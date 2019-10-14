@@ -15,6 +15,7 @@
 
 	<build>
 		<plugins>
+			<!-- Copy Static Files and convert them to Min.css with css.map -->
           	<plugin>
 		        <groupId>com.samaxes.maven</groupId>
 		        <artifactId>minify-maven-plugin</artifactId>
@@ -49,12 +50,13 @@
                     			</jsSourceIncludes>
                     			<jsSourceExcludes>
             						<jsSourceExclude>**/*.min.js</jsSourceExclude>
-            						<cssSourceExclude>**/*.js.map</cssSourceExclude>
+            						<jsSourceExclude>**/*.js.map</jsSourceExclude>
         						</jsSourceExcludes>
                 		</configuration>
             	 </execution>
              </executions>
          </plugin>
+         <!-- Bundle the Css into core, core-website css and js -->
          <plugin>
             	<groupId>com.samaxes.maven</groupId>
 		        <artifactId>minify-maven-plugin</artifactId>
@@ -88,6 +90,36 @@
 			        </execution>
              	</executions>
            </plugin>
+           <!-- Copy the HTML -->
+           <plugin>
+			    <artifactId>maven-resources-plugin</artifactId>
+			    <version>3.0.1</version>
+			    <executions>
+			         <execution>
+			            <id>copy-resources</id>
+			            <!-- here the phase you need -->
+			            <phase>validate</phase>
+			            <goals>
+			               <goal>copy-resources</goal>
+			            </goals>
+			            <configuration>
+			               <outputDirectory>${project.build.directory}/classes</outputDirectory>
+			               <resources>          
+			                    <resource>
+			                        <directory>${project.basedir}/resources</directory>
+			                        <excludes>
+							        	<exclude>**/*.css*</exclude>
+							        	<exclude>**/*.js*</exclude>
+							        	<exclude>**/*.scss*</exclude>
+							        	<exclude>**/*.ico*</exclude>
+							        </excludes>
+			                        <filtering>true</filtering>
+			                    </resource>
+			               </resources>              
+			            </configuration>            
+			        </execution>
+			     </executions>
+			</plugin>
       </plugins>
 	</build>
 </project>
