@@ -59,7 +59,6 @@
         		"/cognito/vendor/amazon-cognito-identity.js",
                 "/cognito/config.js",
                 "/cognito/cognito-auth.js",
-                "/cognito/esri-map.js",
                 "/cognito/cognito-helper.js"
             ]
         }
