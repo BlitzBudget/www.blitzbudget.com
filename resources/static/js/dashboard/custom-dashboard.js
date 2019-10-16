@@ -253,44 +253,12 @@ window.onload = function () {
         	resetMonthExistingPicker();
 			
         	// Check if the user is authenticated. Then call the page to be dynamically loaded
-			$.ajax({
-		        type: "GET",
-		        url: '/api/keepAlive',
-		        dataType: 'html',
-		        success: function(){
-		        	// Call the actual page which was requested to be loaded
-		        	$.ajax({
-				        type: "GET",
-				        url: url,
-				        dataType: 'html',
-				        success: function(data){
-				        	// Load the new HTML
-				            $('#mutableDashboard').html(data);
-				        },
-				        error: function(){
-				        	swal({
-				                title: "Redirecting Not Possible",
-				                text: 'Please try again later',
-				                type: 'warning',
-				                timer: 1000,
-				                showConfirmButton: false
-				            }).catch(swal.noop);
-				        }
-				    });
-		        }, 
-		        error: function(data){
-		        	
-		        	// If other errors then refresh page
-		        	if(isEmpty(data.responseText)) {
-		        		window.location.reload();
-		        	}
-		        	
-		        	var responseError = JSON.parse(data.responseText);
-		           	if(responseError.error.includes("Unauthorized")){
-		           		er.sessionExpiredSwal(data);
-		           	}
-		        }
-			});
+        	if(isUserAuthenticated()) {
+        		// Load the new HTML
+	            $('#mutableDashboard').html(data);
+        	} else {
+        		er.sessionExpiredSwal();
+        	}
 		}
 		
 		function closeCategoryModalIfOpen() {
@@ -645,15 +613,12 @@ er = {
 		
 		// Throw a session expired error and reload the page.
 		sessionExpiredSwal(data){
-			var responseError = JSON.parse(data.responseText);
-	    	if(responseError.error.includes("Unauthorized")){
 	    		// Show the login modal if the session has expired
 	    		// Initialize the modal to not close will when pressing ESC or clicking outside
 				$('#loginModal').modal({
 				    backdrop: 'static',
 				    keyboard: false
 				});
-	    	}
 		},
 		
 		// Delete the auto generated category Ids

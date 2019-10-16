@@ -1,7 +1,7 @@
-/*global WildRydes _config*/
+/*global AWSCogUser _config*/
 
-var WildRydes = window.WildRydes || {};
-WildRydes.map = WildRydes.map || {};
+var AWSCogUser = window.AWSCogUser || {};
+AWSCogUser.map = AWSCogUser.map || {};
 
 (function esriMapScopeWrapper($) {
     require([
@@ -18,7 +18,7 @@ WildRydes.map = WildRydes.map || {};
         Graphic, Point, TextSymbol,
         PictureMarkerSymbol, webMercatorUtils
     ) {
-        var wrMap = WildRydes.map;
+        var wrMap = AWSCogUser.map;
 
         var map = new Map({ basemap: 'gray-vector' });
 

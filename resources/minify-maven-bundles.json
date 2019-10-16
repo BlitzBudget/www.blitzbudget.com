@@ -35,9 +35,7 @@
                 "/dashboard/sidebar/sidebar.js",
                 "/plugins/sweetalert2.js",
                 "/plugins/chartist.min.js",
-                "/dashboard/module/account.js",
-                "/cognito/config.js",
-                "/cognito/cognito-auth.js"
+                "/dashboard/module/account.js"
             ]
         },
         {
@@ -60,7 +58,9 @@
             	"/cognito/vendor/aws-cognito-sdk.min.js",
         		"/cognito/vendor/amazon-cognito-identity.js",
                 "/cognito/config.js",
-                "/cognito/cognito-auth.js"
+                "/cognito/cognito-auth.js",
+                "/cognito/esri-map.js",
+                "/cognito/cognito-helper.js"
             ]
         }
     ]
