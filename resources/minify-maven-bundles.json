@@ -35,7 +35,32 @@
                 "/dashboard/sidebar/sidebar.js",
                 "/plugins/sweetalert2.js",
                 "/plugins/chartist.min.js",
-                "/dashboard/module/account.js"
+                "/dashboard/module/account.js",
+                "/cognito/config.js",
+                "/cognito/cognito-auth.js"
+            ]
+        },
+        {
+            "type": "js",
+            "name": "core-website.js",
+            "files": [
+                "/core/jquery.min.js",
+                "/custom.js",
+                "/core/popper.min.js",
+                "/core/bootstrap-material-design.min.js",
+                "/plugins/moment.min.js",
+                "/plugins/perfect-scrollbar.jquery.min.js",
+                "/material-kit/material-kit.min.js"
+            ]
+        },
+        {
+            "type": "js",
+            "name": "cognito.js",
+            "files": [
+            	"/cognito/vendor/aws-cognito-sdk.min.js",
+        		"/cognito/vendor/amazon-cognito-identity.js",
+                "/cognito/config.js",
+                "/cognito/cognito-auth.js"
             ]
         }
     ]

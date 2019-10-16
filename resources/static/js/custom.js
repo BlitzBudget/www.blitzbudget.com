@@ -1,10 +1,3 @@
-/**
- * Custom Java script for EveryRupee
- * 
- * Nagarjun Nagesh
- */
-
-	
 window.onload = function () {
 	$(document).ready(function(){
 		
