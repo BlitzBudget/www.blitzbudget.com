@@ -3,7 +3,7 @@
 var AWSCogUser = window.AWSCogUser || {};
 
 (function scopeWrapper($) {
-    var signinUrl = 'signin.html';
+    var signinUrl = 'login';
 
     var poolData = {
         UserPoolId: _config.cognito.userPoolId,
@@ -117,7 +117,7 @@ var AWSCogUser = window.AWSCogUser || {};
         signin(email, password,
             function signinSuccess() {
                 console.log('Successfully Logged In');
-                window.location.href = './dashboard/home.html';
+                window.location.href = './dashboard/home';
             },
             function signinError(err) {
                 alert(err);

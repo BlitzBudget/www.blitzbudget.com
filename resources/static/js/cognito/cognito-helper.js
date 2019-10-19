@@ -9,11 +9,11 @@ AWSCogUser.map = AWSCogUser.map || {};
         if (token) {
             authToken = token;
         } else {
-            window.location.href = '/signin.html';
+            window.location.href = '/login';
         }
     }).catch(function handleTokenError(error) {
         alert(error);
-        window.location.href = '/signin.html';
+        window.location.href = '/login';
     });
     
 }(jQuery));
