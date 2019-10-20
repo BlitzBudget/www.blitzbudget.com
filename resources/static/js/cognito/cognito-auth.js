@@ -117,7 +117,7 @@ var AWSCogUser = window.AWSCogUser || {};
         signin(email, password,
             function signinSuccess() {
                 console.log('Successfully Logged In');
-                window.location.href = './dashboard/home';
+                window.location.href = 'https://app.blitzbudget.com/home';
             },
             function signinError(err) {
                 alert(err);
