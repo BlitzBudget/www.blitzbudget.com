@@ -188,10 +188,11 @@ uh = {
 					// ERROR scenarios
 			        if (err) {
 			        	let homepageUrl = 'https://www.blitzbudget.com';
+			        	
 			        	/*
 			        	 * User Does not Exist
 			        	 */
-			        	if(includesStr(err,"UserNotFoundException") {
+			        	if(includesStr(err,"UserNotFoundException")) {
 			        		 let timerInterval;
 			        		  swal({
 			        		    title: 'User does not exist!',
@@ -217,6 +218,20 @@ uh = {
 			        		      console.log('I was closed by the timer');
 			        		    }
 			        		  })
+			        	}
+			        	
+			        	/*
+			        	 * User Not Confirmed
+			        	 */
+			        	if(includesStr(err,"UserNotConfirmedException")) {
+			        		// TODO
+			        	}
+			        	
+			        	/*
+			        	 * PasswordResetRequiredException
+			        	 */
+			        	if(includesStr(err,"PasswordResetRequiredException")) {
+			        		// TODO
 			        	}
 			            return;
 			        }
