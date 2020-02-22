@@ -4,9 +4,8 @@
             "type": "css",
             "name": "core-website.css",
             "files": [
-                "/material-kit/material-kit.css",
-                "/fragments/login-popup.css",
-                "/custom.css"
+                "/custom.css",
+                "/material-design.css"
             ]
         },
         {
@@ -18,19 +17,7 @@
                 "/core/popper.min.js",
                 "/core/bootstrap-material-design.min.js",
                 "/plugins/moment.min.js",
-                "/plugins/perfect-scrollbar.jquery.min.js",
-                "/material-kit/material-kit.min.js"
-            ]
-        },
-        {
-            "type": "js",
-            "name": "cognito.js",
-            "files": [
-            	"/cognito/vendor/aws-cognito-sdk.min.js",
-        		"/cognito/vendor/amazon-cognito-identity.js",
-                "/cognito/config.js",
-                "/cognito/cognito-auth.js",
-                "/cognito/cognito-helper.js"
+                "/plugins/perfect-scrollbar.jquery.min.js"
             ]
         }
     ]
