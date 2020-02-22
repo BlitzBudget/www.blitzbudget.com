@@ -10,55 +10,6 @@
 * All the Custom CSS for EveryRupee gos in here
 */
 
-html {
-    color: -internal-root-color;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
-
-button {
-    -webkit-appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: buttontext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: buttonface;
-    box-sizing: border-box;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
-    border-image: initial;
-}
-
 .expandedNavigationBar {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
@@ -231,6 +182,30 @@ a.text-decoration-none, .text-decoration-none {
 	background-color: #00bcd4;
     position: relative;
     overflow: hidden;
+    background-position: 480px 0;
+    background-size: 1100px;
+    padding: 112px 32px 240px;
+}
+
+@media (min-width: 450px) {
+    .productHero {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .productHero {
+        padding: 64px 32px 120px;
+    }    
+}
+
+@media (min-width: 960px) {
+    .productHero {
+        background-position: 480px 0;
+        background-size: 1100px;
+        padding: 112px 32px 240px;
+    }
 }
 
 .headingInProductHero {
@@ -255,7 +230,7 @@ a.text-decoration-none, .text-decoration-none {
 
 .layoutSubHeading {
     font-family: "Didact Gothic","Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 36px;
@@ -265,4 +240,319 @@ a.text-decoration-none, .text-decoration-none {
     text-decoration: unset;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #eeeeee;
+  border-radius: 0.25rem;
+}
 
+
+.card {
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 6px;
+  color: #333333;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+
+@media (min-width: 992px) {
+    .features {
+        margin-top:115px
+    }
+}
+
+.card.featureIcon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #00aec5;
+    font-size: 38px;
+    text-shadow: 1px 1px 10px rgba(18,196,139,.2);
+}
+
+.card-title {
+    line-height: 32px;
+    line-height: 2rem;
+}
+
+.card-title {
+    color: #344554;
+    font-weight: 700;
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+.card-body p {
+    color: #6c767f;
+    font-size: 16px;
+    font-size: 1rem;
+}
+.card-body p {
+    line-height: 32px;
+    line-height: 2rem;
+}
+
+#showAccounts {
+    fill: #00aec5;
+}
+
+@media (min-width: 992px) {
+    .animated, .text-animation {
+        opacity: 0;
+    }    
+}
+
+.fadeInUp {
+    -webkit-animation: 0.8s ease FadeInUp;
+    -moz-animation: 0.8s ease FadeInUp;
+    animation: 0.8s ease FadeInUp;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.fadeInRight {
+    -webkit-animation: 0.8s ease FadeInRight;
+    -moz-animation: 0.8s ease FadeInRight;
+    animation: 0.8s ease FadeInRight;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;   
+}
+
+.fadeInLeft {
+    -webkit-animation: 0.8s ease FadeInLeft;
+    -moz-animation: 0.8s ease FadeInLeft;
+    animation: 0.8s ease FadeInLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;   
+}
+
+.fadeIn {
+    -webkit-animation: 0.8s ease FadeIn;
+    -moz-animation: 0.8s ease FadeIn;
+    animation: 0.8s ease FadeIn;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;   
+}
+
+@-webkit-keyframes FadeInRight {
+    from {
+        -webkit-transform: translate3d(75px, 0, 0);
+        transform: translate3d(75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes FadeInRight {
+    from {
+        -webkit-transform: translate3d(75px, 0, 0);
+        transform: translate3d(75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes FadeInLeft {
+    from {
+        -webkit-transform: translate3d(-75px, 0, 0);
+        transform: translate3d(-75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes FadeInLeft {
+    from {
+        -webkit-transform: translate3d(-75px, 0, 0);
+        transform: translate3d(-75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+
+@-webkit-keyframes FadeInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes FadeInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes FadeInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes FadeInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes FadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes SlideInRight {
+    0% {
+        -webkit-transform: translate3d(75px, 0, 0);
+        transform: translate3d(75px, 0, 0)
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes SlideInRight {
+    0% {
+        -webkit-transform: translate3d(75px, 0, 0);
+        transform: translate3d(75px, 0, 0)
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.color-white, 
+a.color-white,
+a:-webkit-any-link.color-white {
+    color: #fff;
+}
+
+.delay-12 {
+    -webkit-animation-delay: .72s;
+    animation-delay: .72s;
+}
+
+.signInSug {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.signUpUnstyledAnchor {
+    color: inherit;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 56px;
+    min-width: 162px;
+    background-color: rgb(36, 42, 45);
+    text-decoration: none;
+    overflow: hidden;
+    padding: 0px 16px;
+    border-radius: 8px;
+    border-color: rgb(36, 42, 45);
+}
