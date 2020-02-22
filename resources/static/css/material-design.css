@@ -1847,3 +1847,7 @@
   flex-grow: 1;
   max-width: 100%;
 }
+
+.text-info {
+  color: #00bcd4 !important;
+}
