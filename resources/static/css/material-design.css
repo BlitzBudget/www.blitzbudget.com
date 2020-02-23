@@ -1868,6 +1868,26 @@ button {
   box-shadow: none, 0 0 0 0.2rem rgba(0, 188, 212, 0.5);
 }
 
+
+.btn-black {
+  color: #ffffff;
+  background-color: #242a2d;
+  border-color: #242a2d;
+  box-shadow: none;
+  padding: 0.85rem 1rem;
+}
+
+.btn-black:hover {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+
+.btn-black:focus,
+.btn-black.focus {
+  box-shadow: none, 0 0 0 0.2rem rgba(0, 1, 20, 0.5);
+}
+
 .btn.btn-info {
   color: #fff;
   background-color: #00bcd4;
