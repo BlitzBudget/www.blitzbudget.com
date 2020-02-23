@@ -96,7 +96,7 @@
 			               <goal>copy-resources</goal>
 			            </goals>
 			            <configuration>
-			               <outputDirectory>${project.build.directory}/static/img</outputDirectory>
+			               <outputDirectory>${project.build.directory}/img</outputDirectory>
 			               <encoding>UTF-8</encoding>
 			               <resources>          
 			                    <resource>
