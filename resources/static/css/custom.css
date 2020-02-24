@@ -294,43 +294,52 @@ a.text-decoration-none, .text-decoration-none {
 @media (min-width: 992px) {
     .animated, .text-animation {
         opacity: 0;
+    }
+
+    .fadeInUp {
+        -webkit-animation: 0.8s ease FadeInUp;
+        -moz-animation: 0.8s ease FadeInUp;
+        animation: 0.8s ease FadeInUp;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .fadeInRight {
+        -webkit-animation: 0.8s ease FadeInRight;
+        -moz-animation: 0.8s ease FadeInRight;
+        animation: 0.8s ease FadeInRight;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
+    .fadeInLeft {
+        -webkit-animation: 0.8s ease FadeInLeft;
+        -moz-animation: 0.8s ease FadeInLeft;
+        animation: 0.8s ease FadeInLeft;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
+    .fadeIn {
+        -webkit-animation: 0.8s ease FadeIn;
+        -moz-animation: 0.8s ease FadeIn;
+        animation: 0.8s ease FadeIn;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
+
+    .w-20-rem, .card.w-20-rem {
+        width: 20rem;
+    }
+
+    .w-25-rem, .card.w-25-rem {
+        width: 25rem;
     }    
-}
-
-.fadeInUp {
-    -webkit-animation: 0.8s ease FadeInUp;
-    -moz-animation: 0.8s ease FadeInUp;
-    animation: 0.8s ease FadeInUp;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-.fadeInRight {
-    -webkit-animation: 0.8s ease FadeInRight;
-    -moz-animation: 0.8s ease FadeInRight;
-    animation: 0.8s ease FadeInRight;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;   
-}
-
-.fadeInLeft {
-    -webkit-animation: 0.8s ease FadeInLeft;
-    -moz-animation: 0.8s ease FadeInLeft;
-    animation: 0.8s ease FadeInLeft;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;   
-}
-
-.fadeIn {
-    -webkit-animation: 0.8s ease FadeIn;
-    -moz-animation: 0.8s ease FadeIn;
-    animation: 0.8s ease FadeIn;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;   
 }
 
 @-webkit-keyframes FadeInRight {
@@ -1017,14 +1026,6 @@ a.button:active, a.button:focus, a.button:hover {
     margin-top: -3rem;
 }
 
-.w-20-rem, .card.w-20-rem {
-    width: 20rem;
-}
-
-.w-25-rem, .card.w-25-rem {
-    width: 25rem;
-}
-
 .text-warning {
   color: #ff9800 !important;
 }
@@ -1275,4 +1276,8 @@ a.button:active, a.button:focus, a.button:hover {
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25rem;
+}
+
+.card.mt-minus-20 {
+    margin-top: -5rem;
 }

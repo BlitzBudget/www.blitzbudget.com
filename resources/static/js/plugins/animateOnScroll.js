@@ -2,8 +2,11 @@
 (function scopeWrapper($) {
 
   // get the element to animate
-  let allAnimatedEl = document.getElementsByClassName('text-animation');
-
+  let fI = document.getElementsByClassName('fI');
+  let fIR = document.getElementsByClassName('fIR');
+  let fIU = document.getElementsByClassName('fIU');
+  let fIL = document.getElementsByClassName('fIL');  
+  
 
   // listen for scroll event and call animate function
   document.addEventListener('scroll', animate);
@@ -14,26 +17,62 @@
   // animate element when it is in view
   function animate() {
 
-    for(let i = 0, len = allAnimatedEl.length; i < len; i++) {
-      let children = allAnimatedEl[i];
+    for(let i = 0, len = fI.length; i < len; i++) {
+      let children = fI[i];
       // is element in view?
       if (inView(children)) {
         // Convert children to classList
-        children = children.classList;
-        if(children.contains('fI')) {
-          // element is in view, add class to element
-          children.add('fadeIn');
-        } else if(children.contains('fIR')) {
-          // Fade in right for element
-          children.add('fadeInRight');
-        } else if(children.contains('fIU')) {
-          // Fade in Up for element
-          children.add('fadeInUp');
-        } else {
-          // Fade in left for all the children
-          children.add('fadeInLeft');
-        }
+        // element is in view, add class to element
+        let childrenCL = children.classList;
+        childrenCL.add('fadeIn');
+        childrenCL.remove('fI');
       }
+    }
+
+
+    for(let i = 0, len = fIR.length; i < len; i++) {
+      let children = fIR[i];
+      // is element in view?
+      if(inView(children)) {
+        // Fade in right for element
+        let childrenCL = children.classList;
+        childrenCL.add('fadeInRight');
+        childrenCL.remove('fIR');
+      }
+    }
+
+    for(let i = 0, len = fIU.length; i < len; i++) {
+      let children = fIU[i];
+      // is element in view?
+      if(inView(children)) {
+        // Fade in Up for element
+        let childrenCL = children.classList;
+        childrenCL.add('fadeInUp');
+        childrenCL.remove('fIU');
+      }
+    }
+
+
+    for(let i = 0, len = fIL.length; i < len; i++) {
+      let children = fIL[i];
+      // is element in view?
+      if(inView(children)) {
+        // Fade in left for all the children
+        let childrenCL = children.classList;
+        childrenCL.add('fadeInLeft');
+        childrenCL.remove('fIL');
+      }
+    }
+
+    // Recalculate the fadeable elements
+    fI = document.getElementsByClassName('fI');
+    fIR = document.getElementsByClassName('fIR');
+    fIU = document.getElementsByClassName('fIU');
+    fIL = document.getElementsByClassName('fIL');
+
+    if(isEmpty(fIL) && isEmpty(fIU) && isEmpty(fIR) && isEmpty(fI)) {
+      // Remove event listener
+      document.removeEventListener('scroll', animate);
     }
   }
   
@@ -41,6 +80,11 @@
 
 // check if element is in view
 function inView(element) {
+
+  if(isEmpty(element)) {
+    return;
+  }
+
   // get window height
   var windowHeight = window.innerHeight;
   // get number of pixels that the document is scrolled
