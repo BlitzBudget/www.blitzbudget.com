@@ -885,6 +885,17 @@ a.button:active, a.button:focus, a.button:hover {
     background-color: #ecf9fe;
 }
 
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-transition: width .6s ease;
+    -moz-transition: width .6s ease;
+    -ms-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
 .progress .progress-bar.progress-bar-budget-striped {
     background: #e91e63;
     background-image: linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
