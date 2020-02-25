@@ -200,7 +200,6 @@ a.text-decoration-none, .text-decoration-none {
     max-width: 1024px;
     width: 100%;
     margin: 0px auto;
-    padding: 0px 60px;
 }
 
 .layoutSubHeading {
@@ -292,6 +291,10 @@ a.text-decoration-none, .text-decoration-none {
 }
 
 @media (min-width: 992px) {
+    .layoutContainer {
+        padding: 0px 60px;
+    }
+    
     .animated, .text-animation {
         opacity: 0;
     }
@@ -1288,29 +1291,17 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .card.overviewEntryRow  {
-    top: -5.2rem;
-    left: 21.5rem;
-    width: 15rem;
+    position: absolute;
+    top: 17.2rem;
+    left: 22.5rem;
+    width: 15.3rem;
 }
 
 .card.overviewEntryRow2 {
-    top: -10.2rem;
-    left: 21.5rem;
-    width: 15rem;
-}
-
-.networthImage .image-center {
-    background-image: url(../../../img/dashboard/overview/icons8-money-bag-franc-64.png);
-    content: url(../../../img/dashboard/overview/icons8-money-bag-franc-64.png);
-    height: 64px;
-    width: 64px;
-}
-
-.expenseImage .image-center {
-    background-image: url("../../../img/dashboard/overview/icons8-card-in-use-64.png");
-    content: url("../../../img/dashboard/overview/icons8-card-in-use-64.png");
-    height: 64px;
-    width: 64px;
+    position: absolute;
+    top: 10.5rem;
+    left: 22.5rem;
+    width: 15.3rem;
 }
 
 .descriptionAverages {
@@ -1332,21 +1323,28 @@ a.button:active, a.button:focus, a.button:hover {
     font-size: 0.8rem;
 }
 
+.networthImage .icon, .expenseImage .icon {
+    width: 32px;
+    height: 32px;
+    background-color: #47a44b;
+    border-radius: 50%;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.expenseImage .icon {
+    background-color: #f44336; 
+}
+
+.networthImage .icon .material-icons, 
+.expenseImage .icon .material-icons {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
 @media (max-width: 1300px) {
-    .networthImage .image-center {
-        background-image: url(../../../img/dashboard/overview/icons8-money-bag-franc-35.png);
-        content: url(../../../img/dashboard/overview/icons8-money-bag-franc-35.png);
-        height: 35px;
-        width: 35px;
-    }
-
-
-    .expenseImage .image-center {
-        background-image: url("../../../img/dashboard/overview/icons8-card-in-use-35.png");
-        content: url("../../../img/dashboard/overview/icons8-card-in-use-35.png");
-        height: 35px;
-        width: 35px;
-    }
 
     .descriptionAverages {
         font-size: .7rem;

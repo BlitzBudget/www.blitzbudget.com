@@ -1,5 +1,6 @@
 window.onload = function () {
 	$(document).ready(function(){
+
 		//Currency Preference
 		window.currentCurrencyPreference = '$';
 

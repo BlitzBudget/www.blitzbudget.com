@@ -1,4 +1,6 @@
 
+let locale = "en-US";
+
 function splitElement(str, splitString){
 	if(includesStr(str, splitString)){
 		return isEmpty(str) ? str : str.split(splitString);
@@ -58,7 +60,7 @@ function animateValue(element, start, end, prefix ,duration) {
     if (start == end) {
         // Set as text content
         if(isNotEmpty(prefix)) {
-        	element.textContent = prefix + formatNumber(end, currentUser.locale);
+        	element.textContent = prefix + formatNumber(end, locale);
         } else {
         	element.textContent = end;
         }
@@ -80,7 +82,7 @@ function animateValue(element, start, end, prefix ,duration) {
 	        current += increment;
 	        // Set as text content
 	        if(isNotEmpty(prefix)) {
-	        	element.textContent = prefix + formatNumber(current, currentUser.locale);
+	        	element.textContent = prefix + formatNumber(current, locale);
 	        } else {
 	        	element.textContent = current;
 	        }
