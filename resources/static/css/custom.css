@@ -1281,3 +1281,48 @@ a.button:active, a.button:focus, a.button:hover {
 .card.mt-minus-20 {
     margin-top: -5rem;
 }
+
+.overviewEntryRow  {
+    top: 22rem;
+    left: 17rem;
+    width: 14rem;
+}
+
+.networthImage .image-center {
+    background-image: url(../../../img/dashboard/overview/icons8-money-bag-franc-64.png);
+    content: url(../../../img/dashboard/overview/icons8-money-bag-franc-64.png);
+    height: 64px;
+    width: 64px;
+}
+
+.descriptionAverages {
+    color: #5d7079;
+    -webkit-transition: .2s;
+    transition: .2s;
+    line-height: 1.5;
+}
+
+.overviewHeading {
+    color: #2e4369;
+    letter-spacing: 0;
+    clear: both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+    .networthImage .image-center {
+        background-image: url(../../../img/dashboard/overview/icons8-money-bag-franc-35.png);
+        content: url(../../../img/dashboard/overview/icons8-money-bag-franc-35.png);
+        height: 35px;
+        width: 35px;
+    }
+
+    .descriptionAverages {
+        font-size: .7rem;
+    }
+
+    .overviewHeading {
+        font-size: .9rem;
+    }
+}
