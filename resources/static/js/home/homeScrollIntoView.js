@@ -43,6 +43,10 @@
           }
         });
 
+        // Animate the numbers in the networth and expense
+        animateValue(document.getElementById('averageExpenseAmount'), 0, 2834,  '€' ,2000);
+        animateValue(document.getElementById('networthAmount'), 0, -3985,  '-€' ,2000);
+
         // Remove Event Listener for SVG
         document.removeEventListener('scroll', animateSVG);
       }

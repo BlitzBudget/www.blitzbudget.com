@@ -524,6 +524,11 @@ a:-webkit-any-link.color-white {
     animation-delay: .84s;
 }
 
+.delay-14 {
+    -webkit-animation-delay: .96s;
+    animation-delay: .96s;
+}
+
 .delay-9 {
     -webkit-animation-delay: .56s;
     animation-delay: .56s;   
@@ -1282,15 +1287,28 @@ a.button:active, a.button:focus, a.button:hover {
     margin-top: -5rem;
 }
 
-.overviewEntryRow  {
-    top: 22rem;
-    left: 17rem;
-    width: 14rem;
+.card.overviewEntryRow  {
+    top: 21.9rem;
+    left: 15.65rem;
+    width: 15rem;
+}
+
+.card.overviewEntryRow2 {
+    top: 14.9rem;
+    left: 15.65rem;
+    width: 15rem;
 }
 
 .networthImage .image-center {
     background-image: url(../../../img/dashboard/overview/icons8-money-bag-franc-64.png);
     content: url(../../../img/dashboard/overview/icons8-money-bag-franc-64.png);
+    height: 64px;
+    width: 64px;
+}
+
+.expenseImage .image-center {
+    background-image: url("../../../img/dashboard/overview/icons8-card-in-use-64.png");
+    content: url("../../../img/dashboard/overview/icons8-card-in-use-64.png");
     height: 64px;
     width: 64px;
 }
@@ -1310,10 +1328,22 @@ a.button:active, a.button:focus, a.button:hover {
     white-space: nowrap;
 }
 
+.fs-decrease {
+    font-size: 0.8rem;
+}
+
 @media (max-width: 1300px) {
     .networthImage .image-center {
         background-image: url(../../../img/dashboard/overview/icons8-money-bag-franc-35.png);
         content: url(../../../img/dashboard/overview/icons8-money-bag-franc-35.png);
+        height: 35px;
+        width: 35px;
+    }
+
+
+    .expenseImage .image-center {
+        background-image: url("../../../img/dashboard/overview/icons8-card-in-use-35.png");
+        content: url("../../../img/dashboard/overview/icons8-card-in-use-35.png");
         height: 35px;
         width: 35px;
     }
