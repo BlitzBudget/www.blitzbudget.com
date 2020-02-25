@@ -294,7 +294,7 @@ a.text-decoration-none, .text-decoration-none {
     .layoutContainer {
         padding: 0px 60px;
     }
-    
+
     .animated, .text-animation {
         opacity: 0;
     }
@@ -1352,5 +1352,13 @@ a.button:active, a.button:focus, a.button:hover {
 
     .overviewHeading {
         font-size: .9rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .card.overviewEntryRow2, 
+    .card.overviewEntryRow {
+        top: 5.5rem;
+        left: 9rem;
     }
 }
