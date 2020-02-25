@@ -1288,14 +1288,14 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .card.overviewEntryRow  {
-    top: 21.9rem;
-    left: 15.65rem;
+    top: -5.2rem;
+    left: 21.5rem;
     width: 15rem;
 }
 
 .card.overviewEntryRow2 {
-    top: 14.9rem;
-    left: 15.65rem;
+    top: -10.2rem;
+    left: 21.5rem;
     width: 15rem;
 }
 

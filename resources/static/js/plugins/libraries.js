@@ -40,6 +40,10 @@ function  isEmpty(obj) {
 	return true;
 }
 
+function  isNotEmpty(obj) {
+	return !isEmpty(obj);
+}
+
 //Format numbers in Indian Currency
 function formatNumber(num, locale) {
 	if(isEmpty(locale)){
