@@ -1338,11 +1338,13 @@ a.button:active, a.button:focus, a.button:hover {
     line-height: 1.7;
 }
 
-.outline-circle {
-    background-image: url("../../../img/dashboard/home-page/outline-circle.png");
-    content: url("../../../img/dashboard/home-page/outline-circle.png");
-    height: 35px;
-    width: 35px;
+.iphone-illustration {
+    position:relative;
+    margin:0 auto;
+    width: 298px;
+    height: 600px;
+    background-image:url(../../../img/home-page/iphone-xi.svg);
+    z-index:3
 }
 
 @media (max-width: 1300px) {
@@ -1378,10 +1380,6 @@ a.button:active, a.button:focus, a.button:hover {
         padding-right: 32px;
         padding-left: 32px;
     }
-
-    .circle1 {
-        display: none;
-    }
 }
 
 @media (min-width: 768px) {
@@ -1393,12 +1391,5 @@ a.button:active, a.button:focus, a.button:hover {
 @media (min-width: 960px) {
     .productHero {
         padding: 112px 32px 240px;
-    }
-
-    .circle1 {
-        position: absolute;
-        top: -2rem;
-        left: 30rem;
-        width: 80rem;
     }
 }
