@@ -1500,21 +1500,21 @@ a.button:active, a.button:focus, a.button:hover {
     position: absolute;
     transform: rotate(90deg);
     font-size: 0.87rem;
-    top: 1.144rem;
+    top: 1.294rem;
     left: 12.6rem;
 }
 
 .iphone-illustration .network {
     position: absolute;
     font-size: 0.54rem;
-    top: 1.28rem;
+    top: 1.43rem;
     left: 11.15rem;
 }
 
 .iphone-illustration .wifi {
     position: absolute;
     font-size: 0.54rem;
-    top: 1.28rem;
+    top: 1.43rem;
     left: 11.85rem;
 }
 
@@ -1524,6 +1524,38 @@ a.button:active, a.button:focus, a.button:hover {
     font-size: 0.67rem;
     left: 4.8rem;
     font-weight: 300;
+}
+
+.iphone-illustration .search {
+    position: absolute;
+    font-size: 1rem;
+    top: 2.644rem;
+    color: #524f4f;
+    left: 11.4rem;
+}
+
+.iphone-illustration .dashboard{
+    position: absolute;
+    font-size: 1rem;
+    top: 27.144rem;
+    color: #524f4f;
+    left: 2.16rem;
+}
+
+.iphone-illustration .goals {
+    position: absolute;
+    font-size: 1rem;
+    top: 27.144rem;
+    color: #524f4f;
+    left: 4.56rem;
+}
+
+.iphone-illustration .addIcon {
+    position: absolute;
+    font-size: 1rem;
+    top: 26.144rem;
+    color: #524f4f;
+    left: 6.56rem;
 }
 
 @media (max-width: 1300px) {
@@ -1551,6 +1583,10 @@ a.button:active, a.button:focus, a.button:hover {
     .mt-small-4, 
     .my-small-4 {
         margin-top: 1.5rem;
+    }
+
+    .iphone-illustration .ct-chart {
+        padding-top: 6.4rem;
     }
 }
 
