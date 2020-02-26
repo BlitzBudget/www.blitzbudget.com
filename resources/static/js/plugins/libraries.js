@@ -119,20 +119,13 @@ function buildPieChart(dataPreferences, id, absoluteTotal) {
 	  donut: true,
 	  donutWidth: 25,
 	  startAngle: 270,
-	  showLabel: true,
+	  showLabel: false,
 	  height: '12.75rem'
     };
     
     let responsiveOptions = [
 	  ['screen and (min-width: 640px)', {
-	    chartPadding: 40,
-	    labelOffset: 50,
-	    labelDirection: 'explode',
-	    labelInterpolationFnc: function(value, idx) {
-	      // Calculates the percentage of category total vs absolute total
-	      let percentage = round((dataPreferences.series[idx] / absoluteTotal * 100),2) + '%';
-	      return percentage;
-	    }
+	    chartPadding: 40
 	  }],
 	  ['screen and (min-width: 1301px)', {
 	    labelOffset: 30,

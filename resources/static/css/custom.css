@@ -1471,14 +1471,59 @@ a.button:active, a.button:focus, a.button:hover {
     width: 35px;
     top: 1.3rem;
     left: 1.8rem;
-    font-size: 9px;
+    font-size: 8px;
     text-align: left;
     font-weight: 300;
     color: #344554;
+    font-family: Open Sans,sans-serif;
 }
 
 .iphone-illustration .ct-chart {
-    padding-top: 4rem;
+    padding-top: 5.2rem;
+}
+
+.iphone-illustration .namdAndDescription {
+    position: absolute;
+    top: 4.2rem;
+    left: 3.578rem;;
+}
+
+.iphone-illustration .overviewHeading {
+    font-size: 0.89rem;
+}
+
+.iphone-illustration .averageExpenseAmount {
+    font-size: 1rem;
+}
+
+.iphone-illustration .battery {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 0.87rem;
+    top: 1.144rem;
+    left: 12.6rem;
+}
+
+.iphone-illustration .network {
+    position: absolute;
+    font-size: 0.54rem;
+    top: 1.28rem;
+    left: 11.15rem;
+}
+
+.iphone-illustration .wifi {
+    position: absolute;
+    font-size: 0.54rem;
+    top: 1.28rem;
+    left: 11.85rem;
+}
+
+.iphone-illustration .wallet-name {
+    position: absolute;
+    top: 2.4rem;
+    font-size: 0.67rem;
+    left: 4.8rem;
+    font-weight: 300;
 }
 
 @media (max-width: 1300px) {
