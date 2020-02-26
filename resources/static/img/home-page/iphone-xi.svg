@@ -1,4 +1,11 @@
-<svg width="360" height="722" version="1.1" viewBox="0 0 95.25 191.02918" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="240" height="481" version="1.1" viewBox="0 0 95.25 191.02918" 
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <linearGradient id="linearGradient941">
 <stop stop-color="#dedede" stop-opacity=".27450982" offset="0"/>
@@ -61,8 +68,8 @@
 </linearGradient>
 <linearGradient id="linearGradient5832-3" x1="8.3152552" x2="86.934753" y1="8.4801025" y2="8.4801025" gradientTransform="matrix(.99999998 0 0 -.99999998 .0668174 193.56681)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient5830"/>
 <linearGradient id="linearGradient2973" x1="-41.981419" x2="137.23141" y1="95.480484" y2="95.480484" gradientTransform="rotate(90,47.625001,95.48048)" gradientUnits="userSpaceOnUse">
-<stop stop-color="#303030" offset="0"/>
-<stop stop-color="#171717" offset="1"/>
+<stop stop-color="#fafafa" offset="0"/>
+<stop stop-color="#f9f9f9" offset="1"/>
 </linearGradient>
 <mask id="mask1062-8" maskUnits="userSpaceOnUse">
 <path d="m42.746746 7.2620904c-0.399166 0-0.72037 0.3212029-0.72037 0.7203695 0 0.3991665 0.321204 0.7203694 0.72037 0.7203694h9.921876c0.399166 0 0.72037-0.3212029 0.72037-0.7203694 0-0.3991666-0.321204-0.7203695-0.72037-0.7203695z" color="#000000" fill="none" stroke="#fff" stroke-linecap="round" stroke-width=".05291667"/>

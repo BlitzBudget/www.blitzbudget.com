@@ -1,6 +1,10 @@
 window.onload = function () {
 	$(document).ready(function(){
 
+		// Current Time on Iphone 11
+		let currentTime = new Date();
+		document.getElementById('currentTime').innerText = currentTime.getHours() + ' : ' + ("0" + Number(currentTime.getMinutes())).slice(-2);
+
 		//Currency Preference
 		window.currentCurrencyPreference = '$';
 
@@ -28,6 +32,15 @@ window.onload = function () {
 		let progressBar2 = document.getElementById('progress-budget-5');
 		progressBar2.setAttribute('aria-valuenow', 28);
 		progressBar2.style.width = 28 + '%'; 
+
+
+		// Build the data for the line chart
+    	let dataSimpleBarChart = {
+	         labels: ['Beauty', 'Bills & Fees', 'Family & Personal', 'Shopping', 'Home', 'Travel' , 'Other'],
+	         series: [100,800,600,120,800,500,1200]	         
+    	}
+
+    	buildPieChart(dataSimpleBarChart, 'chatist-pie', 4120);
 
 	});
 }

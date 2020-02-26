@@ -89,3 +89,126 @@ function animateValue(element, start, end, prefix ,duration) {
         }   
     }, stepTime);
 }
+
+// Replace HTML
+function replaceHTML(el, html) {
+    var oldEl = typeof el === "string" ? document.getElementById(el) : el;
+    /*@cc_on // Pure innerHTML is slightly faster in IE
+        oldEl.innerHTML = html;
+        return oldEl;
+    @*/
+    var newEl = oldEl.cloneNode(false);
+    newEl.innerHTML = html;
+    oldEl.parentNode.replaceChild(newEl, oldEl);
+    /* Since we just removed the old element from the DOM, return a reference
+    to the new element, which can be used to restore variable references. */
+    return newEl;
+}
+
+// Minimize the decimals to a set variable
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+
+// Introduce Chartist pie chart
+function buildPieChart(dataPreferences, id, absoluteTotal) {
+	 /*  **************** Public Preferences - Pie Chart ******************** */
+
+    let optionsPreferences = {
+	  donut: true,
+	  donutWidth: 25,
+	  startAngle: 270,
+	  showLabel: true,
+	  height: '12.75rem'
+    };
+    
+    let responsiveOptions = [
+	  ['screen and (min-width: 640px)', {
+	    chartPadding: 40,
+	    labelOffset: 50,
+	    labelDirection: 'explode',
+	    labelInterpolationFnc: function(value, idx) {
+	      // Calculates the percentage of category total vs absolute total
+	      let percentage = round((dataPreferences.series[idx] / absoluteTotal * 100),2) + '%';
+	      return percentage;
+	    }
+	  }],
+	  ['screen and (min-width: 1301px)', {
+	    labelOffset: 30,
+	    chartPadding: 10
+	  }],
+	  ['screen and (min-width: 992px)', {
+  	    labelOffset: 45,
+  	    chartPadding: 40,
+  	  }],
+	  
+	];
+    
+    // Reset the chart
+    replaceHTML(id, '');
+    $("#" + id).tooltip('dispose');
+    
+    // Append Tooltip for Doughnut chart
+    if(isNotEmpty(dataPreferences)) {
+    	let categoryBreakdownChart = new Chartist.Pie('#' + id, dataPreferences, optionsPreferences, responsiveOptions);
+    	
+    	// Animate the doughnut chart
+    	startAnimationDonutChart(categoryBreakdownChart);
+    }   
+}
+
+function startAnimationDonutChart(chart) {
+		
+	chart.on('draw', function(data) {
+		  if(data.type === 'slice') {
+		    // Get the total path length in order to use for dash array animation
+		    var pathLength = data.element._node.getTotalLength();
+
+		    // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+		    data.element.attr({
+		      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+		    });
+		    
+		    // Change the duration of the animation based on the length of the series
+		    let durAnim = 1000;
+		    if(chart.data.series.length > 12) {
+		    	durAnim = 100;
+		    } else if(chart.data.series.length > 9) {
+		    	durAnim = 200;
+		    } else if (chart.data.series.length > 6) {
+		    	durAnim = 400;
+		    } else if (chart.data.series.length > 3) {
+		    	durAnim = 600;
+		    }
+
+		    // Create animation definition while also assigning an ID to the animation for later sync usage
+		    var animationDefinition = {
+		      'stroke-dashoffset': {
+		        id: 'anim' + data.index,
+		        dur: durAnim,
+		        from: -pathLength + 'px',
+		        to:  '0px',
+		        easing: Chartist.Svg.Easing.easeOutQuint,
+		        // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+		        fill: 'freeze'
+		      }
+		    };
+
+		    // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+		    if(data.index !== 0) {
+		      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+		    }
+
+		    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+		    data.element.attr({
+		      'stroke-dashoffset': -pathLength + 'px'
+		    });
+
+		    // We can't use guided mode as the animations need to rely on setting begin manually
+		    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+		    data.element.animate(animationDefinition, false);
+		  }
+	});
+	
+}
