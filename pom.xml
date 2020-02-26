@@ -37,6 +37,8 @@
 			                   	<charset>utf-8</charset>
 			                   	<cssEngine>YUI</cssEngine>
 			                   	<jsEngine>CLOSURE</jsEngine>
+			                   	<cssTargetDir>css/</cssTargetDir> 
+		                      	<jsTargetDir>js/</jsTargetDir> 
 			                   	<cssSourceDir>static/css</cssSourceDir>
 			                   	<cssSourceExcludes>
 			          	 			<cssSourceExclude>**/*.min.css</cssSourceExclude>

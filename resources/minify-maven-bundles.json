@@ -18,7 +18,10 @@
                 "/plugins/chartist.min.js",
                 "/plugins/moment.min.js",
                 "/plugins/perfect-scrollbar.jquery.min.js",
-                "/custom.js"
+                "/plugins/animateOnScroll.js",
+                "/plugins/libraries.js",
+                "/home/homeScrollIntoView.js",
+                "/home/home.js"
             ]
         }
     ]
