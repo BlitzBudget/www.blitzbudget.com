@@ -46,6 +46,7 @@
         // Animate the numbers in the networth and expense
         animateValue(document.getElementById('averageExpenseAmount'), 2000, 2834,  '-€' ,2000);
         animateValue(document.getElementById('networthAmount'), 2800, 3985,  '€' ,2000);
+        animateValue(document.getElementById('averageExpenseAmountIphone'), 2000, 2834,  '-€' ,2000);
 
         // Remove Event Listener for SVG
         document.removeEventListener('scroll', animateSVG);
