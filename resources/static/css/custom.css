@@ -1388,7 +1388,7 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .ct-chart .ct-series-g .ct-point,.ct-chart .ct-series-g .ct-line,.ct-chart .ct-series-g .ct-bar,.ct-chart .ct-series-g .ct-slice-donut,.ct-chart .ct-series-g .ct-slice-pie,.ct-chart .ct-series-g .ct-slice-donut-solid,.ct-chart .ct-series-g .ct-area {
-    stroke: #00bcd4
+    stroke: #004c8c
 }
 
 .ct-chart .ct-series-h .ct-point,.ct-chart .ct-series-h .ct-line,.ct-chart .ct-series-h .ct-bar,.ct-chart .ct-series-h .ct-slice-donut,.ct-chart .ct-series-h .ct-slice-pie,.ct-chart .ct-series-h .ct-slice-donut-solid,.ct-chart .ct-series-h .ct-area {
@@ -1416,7 +1416,7 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .ct-chart .ct-series-n .ct-point,.ct-chart .ct-series-n .ct-line,.ct-chart .ct-series-n .ct-bar,.ct-chart .ct-series-n .ct-slice-donut,.ct-chart .ct-series-n .ct-slice-pie,.ct-chart .ct-series-n .ct-slice-donut-solid,.ct-chart .ct-series-n .ct-area {
-    stroke: #004c8c
+    stroke: #004d8d
 }
 
 .ct-chart .ct-series-o .ct-point,.ct-chart .ct-series-o .ct-line,.ct-chart .ct-series-o .ct-bar,.ct-chart .ct-series-o .ct-slice-donut,.ct-chart .ct-series-o .ct-slice-pie,.ct-chart .ct-series-o .ct-slice-donut-solid,.ct-chart .ct-series-o .ct-area {
@@ -1683,6 +1683,112 @@ a.button:active, a.button:focus, a.button:hover {
     top: 4.3rem;
     width: 86%;
 }
+
+
+.iphone-illustration .info {
+    position: absolute;
+    width: calc(100% - 60px);
+    left: 30px;
+    top: 17rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.iphone-illustration .info .row {
+    -ms-flex-align: center!important;
+    align-items: center!important
+}
+
+.iphone-illustration .info-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: -10px;
+    opacity: 0;
+    position: relative;
+    transition: all .3s ease;
+    transition-delay: .4s
+}
+
+.iphone-illustration .info-content:last-child {
+    margin-top: -15px;
+    transition-delay: .45s
+}
+
+.iphone-illustration .info-content div[class^=col] {
+    padding: 0;
+    margin: 0
+}
+
+.iphone-illustration .info-content p {
+    font-size: 11px;
+    color: #000;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2
+}
+
+.iphone-illustration .info-content p span {
+    color: #667d89;
+    display: block;
+    font-size: 10px;
+    margin-bottom: 0;
+    transition: all .3s ease
+}
+
+.iphone-illustration .info-content p.info-content-minus {
+    text-align: right;
+    color: #fb6666
+}
+
+.iphone-illustration .info-content-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+}
+
+.iphone-illustration .info-content-icon svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px
+}
+
+.iphone-illustration .info-content-icon.bg-1 {
+    background: #f44336;
+}
+
+.iphone-illustration .info-content-icon.bg-2 {
+    background: #f44336
+}
+
+.iphone-illustration .info-content-icon.bg-3 {
+    background: #ff9800
+}
+
+.iphone-illustration .info-content-icon.bg-4 {
+    background: #795548
+}
+
+.iphone-illustration .info-content-icon.bg-5 {
+    background: #cddc39
+}
+
+.iphone-illustration .info .info-content {
+    top: 0;
+    opacity: 1
+}
+
+.iphone-illustration .percentage {
+    color: #fff;
+    font-size: 0.6rem;
+    position: absolute;
+    top: 0.36rem;
+    left: 0.3rem;
+}
+
 
 @media (max-width: 1300px) {
 
