@@ -1329,7 +1329,7 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .ct-chart .ct-series-f .ct-point,.ct-chart .ct-series-f .ct-line,.ct-chart .ct-series-f .ct-bar,.ct-chart .ct-series-f .ct-slice-donut,.ct-chart .ct-series-f .ct-slice-pie,.ct-chart .ct-series-f .ct-slice-donut-solid,.ct-chart .ct-series-f .ct-area {
-    stroke: #03a9f4
+    stroke: #e91e63
 }
 
 .ct-chart .ct-series-g .ct-point,.ct-chart .ct-series-g .ct-line,.ct-chart .ct-series-g .ct-bar,.ct-chart .ct-series-g .ct-slice-donut,.ct-chart .ct-series-g .ct-slice-pie,.ct-chart .ct-series-g .ct-slice-donut-solid,.ct-chart .ct-series-g .ct-area {
@@ -1337,7 +1337,7 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .ct-chart .ct-series-h .ct-point,.ct-chart .ct-series-h .ct-line,.ct-chart .ct-series-h .ct-bar,.ct-chart .ct-series-h .ct-slice-donut,.ct-chart .ct-series-h .ct-slice-pie,.ct-chart .ct-series-h .ct-slice-donut-solid,.ct-chart .ct-series-h .ct-area {
-    stroke: #e91e63
+    stroke: #03a9f4
 }
 
 .ct-chart .ct-series-i .ct-point,.ct-chart .ct-series-i .ct-line,.ct-chart .ct-series-i .ct-bar,.ct-chart .ct-series-i .ct-slice-donut,.ct-chart .ct-series-i .ct-slice-pie,.ct-chart .ct-series-i .ct-slice-donut-solid,.ct-chart .ct-series-i .ct-area {
@@ -1476,7 +1476,7 @@ a.button:active, a.button:focus, a.button:hover {
     font-size: 1rem;
     top: 2.644rem;
     color: #524f4f;
-    left: 11.4rem;
+    left: 12.4rem;
 }
 
 .iphone-illustration .dashboard{
@@ -1734,9 +1734,8 @@ a.button:active, a.button:focus, a.button:hover {
     margin-top: 0.01rem;
 }
 
-.info-content-icon.single-digit {
-    top: 0.4rem;
-    left: 0.4rem;
+.row.downloadAppHeader {
+    display: none;
 }
 
 @media (max-width: 1300px) {
@@ -1768,6 +1767,15 @@ a.button:active, a.button:focus, a.button:hover {
 
     .iphone-illustration .ct-chart {
         padding-top: 6.4rem;
+    }
+
+    .row.downloadAppHeader{
+        display: flex;
+    }
+
+    .btn.signUpUnstyledAnchor, 
+    .signInSug {
+        display: none;
     }
 }
 
