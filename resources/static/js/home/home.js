@@ -3,10 +3,7 @@ window.onload = function () {
 
 		// Current Time on Iphone 11
 		let currentTime = new Date();
-		document.getElementById('currentTime').innerText = currentTime.getHours() + ' : ' + ("0" + Number(currentTime.getMinutes())).slice(-2);
-
-		//Currency Preference
-		window.currentCurrencyPreference = '$';
+		document.getElementById('currentTime').innerText = ("0" + Number(currentTime.getHours())).slice(-2) + ' : ' + ("0" + Number(currentTime.getMinutes())).slice(-2);
 
 		$('.deleteBudget').click(function() {
 			let deleteButtonElement = this;
@@ -40,7 +37,11 @@ window.onload = function () {
 	         series: [100,800,600,120,800,500,1200]	         
     	}
 
+    	// Build pie chart on iphone 11
     	buildPieChart(dataSimpleBarChart, 'chatist-pie', 4120);
+
+    	// Animate values on Iphone 11
+    	animateValue(document.getElementById('averageExpenseAmountIphone'), 2000, 2834,  '-€' ,2000);
 
 	});
 }
