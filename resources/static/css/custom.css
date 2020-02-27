@@ -1637,7 +1637,7 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .iphone-illustration .previous-date {
-      position: absolute;
+    position: absolute;
     left: 1.9rem;
     font-weight: 300;
     font-size: .43rem;
@@ -1646,10 +1646,8 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .iphone-illustration div.hr {
-    width:100%;
     height: 0.9px;
     background: #f3f1f1;
-    position:relative;
     margin-top: 0.5rem;
 }
 
