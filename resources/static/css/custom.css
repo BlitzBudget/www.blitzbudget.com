@@ -319,6 +319,16 @@ a.text-decoration-none, .text-decoration-none {
     }
 
 
+    .fadeInDown {
+        -webkit-animation: 0.8s ease FadeInDown;
+        -moz-animation: 0.8s ease FadeInDown;
+        animation: 0.8s ease FadeInDown;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
+
     .w-20-rem, .card.w-20-rem {
         width: 20rem;
     }
