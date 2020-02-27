@@ -1702,19 +1702,19 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .iphone-illustration .info-content-icon.bg-1 {
-    background: #f44336;
+    background: #00bcd4;
 }
 
 .iphone-illustration .info-content-icon.bg-2 {
-    background: #ff9800
+    background: #f44336
 }
 
 .iphone-illustration .info-content-icon.bg-3 {
-    background: #795548
+    background: #ff9800
 }
 
 .iphone-illustration .info-content-icon.bg-4 {
-    background: #cddc39
+    background: #795548
 }
 
 .iphone-illustration .info .info-content {
@@ -1730,6 +1730,14 @@ a.button:active, a.button:focus, a.button:hover {
     left: 0.3rem;
 }
 
+.iphone-illustration .info-content.last {
+    margin-top: 0.01rem;
+}
+
+.info-content-icon.single-digit {
+    top: 0.4rem;
+    left: 0.4rem;
+}
 
 @media (max-width: 1300px) {
 

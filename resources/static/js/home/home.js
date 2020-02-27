@@ -43,5 +43,8 @@ window.onload = function () {
     	// Animate values on Iphone 11
     	animateValue(document.getElementById('averageExpenseAmountIphone'), 2000, 2834,  '-€' ,2000);
 
+    	// Build pie chart on iphone 11
+    	buildPieChart(dataSimpleBarChart, 'chatist-pie2', 4120);
+
 	});
 }
