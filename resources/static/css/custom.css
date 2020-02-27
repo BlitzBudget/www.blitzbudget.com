@@ -1706,18 +1706,14 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .iphone-illustration .info-content-icon.bg-2 {
-    background: #f44336
-}
-
-.iphone-illustration .info-content-icon.bg-3 {
     background: #ff9800
 }
 
-.iphone-illustration .info-content-icon.bg-4 {
+.iphone-illustration .info-content-icon.bg-3 {
     background: #795548
 }
 
-.iphone-illustration .info-content-icon.bg-5 {
+.iphone-illustration .info-content-icon.bg-4 {
     background: #cddc39
 }
 
