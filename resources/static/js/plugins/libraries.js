@@ -125,7 +125,7 @@ function buildPieChart(dataPreferences, id, absoluteTotal) {
     
     let responsiveOptions = [
 	  ['screen and (min-width: 640px)', {
-	    chartPadding: 40
+	    chartPadding: 80
 	  }],
 	  ['screen and (min-width: 1301px)', {
 	    labelOffset: 30,

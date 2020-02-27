@@ -1484,7 +1484,7 @@ a.button:active, a.button:focus, a.button:hover {
 
 .iphone-illustration .namdAndDescription {
     position: absolute;
-    top: 4.2rem;
+    top: 5.2rem;
     left: 3.578rem;;
 }
 
@@ -1552,16 +1552,16 @@ a.button:active, a.button:focus, a.button:hover {
 
 .iphone-illustration .budget {
     position: absolute;
-    width: 0.8rem;
-    top: 27rem;
+    width: .7rem;
+    top: 27.03rem;
     color: #524f4f;
     left: 9.79rem;
 }
 
 .iphone-illustration .transactions {
     position: absolute;
-    font-size: 1rem;
-    top: 27.144rem;
+    font-size: 0.8rem;
+    top: 27.274rem;
     color: #524f4f;
     left: 4.56rem;
 }
@@ -1576,34 +1576,73 @@ a.button:active, a.button:focus, a.button:hover {
 
 .iphone-illustration .overview-text {
     position: absolute;
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     top: 28.144rem;
     color: #524f4f;
-    left: 1.8rem;
+    left: 1.9rem;
 }
 
 .iphone-illustration .transactions-text {
     position: absolute;
-    font-size: 0.45rem;
+    font-size: .4rem;
     top: 28.144rem;
     color: #524f4f;
-    left: 3.8rem;
+    left: 3.9rem;
 }
 
 .iphone-illustration .budget-text {
     position: absolute;
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     top: 28.144rem;
     color: #524f4f;
-    left: 8.8rem;
+    left: 9.6rem;
 }
 
 .iphone-illustration .goals-text {
     position: absolute;
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     top: 28.144rem;
     color: #524f4f;
-    left: 10.8rem;
+    left: 11.98rem;
+}
+
+.iphone-illustration .footer-line {
+    width: 85.8%;
+    position: absolute;
+    left: 1.0rem;
+    top: 26.38rem;
+    border-top: 0.5px solid #ccc;
+}
+
+.iphone-illustration .networthImage .icon {
+    border: 1px solid #f7f7f7;
+}
+
+.iphone-illustration .current-date {
+    position: absolute;
+    left: 6.3rem;
+    font-weight: 300;
+    font-size: .43rem;
+    top: 3.944rem;
+    color: #524f4f;
+}
+
+.iphone-illustration .future-date {
+    position: absolute;
+    left: 11rem;
+    font-weight: 300;
+    font-size: .43rem;
+    top: 3.944rem;
+    color: #524f4f;
+}
+
+.iphone-illustration .previous-date {
+      position: absolute;
+    left: 1.9rem;
+    font-weight: 300;
+    font-size: .43rem;
+    top: 3.944rem;
+    color: #524f4f;
 }
 
 @media (max-width: 1300px) {
