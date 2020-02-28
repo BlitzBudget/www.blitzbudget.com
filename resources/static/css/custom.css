@@ -1738,6 +1738,69 @@ a.button:active, a.button:focus, a.button:hover {
     display: none;
 }
 
+/**
+*
+*  Menu Bar Mobile
+*
+**/
+.mobileMenuButton {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 22px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    -webkit-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+
+.mobileMenuBars {
+    position: relative;
+    width: 22px;
+    height: 2px;
+    background: 
+    #69757a;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.mobileMenuButton:hover {
+ opacity:0.8
+}
+
+.mobileMenuBars {
+ position:relative;
+ width:22px;
+ height:2px;
+ background:#69757a;
+ -webkit-transition:all 150ms ease-in-out;
+ transition:all 150ms ease-in-out
+}
+
+.mobileMenuBars::before,
+.mobileMenuBars::after {
+ content:"";
+ position:absolute;
+ left:0;
+ width:22px;
+ height:2px;
+ background:#69757a;
+ -webkit-transition:all 150ms ease-in-out;
+ transition:all 150ms ease-in-out;
+ -webkit-transform:none;
+ transform:none
+}
+
+.mobileMenuBars::before {
+ top:-6px
+}
+
+.mobileMenuBars::after {
+ bottom:-6px
+}
+
 @media (max-width: 1300px) {
 
     .descriptionAverages {
