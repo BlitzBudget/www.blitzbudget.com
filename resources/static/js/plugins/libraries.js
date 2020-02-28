@@ -127,10 +127,10 @@ function buildPieChart(dataPreferences, id, absoluteTotal) {
 	    chartPadding: 60
 	  }],
 	  ['screen and (max-width: 992px)', {
-  	    chartPadding: 40
+  	    chartPadding: 30
   	  }],
   	  ['screen and (max-width: 1301px)', {
-	    chartPadding: 10
+	    chartPadding: 25
 	  }] 
 	];
     

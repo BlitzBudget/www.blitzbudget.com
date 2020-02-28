@@ -542,6 +542,12 @@ a.color-white:hover {
     font-weight: 500;
 }
 
+.navWithHeader a:hover,
+.footerInternal a:-webkit-any-link:hover,
+a.color-white:hover {
+    text-decoration: underline;
+}
+
 .playstoreIcon {
   width:auto; 
   height:56px;
@@ -665,7 +671,7 @@ a.color-white:hover {
 
 @media (min-width: 768px) {
     .footerContainer {
-        padding: 112px 32px;
+        padding: 8rem 5rem 2rem;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -989,7 +995,8 @@ a.button:active, a.button:focus, a.button:hover {
 .logoHeader #path16,
 .logoHeader #path18,
 .logoHeader #path20,
-.logoHeader #path22 {
+.logoHeader #path22,
+.logoHeader #path42 {
     fill:#43b2c6;
     fill-opacity:1;
     fill-rule:nonzero;
@@ -1001,7 +1008,10 @@ a.button:active, a.button:focus, a.button:hover {
 .logoHeader #path28,
 .logoHeader #path30,
 .logoHeader #path32,
-.logoHeader #path34 {
+.logoHeader #path34,
+.logoHeader #path36,
+.logoHeader #path38,
+.logoHeader #path40 {
     fill:#f1419a;
     fill-opacity:1;
     fill-rule:nonzero;
@@ -1424,7 +1434,7 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .iphone-illustration .ct-chart {
-    padding-top: 5.2rem;
+    padding-top: 6.8rem;
 }
 
 .iphone-illustration .namdAndDescription {
@@ -1927,18 +1937,6 @@ a.button:active, a.button:focus, a.button:hover {
     .overviewHeading {
         font-size: .9rem;
     }
-
-    #chatist-pie.ct-chart svg,
-    #chatist-pie2.ct-chart svg {
-        padding-top: 2rem;   
-    }
-}
-
-@media (max-width: 767px) {
-    #chatist-pie.ct-chart svg,
-    #chatist-pie2.ct-chart svg {
-        padding-top: 1.5rem;   
-    }
 }
 
 @media (max-width: 576px) {
@@ -1971,11 +1969,6 @@ a.button:active, a.button:focus, a.button:hover {
         display: none;
     }
 
-    #chatist-pie.ct-chart svg,
-    #chatist-pie2.ct-chart svg {
-        padding-top: 1rem;   
-    }
-
     .iphone-illustration {
         margin-top: 2rem;
     }
@@ -1983,9 +1976,12 @@ a.button:active, a.button:focus, a.button:hover {
     .productHero {
         padding-bottom: 0;
     }
-}
 
-@media (max-height: 400px) {
+    .headingInProductHero {
+        text-align: center;
+        font-size: 2.29rem;
+    }
+
     .mobileBannerMenuSocialNav {
         top:50%;
         left: 32px;
