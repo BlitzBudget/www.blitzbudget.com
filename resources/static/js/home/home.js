@@ -46,5 +46,10 @@ window.onload = function () {
     	// Build pie chart on iphone 11
     	buildPieChart(dataSimpleBarChart, 'chatist-pie2', 4120);
 
+    	// Mobile Menu Button
+    	document.getElementById('mobileMenuButton').addEventListener("click",function(){
+    		this.parentNode.classList.toggle('is-open');
+    	});
+
 	});
 }

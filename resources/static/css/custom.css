@@ -1801,6 +1801,105 @@ a.button:active, a.button:focus, a.button:hover {
  bottom:-6px
 }
 
+
+.is-open .mobileMenuBars {
+    background: transparent;
+    -webkit-transition: none;
+    transition: none
+}
+
+.is-open .mobileMenuBars::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.is-open .mobileMenuBars::after {
+    bottom: 0;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg)
+}
+
+.is-open .mobileBannerMenu {
+    visibility: visible;
+    opacity: 1
+}
+
+.mobileBannerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    -webkit-transition: 150ms opacity,150ms visibility;
+    transition: 150ms opacity,150ms visibility;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.mobileBannerMenuNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 220px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.mobileBannerMenuNav a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    border-bottom: 2px solid #f5f7f8;
+    color: #495257;
+    line-height: 2.4;
+    text-decoration: none;
+    -webkit-transition: color 150ms;
+    transition: color 150ms
+}
+
+.mobileBannerMenuNav a:hover {
+    color: #69757a;
+    text-decoration: none
+}
+
+.mobileBannerMenuSocialNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    width: 150px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.mobileBannerMenuSocialNav a {
+    -webkit-transition: opacity 150ms;
+    transition: opacity 150ms
+}
+
+.mobileBannerMenuSocialNav a:hover {
+    opacity: 0.8
+}
+
+
 @media (max-width: 1300px) {
 
     .descriptionAverages {
@@ -1837,8 +1936,22 @@ a.button:active, a.button:focus, a.button:hover {
     }
 
     .btn.signUpUnstyledAnchor, 
-    .signInSug {
+    .signInSug,
+    .layoutSubHeading {
         display: none;
+    }
+}
+
+@media (max-height: 400px) {
+    .mobileBannerMenuSocialNav {
+        top:50%;
+        left: 32px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
     }
 }
 
