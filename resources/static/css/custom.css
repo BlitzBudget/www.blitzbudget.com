@@ -1882,7 +1882,6 @@ a.button:active, a.button:focus, a.button:hover {
     position: absolute;
     bottom: 32px;
     left: 50%;
-    width: 150px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1899,6 +1898,25 @@ a.button:active, a.button:focus, a.button:hover {
     opacity: 0.8
 }
 
+.mobileBannerMenuNav a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    border-bottom: 2px solid #f5f7f8;
+    color: #495257;
+    line-height: 2.4;
+    text-decoration: none;
+    -webkit-transition: color 150ms;
+    transition: color 150ms;
+}
+
+.appStoreHover {
+    width: 15rem;
+}
+
+.appStoreHover:hover {
+    opacity: 0.8rem;
+}
 
 @media (max-width: 1300px) {
 
@@ -1908,6 +1926,18 @@ a.button:active, a.button:focus, a.button:hover {
 
     .overviewHeading {
         font-size: .9rem;
+    }
+
+    #chatist-pie.ct-chart svg,
+    #chatist-pie2.ct-chart svg {
+        padding-top: 2rem;   
+    }
+}
+
+@media (max-width: 767px) {
+    #chatist-pie.ct-chart svg,
+    #chatist-pie2.ct-chart svg {
+        padding-top: 1.5rem;   
     }
 }
 
@@ -1939,6 +1969,19 @@ a.button:active, a.button:focus, a.button:hover {
     .signInSug,
     .layoutSubHeading {
         display: none;
+    }
+
+    #chatist-pie.ct-chart svg,
+    #chatist-pie2.ct-chart svg {
+        padding-top: 1rem;   
+    }
+
+    .iphone-illustration {
+        margin-top: 2rem;
+    }
+
+    .productHero {
+        padding-bottom: 0;
     }
 }
 
