@@ -1928,6 +1928,64 @@ a.button:active, a.button:focus, a.button:hover {
     opacity: 0.8rem;
 }
 
+.features .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+    height: 400px;
+    width: 460px;
+    border-radius: 4px;
+}
+
+.features .list .second-card {
+    margin-left: 3.6rem;
+}
+
+.features .list .third-card {
+    margin-left: 7.2rem;
+}
+
+.features .list .item-container {
+    padding: 1rem 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.features .list .item-container .icon {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -8px 0 0 10px;
+}
+
+.features .list .item-container .copy-container {
+    padding-left: 26px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.features .list .item-container .copy-container .title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #363f41;
+    margin-bottom: 10px;
+}
+
+.features .list .item-container .copy-container .description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #363f41;
+}
+
 @media (max-width: 1300px) {
 
     .descriptionAverages {

@@ -13,7 +13,7 @@
       // is element in view?
       if (inView(allAnimatedEl)) {
         let analysisChart = new Chartist.Line('#analysisChart', {
-            labels: ['Dec 10', '', 'Dec 12', '', 'Dec 14', '', 'Dec 16'],
+            labels: ['Dec 10', '', 'Dec 12', '', 'Dec 14', '', ''],
             series: [
               [1, 5, 2, 5, 4, 3, 6]
             ]
