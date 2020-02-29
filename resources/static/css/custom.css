@@ -632,7 +632,8 @@ a.color-white:hover {
 
 
 
-.footerContainer {
+.footerContainer, 
+.step1Feature {
     margin: auto;
     max-width: 100%;
     display: -webkit-box;
@@ -652,7 +653,8 @@ a.color-white:hover {
 }
 
 
-.footerInternal {
+.footerInternal, 
+.step1Image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -670,7 +672,8 @@ a.color-white:hover {
 }
 
 @media (min-width: 768px) {
-    .footerContainer {
+    .footerContainer,
+    .step1Feature {
         padding: 8rem 5rem 2rem;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
@@ -684,7 +687,8 @@ a.color-white:hover {
         align-items: flex-start;
     }
 
-    .footerOther {
+    .footerOther, 
+    .step1Text {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -697,7 +701,8 @@ a.color-white:hover {
         align-items: flex-start;
     }
 
-    .footerInternal {
+    .footerInternal,
+    .step1Image {
         padding: 1rem 1rem;
         margin-right: 5rem;
     }    
@@ -1939,14 +1944,6 @@ a.button:active, a.button:focus, a.button:hover {
     border-radius: 4px;
 }
 
-.features .list .second-card {
-    margin-left: 3.6rem;
-}
-
-.features .list .third-card {
-    margin-left: 7.2rem;
-}
-
 .features .list .item-container {
     padding: 1rem 1rem 0rem;
     display: flex;
@@ -1976,14 +1973,14 @@ a.button:active, a.button:focus, a.button:hover {
 .features .list .item-container .copy-container .title {
     font-size: 18px;
     font-weight: 600;
-    color: #363f41;
+    color: #344554;
     margin-bottom: 10px;
 }
 
 .features .list .item-container .copy-container .description {
     font-size: 14px;
     line-height: 1.71;
-    color: #363f41;
+    color: #6c767f;
 }
 
 @media (max-width: 1300px) {
@@ -2133,5 +2130,13 @@ a.button:active, a.button:focus, a.button:hover {
 
     .w-25-rem, .card.w-25-rem {
         width: 25rem;
+    }
+
+    .features .list .second-card {
+        margin-left: 3.6rem;
+    }
+
+    .features .list .third-card {
+        margin-left: 7.2rem;
     }    
 }
