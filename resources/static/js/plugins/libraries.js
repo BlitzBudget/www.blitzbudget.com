@@ -119,23 +119,19 @@ function buildPieChart(dataPreferences, id, absoluteTotal) {
 	  donut: true,
 	  donutWidth: 25,
 	  startAngle: 270,
-	  showLabel: false,
-	  height: '12.75rem'
+	  showLabel: false
     };
     
     let responsiveOptions = [
-	  ['screen and (min-width: 640px)', {
-	    chartPadding: 80
+	  ['screen and (max-width: 640px)', {
+	    chartPadding: 60
 	  }],
-	  ['screen and (min-width: 1301px)', {
-	    labelOffset: 30,
-	    chartPadding: 10
-	  }],
-	  ['screen and (min-width: 992px)', {
-  	    labelOffset: 45,
-  	    chartPadding: 40,
+	  ['screen and (max-width: 992px)', {
+  	    chartPadding: 30
   	  }],
-	  
+  	  ['screen and (max-width: 1301px)', {
+	    chartPadding: 25
+	  }] 
 	];
     
     // Reset the chart
@@ -149,6 +145,26 @@ function buildPieChart(dataPreferences, id, absoluteTotal) {
     	// Animate the doughnut chart
     	startAnimationDonutChart(categoryBreakdownChart);
     }   
+}
+
+function formatLargeCurrencies(value) {
+	
+	if(value >= 1000000000) {
+		value = (value / 1000000000) + 'B';
+		return value;
+	}
+	
+	if(value >= 1000000) {
+		value = (value / 1000000) + 'M';
+		return value;
+	}
+	
+	if(value >= 1000) {
+  	  value = (value / 1000) + 'k';
+  	  return value;
+    }
+	
+	return value;
 }
 
 function startAnimationDonutChart(chart) {

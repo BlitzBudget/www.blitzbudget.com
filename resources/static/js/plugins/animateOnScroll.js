@@ -6,6 +6,7 @@
   let fIR = document.getElementsByClassName('fIR');
   let fIU = document.getElementsByClassName('fIU');
   let fIL = document.getElementsByClassName('fIL');  
+  let fID = document.getElementsByClassName('fID');  
   
 
   // listen for scroll event and call animate function
@@ -64,13 +65,26 @@
       }
     }
 
+
+    for(let i = 0, len = fID.length; i < len; i++) {
+      let children = fID[i];
+      // is element in view?
+      if(inView(children)) {
+        // Fade in left for all the children
+        let childrenCL = children.classList;
+        childrenCL.add('fadeInDown');
+        childrenCL.remove('fID');
+      }
+    }
+
     // Recalculate the fadeable elements
     fI = document.getElementsByClassName('fI');
     fIR = document.getElementsByClassName('fIR');
     fIU = document.getElementsByClassName('fIU');
     fIL = document.getElementsByClassName('fIL');
+    fID = document.getElementsByClassName('fID');
 
-    if(isEmpty(fIL) && isEmpty(fIU) && isEmpty(fIR) && isEmpty(fI)) {
+    if(isEmpty(fIL) && isEmpty(fIU) && isEmpty(fIR) && isEmpty(fI) && isEmpty(fID)) {
       // Remove event listener
       document.removeEventListener('scroll', animate);
     }

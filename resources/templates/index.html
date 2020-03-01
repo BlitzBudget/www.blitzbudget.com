@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8"/>
-  <title>
-    Landing Page for Financial Portfolio
-  </title>
-  <meta charset="utf-8" />
+	<title>BlitzBudget: Money Manager &amp; Financial Planner</title>
+    <meta name="author" content="BLITZBUDGET a.s. www.blitzbudget.com">
+    <meta name="copyright" content="Copyright 2020 BLITZBUDGET a.s. | All Rights Reserved">
+    <meta name="description" content="Control all your money in one place with ease using Blitzbudget. track your transactions, create a financial plan and execute your dreams. Get BlitzBudget now!">        
+    <meta name="keywords" content="Personal Finance, Money Management, Money Tracker, Budget Planner, Budgeting Tool, Saving Money, Money App, Finance App, Budget App, Financial Planning">        
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blitzbudget.com/">
+    <meta property="og:title" content="BlitzBudget: Money Manager &amp; Financial Planner">
+    <meta property="og:description" content="Control all your money in one place with ease using Blitzbudget. track your transactions, create a financial plan and execute your dreams. Get BlitzBudget now!">        
+  	<meta charset="utf-8"/>
 	<link rel="shortcut icon" type="image/x-icon" sizes="64x64" href="img/business-name/favicon-business-name.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<!-- Meta, title, CSS, favicons, etc. -->
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   	<!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Didact+Gothic:300,400,500,700|Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Didact+Gothic:300,400,500,700|Material+Icons" />
 
-  <!-- CSS Files -->
-  <link rel="stylesheet preload" href="./css/core-website.min.css"/>
-  <!--   Core JS Files   -->
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script defer  nonce="2726d7e26r" src="./js/core-website.min.js" type="text/javascript"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet preload" href="./css/core-website.min.css"/>
+    <!--   Core JS Files   -->
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script defer  nonce="2726d7e26r" src="./js/core-website.min.js" type="text/javascript"></script>
 </head>
 
 <body class="landing-page sidebar-collapse noselect">
@@ -80,29 +85,50 @@
 					    </g>
 					</svg>
 	 			</a>
-	 			<ul class="navigationLinksContainer">
+	 			<ul class="navigationLinksContainer d-lg-block d-md-block d-none">
 	 				<li class="navigationLink">
-	 					<a class="headingUnstyledAnchor" href="https://learn.blitzbudget.com">
+	 					<a class="headingUnstyledAnchor" href="https://help.blitzbudget.com">
 	 						<span class="headingLinkName">Learn</span>
 	 					</a>
 	 				</li>
 	 				<li class="navigationLink">
-	 					<a class="headingUnstyledAnchor" href="www.blitzbudget.com/support/">
+	 					<a class="headingUnstyledAnchor" href="/support">
 	 						<span class="headingLinkName">Support</span>
 	 					</a>
 	 				</li>
 	 			</ul>
 	 			<div class="spacer"></div>
 	 			<div class="expandedNavContent">
-	 				<a type="anchor" class="loginUnstyledAnchor" href="https://app.blitzbudget.com/login">
+	 				<div class="parentWrapperForMobileMenu">
+			 			<button id="mobileMenuButton" class="mobileMenuButton float-right d-lg-none d-md-none d-block">
+					      <div class="mobileMenuBars"></div>
+					    </button>
+					    <div class="mobileBannerMenu">
+	      					<nav class="mobileBannerMenuNav">
+						        <a href="https://help.blitzbudget.com">Learn</a>
+						        <a href="/support">Support</a>
+						        <a href="/premium">BlitzBudget Plus</a>
+						        <a href="/blog">Blog</a>
+						    </nav>
+						    <nav class="mobileBannerMenuSocialNav row">
+						        <div class="col-6">
+						        	<a href="https://app.blitzbudget.com/signup" class="btn btn-outline-info btn-round mr-4">Get started</a>
+						        </div>
+						        <div class="col-6">
+						        	<a href="https://app.blitzbudget.com/login" class="btn btn-info btn-round">Sign In</a>
+						        </div>
+						    </nav>
+					    </div>
+					</div>
+	 				<a type="anchor" class="loginUnstyledAnchor d-lg-flex d-md-flex d-none" href="https://app.blitzbudget.com/login">
 	 					<span class="loginContent">
-	 						<span class="loginText">Sign In</span>
+	 						<span class="loginText">Sign in</span>
 	 					</span>
 	 				</a>
-	 				<div class="signupButtonWrapper">
-	 					<a type="anchor" class="text-decoration-none btn btn-info" href="https://app.blitzbudget.com/signup">
+	 				<div class="signupButtonWrapper d-lg-flex d-md-flex d-none">
+	 					<a type="anchor" class="text-decoration-none btn btn-info btn-round" href="https://app.blitzbudget.com/signup">
 	 						<span class="signupContent">
-	 							<span class="signUpText">Sign Up</span>
+	 							<span class="signUpText">Get started</span>
 	 						</span>
 	 					</a>
 	 				</div>
@@ -117,9 +143,9 @@
 		 			<div class="col-12 col-md-6 col-lg-5">
 		 				<h1 class="headingInProductHero pt-5 text-animation fadeInLeft">One place to control your money <span class="">.</span></h1>
 		 				<p class="layoutSubHeading mt-5 text-animation fadeInLeft">Join our growing community of people who get to control their finances with BlitzBudget.We're offering complete control over your data, highest security and affordable services.</p>
-		 				<a type="anchor" class="my-4 signUpUnstyledAnchor text-decoration-none btn btn-black text-center text-animation fadeInLeft" href="https://app.blitzbudget.com/signup">
+		 				<a type="anchor" class="my-4 signUpUnstyledAnchor text-decoration-none btn btn-black btn-round text-center text-animation fadeInLeft" href="https://app.blitzbudget.com/signup">
 	 						<span class="align-middle signupContent">
-	 							<span class="signUpText">Sign Up - It's Free</span>
+	 							<span class="signUpText">Get started</span>
 	 						</span>
 	 					</a>
 	 					<div class="text-animation delay-12 fadeIn signInSug">
@@ -138,6 +164,7 @@
 							<span class="current-date">January 2020</span>
 							<span class="previous-date">February 2020</span>
 							<span class="future-date" >Scheduled</span>
+							<div class="hr"></div>
 		 					<div class="namdAndDescription">
 								<h4 class="font-weight-bold overviewHeading">Monthly Expenses</h4>
 								<div class="descriptionAverages text-nowrap">
@@ -147,11 +174,65 @@
 							</div>
 		 					<div id="chatist-pie" class="ct-chart">
 		 					</div>
+		 					<div class="info text-animation fadeInDown text-nowrap">
+                            	<div class="row info-content single-digit">
+		                            <div class="col-2">
+		                                <div class="info-content-icon bg-1 align-middle">
+											<span class="text-center percentage">02%</span>     
+		                                </div>
+		                            </div>
+		                            <div class="col-5">
+		                                <p>Beauty<span>12 transactions</span></p>
+		                            </div>
+		                            <div class="col-5">
+		                                <p class="info-content-minus">-100 EUR</p>
+		                            </div>
+		                        </div>
+		                        <div class="row info-content">
+		                            <div class="col-2">
+		                                <div class="info-content-icon bg-2 align-middle">
+											<span class="text-center percentage">19%</span>     
+		                                </div>
+		                            </div>
+		                            <div class="col-5">
+		                                <p>Bills & Fees<span>6 transactions</span></p>
+		                            </div>
+		                            <div class="col-5">
+		                                <p class="info-content-minus">-800 EUR</p>
+		                            </div>
+		                        </div>
+		                        <div class="row info-content">
+		                            <div class="col-2">
+		                                <div class="info-content-icon bg-3 align-middle">
+											<span class="text-center percentage">15%</span>     
+		                                </div>
+		                            </div>
+		                            <div class="col-5">
+		                                <p>Family & Personal<span>7 transaction</span></p>
+		                            </div>
+		                            <div class="col-5">
+		                                <p class="info-content-minus">-600 EUR</p>
+		                            </div>
+		                        </div>
+		                        <div class="row info-content last single-digit">
+		                            <div class="col-2">
+		                                <div class="info-content-icon bg-4 align-middle">
+											<span class="text-center percentage">03%</span>     
+		                                </div>
+		                            </div>
+		                            <div class="col-5">
+		                                <p>Shopping<span>1 transaction</span></p>
+		                            </div>
+		                            <div class="col-5">
+		                                <p class="info-content-minus">-120 EUR</p>
+		                            </div>
+		                        </div>
+		                    </div>
 		 					<hr class="footer-line">
-		 					<i class="material-icons dashboard">timeline</i>
-		 					<span class="overview-text">Overview</span>
-		 					<i class="material-icons transactions text-success">account_balance_wallet</i>
-		 					<span class="transactions-text text-success">Transactions</span>
+		 					<i class="material-icons dashboard text-success">timeline</i>
+		 					<span class="overview-text text-success">Overview</span>
+		 					<i class="material-icons transactions">account_balance_wallet</i>
+		 					<span class="transactions-text">Transactions</span>
 		 					<div class="networthImage addIcon">
 		 						<div class="icon text-center">
 									<i class="material-icons align-middle">add</i>
@@ -162,13 +243,124 @@
 							<i class="material-icons goals">track_changes</i>
 							<span class="goals-text">Goals</span>
 		 				</div>
+		 				<div class="desktop-app text-animation fadeInLeft">
+		 				</div>
+		 				<div class="row text-center my-5 downloadAppHeader">
+		 					<div class="col-12 mb-4"> 
+		 						Control your money on the go! with the app.
+		 					</div>		 					
+		                    <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
+		                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 42" class="appStoreHover">
+							        <path id="line" fill="#a6a6a6" d="M137.9 42H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h132.9a5 5 0 0 1 5.1 5v32a5 5 0 0 1-5.1 5z"></path>
+							        <path id="path-1" fill="#283139" d="M137.9 41H5.1A4 4 0 0 1 1 37V5a4 4 0 0 1 4.1-4H138c2.2 0 4.1 1.8 4.1 4v32c-.1 2.2-1.9 4-4.2 4z"></path>
+							        <path id="hover" fill-opacity=".3" d="M137.9 41H5.1A4 4 0 0 1 1 37V5a4 4 0 0 1 4.1-4H138c2.2 0 4.1 1.8 4.1 4v32c-.1 2.2-1.9 4-4.2 4z"></path>
+							        <path id="logo" fill="#ffffff" d="M19.2 14.5c0-3.4 2.8-5 2.9-5.1a6 6 0 0 0-5-2.7c-2-.2-4.1 1.2-5.1 1.2-1.1 0-2.7-1.2-4.5-1.2A6.2 6.2 0 0 0 2 10.1c-2.4 4.1-.6 10.2 1.7 13.5C4.8 25.2 6.2 27 7.9 27c1.7-.1 2.4-1.1 4.4-1.1 2.1 0 2.7 1.1 4.4 1 1.8 0 3-1.6 4.1-3.3 1.3-1.9 1.9-3.7 1.9-3.8 0 0-3.5-1.3-3.5-5.3zm-3.4-10A5.9 5.9 0 0 0 17.2.2c-1.3.1-3 .9-4 2-.9 1-1.6 2.6-1.4 4.1 1.5.2 3-.7 4-1.8z" class="st3" transform="translate(12.7 6.3)"></path>
+							        <path id="text" fill="#ffffff" d="M12.3 14.2H9.9l-1.3-4.1H4l-1.3 4.1H.4L5 .2h2.8l4.5 14zM8.2 8.3L7 4.7l-.7-2.6-.7 2.6-1.2 3.6h3.8zM24 9a6 6 0 0 1-1.4 4.1 4 4 0 0 1-3.1 1.3c-1.3 0-2.3-.5-2.9-1.4v5.3h-2.3V7.4l-.1-3.3h2l.1 1.6a3.8 3.8 0 0 1 3.4-1.8c1.2 0 2.2.5 3 1.4A5 5 0 0 1 24 9zm-2.3.1c0-1-.2-1.8-.7-2.4-.5-.7-1.1-1-2-1-.6 0-1.1.2-1.5.5-.5.4-.7.8-.9 1.4l-.1.7V10c0 .7.2 1.3.7 1.9.5.5 1 .8 1.8.8s1.5-.3 2-1a5 5 0 0 0 .7-2.6zM35.6 9a6 6 0 0 1-1.4 4.1 4 4 0 0 1-3.1 1.3c-1.3 0-2.3-.5-2.9-1.4v5.3h-2.3V7.4l-.1-3.3h2l.2 1.6a3.8 3.8 0 0 1 3.4-1.8c1.2 0 2.2.5 3 1.4.8.9 1.2 2.2 1.2 3.7zm-2.3.1c0-1-.2-1.8-.7-2.4-.5-.7-1.1-1-2-1-.6 0-1.1.2-1.5.5-.5.4-.7.8-.9 1.4l-.1.7V10c0 .7.2 1.3.7 1.9.5.5 1 .8 1.8.8s1.5-.3 2-1 .7-1.5.7-2.6zm15.4 1.1c0 1.2-.4 2.2-1.2 2.9-.9.8-2.2 1.2-3.8 1.2-1.5 0-2.7-.3-3.6-.9l.5-1.9c1 .6 2.1.9 3.3.9.8 0 1.5-.2 2-.6.5-.4.7-.9.7-1.5s-.2-1-.6-1.4c-.4-.4-1-.7-1.9-1.1-2.5-.9-3.7-2.2-3.7-4 0-1.1.4-2.1 1.3-2.8.9-.7 2-1.1 3.4-1.1 1.3 0 2.3.2 3.2.7l-.6 1.8a6 6 0 0 0-2.7-.6c-.8 0-1.4.2-1.9.6-.4.3-.6.8-.6 1.3 0 .6.2 1 .6 1.4l2 1.1a7 7 0 0 1 2.7 1.7c.6.6.9 1.4.9 2.3zm7.4-4.4h-2.5v4.9c0 1.2.4 1.9 1.3 1.9l1-.1.1 1.7c-.4.2-1 .2-1.8.2-.9 0-1.6-.3-2.1-.8s-.8-1.4-.8-2.7V5.8H50V4.1h1.5V2.3l2.2-.7v2.5h2.5v1.7zM67.3 9c0 1.5-.4 2.8-1.3 3.8s-2.2 1.5-3.7 1.5-2.7-.5-3.6-1.5-1.3-2.2-1.3-3.7c0-1.6.5-2.8 1.4-3.8.9-1 2.1-1.5 3.7-1.5 1.5 0 2.7.5 3.6 1.5.8 1 1.2 2.2 1.2 3.7zm-2.3.1c0-.9-.2-1.7-.6-2.4-.5-.8-1.1-1.2-2-1.2-.9 0-1.6.4-2.1 1.2-.4.7-.6 1.5-.6 2.4 0 .9.2 1.7.6 2.4.5.8 1.2 1.2 2 1.2.9 0 1.5-.4 2-1.2.5-.6.7-1.5.7-2.4zm9.7-3L74 6a2 2 0 0 0-1.8.9c-.4.5-.6 1.2-.6 2v5.3h-2.3V7.3l-.1-3.2h2l.1 1.9h.1a3 3 0 0 1 1.1-1.6c.5-.4 1-.5 1.6-.5h.6v2.2zm10.1 2.6l-.1 1h-6.8a3 3 0 0 0 1 2.3c.6.5 1.3.7 2.2.7 1 0 1.9-.2 2.7-.5l.4 1.6a9 9 0 0 1-3.4.6 5 5 0 0 1-3.7-1.4 5 5 0 0 1-1.3-3.7c0-1.5.4-2.8 1.3-3.8a4.3 4.3 0 0 1 3.5-1.6c1.5 0 2.6.5 3.3 1.6.6.8.9 1.9.9 3.2zm-2.2-.6a3 3 0 0 0-.4-1.7 2 2 0 0 0-1.8-.9c-.7 0-1.3.3-1.8.9-.4.5-.6 1.1-.7 1.7h4.7z" class="st3" transform="translate(44.4 18.9)"></path>
+							        <path id="top" fill="#ffffff" d="M6.4 4.2C6.4 5.4 6 6.4 5.3 7c-.7.6-1.7.9-3 .9L.7 7.8V1L2.6.9c1.2 0 2.1.3 2.7.8.8.6 1.1 1.4 1.1 2.5zm-1.2 0c0-.8-.2-1.4-.6-1.8-.4-.4-1.1-.6-1.9-.6l-.9.1V7h.8c.8 0 1.5-.2 2-.7.4-.5.6-1.2.6-2.1zm7.4 1.1c0 .8-.2 1.4-.7 1.9-.5.5-1.1.8-1.8.8s-1.3-.2-1.7-.7c-.5-.6-.7-1.2-.7-1.9 0-.8.2-1.4.7-1.9.4-.5 1-.7 1.8-.7.7 0 1.3.2 1.8.7.4.4.6 1 .6 1.8zm-1.2 0c0-.5-.1-.8-.3-1.2-.2-.4-.6-.6-1-.6s-.8.2-1 .6l-.3 1.2c0 .5.1.8.3 1.2.2.4.6.6 1 .6s.8-.2 1-.6c.2-.3.3-.7.3-1.2zm9.5-2.4l-1.6 4.9h-1l-.6-2.1-.4-1.6-.4 1.6-.7 2.1h-1l-1.5-4.9h1.1l.6 2.4.3 1.6.4-1.6.7-2.4h.9l.7 2.3.4 1.6.3-1.6.6-2.3h1.2zm5.7 4.9h-1.1V5c0-.9-.3-1.3-1-1.3a1 1 0 0 0-.8.4c-.2.2-.3.5-.3.8v2.9h-1.1V4.3 2.9h1l.1.8.6-.6c.3-.2.6-.3 1-.3.5 0 .9.1 1.2.4.4.4.6.9.6 1.6v3zm3.1 0h-1.1V.6h1.1v7.2zm6.5-2.5c0 .8-.2 1.4-.7 1.9-.5.5-1.1.8-1.8.8s-1.3-.2-1.7-.7c-.4-.5-.7-1.1-.7-1.8 0-.8.2-1.4.7-1.9.4-.5 1.1-.7 1.8-.7s1.3.2 1.8.7c.4.3.6.9.6 1.7zm-1.1 0c0-.5-.1-.8-.3-1.2-.2-.4-.6-.6-1-.6s-.8.2-1 .6c-.2.3-.3.7-.3 1.2s.1.8.3 1.2c.2.4.6.6 1 .6s.8-.2 1-.6c.2-.3.3-.7.3-1.2zm6.5 2.5h-1l-.1-.6c-.3.5-.8.7-1.5.7-.5 0-.9-.1-1.1-.4-.3-.3-.4-.6-.4-1 0-.6.3-1.1.8-1.4a4 4 0 0 1 2.1-.5v-.1c0-.7-.3-1-1-1a2 2 0 0 0-1.3.4l-.2-.7a3 3 0 0 1 1.7-.4c1.3 0 2 .7 2 2v1.8 1.2zm-1.2-1.7v-.8c-1.2 0-1.8.3-1.8 1l.2.6.6.2.7-.2.4-.6-.1-.2zm7.5 1.7h-1l-.1-.8c-.3.6-.8.9-1.6.9-.6 0-1.1-.2-1.5-.7-.4-.5-.6-1.1-.6-1.8 0-.8.2-1.4.6-1.9.4-.5.9-.7 1.5-.7.7 0 1.1.2 1.4.7V.6h1.1v5.9l.2 1.3zm-1.2-2.1v-.8-.3l-.4-.7a1 1 0 0 0-.7-.3c-.4 0-.7.2-1 .5-.2.3-.4.7-.4 1.3 0 .5.1.9.3 1.2.2.3.6.5 1 .5s.7-.1.9-.4c.2-.3.3-.6.3-1zm10.7-.4c0 .8-.2 1.4-.7 1.9-.5.5-1.1.8-1.8.8s-1.3-.2-1.7-.7c-.4-.5-.7-1.1-.7-1.8 0-.8.2-1.4.7-1.9.4-.6 1-.8 1.8-.8.7 0 1.3.2 1.8.7.3.4.6 1 .6 1.8zm-1.2 0c0-.5-.1-.8-.3-1.2-.2-.4-.6-.6-1-.6s-.8.2-1 .6c-.2.3-.3.7-.3 1.2s.1.8.3 1.2c.2.4.6.6 1 .6s.8-.2 1-.6c.2-.3.3-.7.3-1.2zm7.1 2.5h-1.1V5c0-.9-.3-1.3-1-1.3a1 1 0 0 0-.8.4c-.2.2-.3.5-.3.8v2.9H59V4.3 2.9h1v.7l.6-.6c.3-.2.6-.3 1-.3.5 0 .9.1 1.2.4.4.4.6.9.6 1.6v3.1zm7.5-4.1h-1.2v2.4c0 .6.2.9.6.9l.5-.1v.8l-.9.1c-.4 0-.8-.1-1-.4-.2-.3-.4-.7-.4-1.3V3.7h-.7v-.8h.7v-1l1.1-.3v1.2h1.2l.1.9zm5.8 4.1h-1.1V5c0-.9-.3-1.3-1-1.3-.5 0-.9.3-1.1.8l-.1.4v3h-1.1V.6h1.1v3c.3-.5.8-.8 1.5-.8.5 0 .8.1 1.1.4.4.4.6.9.6 1.7v2.9zm6.1-2.7v.5h-3.3c0 .5.2.9.5 1.1.3.2.6.3 1.1.3l1.3-.2.2.8c-.5.2-1 .3-1.7.3-.8 0-1.4-.2-1.8-.7-.4-.5-.7-1.1-.7-1.8s.2-1.4.6-1.9c.4-.5 1-.8 1.7-.8s1.3.3 1.6.8c.3.5.5 1 .5 1.6zm-1.1-.3l-.2-.8a1 1 0 0 0-.9-.5c-.4 0-.7.1-.9.4-.2.2-.3.5-.3.9h2.3z" class="st3" transform="translate(45.5 6.3)"></path>
+							    </svg>
+	                        </div>
+	                        <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
+	                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 42" class="appStoreHover">
+							        <path fill="#283139" d="M137.2 41.5H5.8a5.2 5.2 0 0 1-5.3-5.1V5.6C.5 2.8 2.9.5 5.8.5h131.5c2.9 0 5.3 2.3 5.3 5.1v30.8a5.4 5.4 0 0 1-5.4 5.1z"></path>
+							        <path id="hover" fill-opacity=".3" d="M137.2 41.5H5.8a5.2 5.2 0 0 1-5.3-5.1V5.6C.5 2.8 2.9.5 5.8.5h131.5c2.9 0 5.3 2.3 5.3 5.1v30.8a5.4 5.4 0 0 1-5.4 5.1z"></path>
+							        <path fill="#a6a6a6" d="M137.6 1c2.4 0 4.4 2 4.4 4.4v31.3c0 2.4-2 4.4-4.4 4.4H5.4A4.6 4.6 0 0 1 1 36.6V5.4C1 3 3 1 5.4 1h132.2zm.1-1H5.3A5.3 5.3 0 0 0 0 5.2v31.5C0 39.6 2.4 42 5.3 42h132.4c2.9 0 5.3-2.4 5.3-5.2V5.2c0-2.8-2.4-5.2-5.3-5.2z"></path>
+							        <path fill="#fff" stroke="#fff" stroke-width=".7" d="M50.2 11.1c0 .9-.3 1.6-.8 2.1-.6.6-1.4.9-2.3.9a3.3 3.3 0 0 1-3.3-3.2c0-.9.3-1.7 1-2.3.6-.6 1.4-.9 2.3-.9.5 0 .9.1 1.3.3l1 .7-.6.5c-.4-.5-1-.7-1.7-.7s-1.2.2-1.7.7c-.5.5-.7 1.1-.7 1.8a2.4 2.4 0 0 0 2.4 2.5c.7 0 1.3-.2 1.8-.7.3-.3.5-.7.5-1.3h-2.3v-.8h3.1v.4zm4.9-2.6h-2.9v2h2.6v.8h-2.6v2h2.9v.7h-3.7V7.8h3.7v.7zm3.4 5.5h-.8V8.5H56v-.7h4.4v.8h-1.8V14zm5 0V7.8h.8V14h-.8zm4.4 0h-.8V8.5h-1.8v-.7h4.4v.8h-1.8V14zm10.1-.8c-.6.6-1.4.9-2.3.9-.9 0-1.7-.3-2.3-.9-.6-.6-.9-1.4-.9-2.3 0-.9.3-1.7.9-2.3.6-.6 1.4-.9 2.3-.9.9 0 1.7.3 2.3.9.6.6.9 1.4.9 2.3 0 .9-.3 1.7-.9 2.3zm-4.1-.5c.5.5 1 .7 1.7.7s1.3-.2 1.7-.7c.5-.5.7-1.1.7-1.8s-.2-1.3-.7-1.8c-.5-.5-1-.7-1.7-.7s-1.3.2-1.7.7c-.5.5-.7 1.1-.7 1.8s.2 1.3.7 1.8zm6.2 1.3V7.8h1l3.1 4.8V7.8h.8V14h-.9l-3.2-5.1V14h-.8z"></path>
+							        <path fill="#fff" d="M72.2 23.1a4.4 4.4 0 1 0 0 8.8c2.5 0 4.5-1.9 4.5-4.4 0-2.6-2-4.4-4.5-4.4zm0 7.1c-1.4 0-2.5-1.1-2.5-2.7s1.2-2.7 2.5-2.7c1.4 0 2.5 1.1 2.5 2.7s-1.2 2.7-2.5 2.7zm-9.9-7.1a4.4 4.4 0 1 0 0 8.8c2.5 0 4.5-1.9 4.5-4.4 0-2.6-2-4.4-4.5-4.4zm0 7.1c-1.4 0-2.5-1.1-2.5-2.7s1.2-2.7 2.5-2.7c1.4 0 2.5 1.1 2.5 2.7s-1.1 2.7-2.5 2.7zm-11.7-5.8v1.9h4.6c-.1 1-.5 1.8-1 2.4a5 5 0 0 1-3.5 1.4c-2.8 0-5-2.2-5-5s2.2-5 5-5a5 5 0 0 1 3.4 1.3l1.4-1.3a6.6 6.6 0 0 0-4.8-1.9c-3.9 0-7.1 3.1-7.1 6.9s3.2 6.9 7.1 6.9c2.1 0 3.7-.7 4.9-1.9a6 6 0 0 0 1.7-4.4l-.1-1.2h-6.6zm48 1.5c-.4-1-1.5-2.8-3.9-2.8-2.3 0-4.2 1.8-4.2 4.4 0 2.5 1.9 4.4 4.5 4.4 2.1 0 3.3-1.2 3.8-2l-1.5-1c-.5.7-1.2 1.2-2.2 1.2-1 0-1.7-.5-2.2-1.3l6-2.4-.3-.5zm-6.2 1.5c-.1-1.7 1.4-2.6 2.4-2.6.8 0 1.5.4 1.7.9l-4.1 1.7zm-4.9 4.3h2v-13h-2v13zm-3.2-7.6c-.5-.5-1.4-1-2.4-1a4.4 4.4 0 0 0-4.3 4.4c0 2.5 2.1 4.4 4.3 4.4 1.1 0 1.9-.5 2.4-1h.1v.6c0 1.7-.9 2.6-2.4 2.6-1.2 0-2-.9-2.3-1.6l-1.7.7a4.2 4.2 0 0 0 4 2.6c2.3 0 4.3-1.3 4.3-4.6v-7.9h-1.9v.8zM82 30.2c-1.4 0-2.5-1.1-2.5-2.7s1.1-2.7 2.5-2.7c1.3 0 2.4 1.1 2.4 2.7s-1 2.7-2.4 2.7zm25.9-11.5h-4.7v13h2v-4.9h2.8c2.2 0 4.3-1.6 4.3-4a4.3 4.3 0 0 0-4.4-4.1zm0 6.2h-2.8v-4.5h2.8c1.5 0 2.3 1.2 2.3 2.2 0 1.1-.8 2.3-2.3 2.3zm12.2-1.8c-1.4 0-2.9.6-3.5 2l1.8.7a2 2 0 0 1 1.8-1c1 0 2.1.6 2.1 1.7v.1c-.4-.2-1.1-.5-2.1-.5-1.9 0-3.8 1-3.8 2.9 0 1.7 1.5 2.9 3.3 2.9 1.3 0 2.1-.6 2.5-1.3h.1v1h1.9v-5c0-2.2-1.8-3.5-4.1-3.5zm-.2 7.1c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.4 2.1-1.4.9 0 1.3.2 1.8.4a2.5 2.5 0 0 1-2.4 2.1zm11.2-6.9l-2.3 5.6h-.1l-2.3-5.6h-2.1l3.5 7.9-2 4.4h2.1l5.4-12.2h-2.2zm-17.8 8.4h2v-13h-2v13z"></path>
+							        <g transform="translate(10.4 7.5)">
+							            <linearGradient id="google_a" x1="-226.4" x2="-227.7" y1="424.8" y2="424.1" gradientTransform="matrix(13.7029 0 0 26.0466 3114.6 -11039.5)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#00a0ff"></stop>
+							                <stop offset="0" stop-color="#00a1ff"></stop>
+							                <stop offset=".3" stop-color="#00beff"></stop>
+							                <stop offset=".5" stop-color="#00d2ff"></stop>
+							                <stop offset=".8" stop-color="#00dfff"></stop>
+							                <stop offset="1" stop-color="#00e3ff"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_a)" d="M.7.8c-.4.3-.5.8-.5 1.5v23c0 .6.2 1.1.5 1.5l.1.1L13.9 14v-.3L.7.8z"></path>
+							        </g>
+							        <g transform="translate(23.9 15.5)">
+							            <linearGradient id="google_b" x1="-235.1" x2="-237.5" y1="444" y2="444" gradientTransform="matrix(10.772 0 0 8.8891 2544.2 -3941.4)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#ffe000"></stop>
+							                <stop offset=".4" stop-color="#ffbd00"></stop>
+							                <stop offset=".8" stop-color="orange"></stop>
+							                <stop offset="1" stop-color="#ff9c00"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_b)" d="M4.7 10.2L.4 5.9v-.3l4.4-4.3.1.1L10 4.2c1.5.8 1.5 2.2 0 3l-5.2 2.9-.1.1z"></path>
+							        </g>
+							        <g transform="translate(10.6 6.4)">
+							            <linearGradient id="google_c" x1="-231.2" x2="-232.5" y1="438.8" y2="437.1" gradientTransform="matrix(17.688 0 0 13.365 4093.3 -5846.2)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#ff3a44"></stop>
+							                <stop offset="1" stop-color="#c31162"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_c)" d="M18.1 19.2l-4.5-4.4-13.2 13c.5.5 1.3.6 2.2.1l15.5-8.7"></path>
+							        </g>
+							        <g transform="translate(10.6 20.7)">
+							            <linearGradient id="google_d" x1="-232.2" x2="-231.6" y1="426.3" y2="425.5" gradientTransform="matrix(17.688 0 0 13.3605 4093.3 -5681.2)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#32a071"></stop>
+							                <stop offset=".1" stop-color="#2da771"></stop>
+							                <stop offset=".5" stop-color="#15cf74"></stop>
+							                <stop offset=".8" stop-color="#06e775"></stop>
+							                <stop offset="1" stop-color="#00f076"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_d)" d="M18.1-3.9L2.6-12.5c-.9-.5-1.7-.4-2.2.1L13.6.5l4.5-4.4z"></path>
+							        </g>
+							    </svg>
+		                    </div>
+	                    </div>
 		 			</div>
 		 		</div>
 		 	</div>
 	 	</section>
 	 	<section class="Steps">
-		 	<div class="features section row ml-lg-5 ml-2">
-		 		<div class="col-12 col-md-6 col-lg-5 mt-4">
+	 		<div class="features section row">
+                <div class="col-12">
+                    <h2 class="shape-heading text-center">
+                        Gain Total Control <br>
+                        <b>of Your Money</b>
+                    </h2>
+                </div>
+            </div>
+		 	<div class="features section row ml-lg-5 ml-2 step1Feature">
+		 		<div class="col-12 col-md-6 col-lg-6 step1Text">
+		 			<div class="list">
+						<div class="card item-container text-animation fIR">
+							<div class="icon">
+								<img src="/img/home-page/invest.svg">
+							</div>
+							<div class="copy-container">
+								<p class="title mb-1">Connect your bank account</p>
+								<p class="description mb-3">Automatically track all your transactions by connecting all your bank accounts.</p>
+							</div>
+						</div>
+						<div class="card item-container second-card mt-0 text-animation fIR delay-1">
+							<div class="icon">
+								<img src="/img/home-page/transactions.svg">
+							</div>
+							<div class="copy-container">
+								<p class="title mb-1">Import from bank statements</p>
+								<p class="description mb-3">Import all your transactions from you bank statement with one click.</p>
+							</div>
+						</div>
+						<div class="card item-container third-card mt-0 text-animation fIR delay-9">
+							<div class="icon">
+								<img src="/img/home-page/share-wallet.svg">
+							</div>
+							<div class="copy-container">
+								<p class="title mb-1">Share your portfolio with others</p>
+								<p class="description mb-3">Spending together? Share your portfolio with others.</p>
+							</div>
+						</div>
+					</div>
+		 		</div>
+		 		<div class="col-12 col-md-6 col-lg-6 step1Image">
+		 			<svg xmlns="http://www.w3.org/2000/svg" width="145" height="336" class="oneSVG">
+                        <defs>
+                            <linearGradient id="step_a" x1="50%" x2="50%" y1="13.964%" y2="86.393%">
+                                <stop offset="0%" stop-color="#EFF2F6"></stop>
+                                <stop offset="100%" stop-color="#FAFAFA"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#step_a)" fill-rule="evenodd" d="M335.366 336h-53.93V119.36c0-25.857.611-46.358 1.835-61.505-3.519 3.672-7.841 7.727-12.966 12.164-5.126 4.436-22.3 18.512-51.521 42.226l-27.08-34.194L290.385.482h44.98V336z" transform="translate(-191)"></path>
+                    </svg>
 		 			<div class="shape">
 		 				<div class="stepSubHeading text-animation fIL">Step 1</div>
 		 				<h3 class="text-animation fIL">Start tracking all your transactions</h3>
@@ -182,7 +374,7 @@
 		 		</div>
 		 	</div>
 		 	<div class="features section row ml-lg-5 ml-2 mr-4 mr-lg-0 mr-md-0">
-		 		<div class="col-12 col-md-6 col-lg-6 mt-4">
+		 		<div class="col-12 col-md-6 col-lg-6">
 		 			<div class="card w-20-rem text-animation fIL">
 				        <div class="card-header card-header-icon card-header-info">
 				    		<div class="card-icon">
@@ -247,6 +439,13 @@
 				    </div>
 		 		</div>
 		 		<div class="col-12 col-md-6 col-lg-5 mt-4">
+		 			<svg xmlns="http://www.w3.org/2000/svg" width="228" height="341" viewBox="0 0 228 341" class="twoSVG">
+                        <linearGradient id="nuber-2" x1="-189.7" x2="-189.7" y1="566.2" y2="565.5" gradientTransform="matrix(227.4268 0 0 -340.3369 43247.5 192746.7)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#eff2f6"></stop>
+                            <stop offset="1" stop-color="#fff"></stop>
+                        </linearGradient>
+                        <path fill="url(#nuber-2)" d="M227.4 341H0v-40.8l86.5-87c25.6-26.2 42.5-44.7 50.8-55.7s14.4-21.2 18.2-30.9c3.8-9.6 5.7-20 5.7-31 0-15.1-4.6-27.1-13.7-35.8a52.5 52.5 0 0 0-37.8-13.1c-12.9 0-25.3 2.4-37.3 7.1S46.8 67.2 31 79.6L1.9 44c18.7-15.8 36.8-26.9 54.4-33.5S92.6.6 112.5.6c31.2 0 56.2 8.1 75 24.4s28.2 38.2 28.2 65.7c0 15.1-2.7 29.5-8.1 43.1s-13.8 27.7-25 42.1-29.9 34-56.1 58.6L68.2 291v2.3h159.3V341z"></path>
+                    </svg>
 		 			<div class="shape">
 			 			<div class="stepSubHeading text-animation fIR">Step 2</div>
 		 				<h3 class="text-animation fIR">Mold your financial habits</h3>
@@ -261,6 +460,13 @@
 		 	</div>
 		 	<div class="features section row ml-lg-5 ml-2">
 		 		<div class="col-12 col-md-6 col-lg-5 mt-4">
+		 			<svg xmlns="http://www.w3.org/2000/svg" width="226" height="326" viewBox="0 0 226 346" class="threeSVG">
+                        <linearGradient id="number-3" x1="-190.6" x2="-190.6" y1="569.2" y2="568.5" gradientTransform="matrix(225.5908 0 0 -344.9268 43121.5 196387)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#eff2f6"></stop>
+                            <stop offset="1" stop-color="#fff"></stop>
+                        </linearGradient>
+                        <path fill="url(#number-3)" d="M215.8 82.6c0 21.3-6.2 39-18.6 53.1s-29.8 23.7-52.3 28.6v1.8c26.9 3.4 47.1 11.7 60.6 25.1s20.2 31.2 20.2 53.4c0 32.3-11.4 57.2-34.2 74.7s-55.2 26.3-97.3 26.3c-37.2 0-68.5-6-94.1-18.1v-48a215.2 215.2 0 0 0 91.1 22c26 0 45.4-4.8 58.3-14.5s19.3-24.6 19.3-44.8c0-17.9-7.1-31.1-21.3-39.5s-36.6-12.6-67-12.6H51.3v-43.8h29.6c53.5 0 80.3-18.5 80.3-55.5 0-14.4-4.7-25.5-14-33.3s-23.1-11.7-41.3-11.7c-12.7 0-24.9 1.8-36.7 5.4s-25.7 10.6-41.8 21L1 34.6C31.8 12 67.5.6 108.2.6c33.8 0 60.2 7.3 79.2 21.8s28.4 34.6 28.4 60.2z"></path>
+                    </svg>
 		 			<div class="shape">
 			 			<div class="stepSubHeading text-animation fIL">Step 3</div>
 		 				<h3 class="text-animation fIL">Achieve your financial goals</h3>
@@ -275,52 +481,60 @@
 		 		</div>
 		 	</div>
 		 	<div class="features section row ml-lg-5 ml-2 mt-small-4">
-		 		<div id="analysisChart" class="col-12 col-md-6 col-lg-6 mt-4 mb-5 mb-lg-0 mb-md-0">
-		 			<div class="card featureIcon mx-0 mb-0 mt-minus-20">
-		 				<svg id="showAccounts" viewBox="0 0 16 16" width="30" height="30" class="svg-absolute-center">
-		                 	<path fill-rule="evenodd" d="M 9.56677 0.127178C 9.8328 -0.0423927 10.1674 -0.0423927 10.4334 0.127178L 19.6991 6.03018C 19.8859 6.1492 19.9999 6.36114 19.9999 6.58957L 19.9999 7.56392C 19.9999 7.67959 19.9559 7.79052 19.8775 7.87231C 19.7991 7.95408 19.6927 8.00003 19.5819 8L 18.4167 7.99986C 18.1865 7.99986 18 8.1306 18 8.37071L 18 16.1692C 18 16.1692 18.0757 16.4612 18.1996 16.5401L 19.6992 17.5487C 19.886 17.6677 20 17.8796 20 18.1081L 20 19.5637C 20 19.6795 19.9559 19.7904 19.8775 19.8722C 19.7991 19.9541 19.6927 20 19.5818 20L 0.416748 20C 0.18663 20 8.39233e-05 19.8053 8.39233e-05 19.5652L 8.39233e-05 18.107C 9.15527e-05 17.8792 0.113754 17.6678 0.300079 17.5491L 1.80054 16.5401C 1.92444 16.4612 2.00001 16.3207 2 16.1692L 2 8.37071C 2 8.1306 1.81345 7.99986 1.58334 7.99986L 0.416664 7.99986C 0.186546 7.99986 0 7.80522 0 7.56509L 0 6.58847C 1.52588e-05 6.3607 0.113678 6.14938 0.299995 6.03071L 9.56677 0.127178ZM 4 8.5C 4 8.22386 4.22385 8 4.5 8L 6.16 8C 6.43614 8 6.66 8.22386 6.66 8.5L 6.66 16.5C 6.66 16.7761 6.43614 17 6.16 17L 4.5 17C 4.22385 17 4 16.7761 4 16.5L 4 8.5ZM 9.15997 8C 8.88383 8 8.65997 8.22386 8.65997 8.5L 8.65997 16.5C 8.65997 16.7761 8.88383 17 9.15997 17L 10.82 17C 11.0961 17 11.32 16.7761 11.32 16.5L 11.32 8.5C 11.32 8.22386 11.0961 8 10.82 8L 9.15997 8ZM 13.33 8.5C 13.33 8.22386 13.5539 8 13.83 8L 15.49 8C 15.7661 8 15.99 8.22386 15.99 8.5L 15.99 16.5C 15.99 16.7761 15.7661 17 15.49 17L 13.83 17C 13.5539 17 13.33 16.7761 13.33 16.5L 13.33 8.5ZM 10 6C 10.8284 6 11.5 5.32843 11.5 4.5C 11.5 3.67157 10.8284 3 10 3C 9.17157 3 8.5 3.67157 8.5 4.5C 8.5 5.32843 9.17157 6 10 6Z" transform="scale(.45) translate(6 6.25)">
-		                 	</path>
-					    </svg>
-		 			</div>
+		 		<div id="analysisChart" class="col-12 col-md-6 col-lg-6 mb-5 mb-lg-0 mb-md-0 ct-chart">
 		 			<!-- Dynamically populate chart -->
-		 			<div class="card overviewEntryRow m-0 py-3 text-animation fIU delay-13">	
-    					<div class=" row px-3">
-							<div class="col-3 networthImage image-center">
-								<div class="icon text-center">
-									<i class="material-icons align-middle">arrow_upward</i>
-								</div>
-							</div>
-							<div class="col-9 namdAndDescription">
-								<h4 class="font-weight-bold overviewHeading">Networth</h4>
-								<div class="descriptionAverages text-nowrap">
-									<span>Your Networth is </span>
-									<span id="networthAmount" class="font-weight-bold text-success">€0.00</span>
-									<i class="material-icons text-success align-middle fs-decrease">arrow_upward</i>
-								</div>
-							</div>
-    					</div>
-    				</div>
-    				<div class="card overviewEntryRow2 m-0 py-3 text-animation fIU delay-14">	
-    					<div class=" row px-3">
-							<div class="col-3 expenseImage image-center">
-								<div class="icon text-center">
-									<i class="material-icons align-middle">arrow_downward</i>
-								</div>
-							</div>
-							<div class="col-9 namdAndDescription">
-								<h4 class="font-weight-bold overviewHeading">Expenses</h4>
-								<div class="descriptionAverages text-nowrap">
-									<span id="averageExpenseAmount" class="font-weight-bold text-danger">
-										€0.00
-									</span>
-									<i class="material-icons text-danger align-middle fs-decrease">arrow_downward</i>
-									<span class="font-weight-bold"> per month</span>
-								</div>
-							</div>
-    					</div>
-    				</div>
+		 			<div class="row">
+		 				<div class=" col-6">
+				 			<div class="card overviewEntryRow m-0 py-3 text-animation fIU delay-13">	
+		    					<div class=" row px-3">
+									<div class="col-3 networthImage image-center">
+										<div class="icon text-center">
+											<i class="material-icons align-middle">arrow_upward</i>
+										</div>
+									</div>
+									<div class="col-9 namdAndDescription">
+										<h4 class="font-weight-bold overviewHeading">Networth</h4>
+										<div class="descriptionAverages text-nowrap">
+											<span>Your Networth is </span>
+											<span id="networthAmount" class="font-weight-bold text-success">€0.00</span>
+											<i class="material-icons text-success align-middle fs-decrease">arrow_upward</i>
+										</div>
+									</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-6">
+		    				<div class="card overviewEntryRow2 m-0 py-3 text-animation fIU delay-14">	
+		    					<div class=" row px-3">
+									<div class="col-3 expenseImage image-center">
+										<div class="icon text-center">
+											<i class="material-icons align-middle">arrow_downward</i>
+										</div>
+									</div>
+									<div class="col-9 namdAndDescription">
+										<h4 class="font-weight-bold overviewHeading">Expenses</h4>
+										<div class="descriptionAverages text-nowrap">
+											<span id="averageExpenseAmount" class="font-weight-bold text-danger">
+												€0.00
+											</span>
+											<i class="material-icons text-danger align-middle fs-decrease">arrow_downward</i>
+											<span class="font-weight-bold"> / month</span>
+										</div>
+									</div>
+		    					</div>
+		    				</div>
+		    			</div>
+	    			</div>
 			 	</div>
 		 		<div class="col-12 col-md-6 col-lg-5 mt-4">
+		 			<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="226" height="336" viewBox="0 0 972.000000 1280.000000" preserveAspectRatio="xMidYMid meet" class="threeSVG">
+						<linearGradient id="number-4" x1="90" x2="90" y1="100%" y2="-100%" gradientTransform="matrix(225.5908 0 0 -344.9268 43121.5 196387)" gradientUnits="userSpaceOnUse">
+						                            <stop offset="0" stop-color="#eff2f6"></stop>
+						                            <stop offset="1" stop-color="#fff"></stop>
+						                        </linearGradient><g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none" fill="url(#number-4)">
+						<path d="M3858 12637 c-36 -89 -264 -641 -506 -1227 -242 -586 -907 -2194 -1477 -3575 -1196 -2895 -1358 -3288 -1656 -4009 l-219 -529 0 -123 0 -124 2450 0 2450 0 0 -1525 0 -1525 108 0 c112 0 81 -4 1737 245 1123 169 1296 195 1301 195 2 0 4 587 4 1305 l0 1305 595 0 c327 0 595 4 595 8 0 5 108 601 240 1326 219 1200 240 1327 240 1426 l0 110 -835 0 -835 0 0 3440 0 3440 -2062 0 -2063 0 -67 -163z m1242 -5292 l0 -1425 -590 0 c-324 0 -590 3 -590 7 0 9 1173 2843 1177 2843 2 0 3 -641 3 -1425z" fill=""></path>
+						</g>
+					</svg>
 		 			<div class="shape">
 			 			<div class="stepSubHeading text-animation fIR">Step 4</div>
 		 				<h3 class="text-animation fIR">Obtain a global overview of your finances</h3>
@@ -334,7 +548,7 @@
 		 	</div>
 		 	<div class="features section row ml-lg-5 my-small-4">
 		        <div class="col-12 text-center">
-		             <a href="https://app.blitzbudget.com/signup" class="button btn-info btn-round text-animation fIU">Create a free account</a>
+		             <a href="https://app.blitzbudget.com/signup" class="button btn btn-info btn-round text-animation fIU">Get started</a>
 		        </div>
 		    </div>
 	 	</section>
@@ -350,7 +564,7 @@
 			 			</div>
 		 				<div class="card-body">
 		 					<div class="card-title">Multiple Wallets</div>
-		 					<p class="mt-3">are populate amoung couples and families who handle their financies and to people who manage multiple currencies.</p>
+		 					<p class="mt-3">are populate among couples and families who handle their financies and to people who manage multiple currencies.</p>
 		 				</div>
 		 			</div>
 		 		</div>
@@ -364,7 +578,7 @@
 			 			</div>
 		 				<div class="card-body">
 		 					<div class="card-title">Connecting Bank Accounts</div>
-		 					<p class="mt-3">to BlitzBudget is preferred by people who spends by mostly by card.</p>
+		 					<p class="mt-3">to BlitzBudget is preferred by people who spend mostly by card.</p>
 		 				</div>
 		 			</div>
 		 		</div>
@@ -378,18 +592,18 @@
 		 				</div>
 		 				<div class="card-body">
 		 					<div class="card-title">Multiple Currencies</div>
-		 					<p class="mt-3">are favoured by immigrants, travellers and investors who invests in more than one currency.</p>
+		 					<p class="mt-3">are favoured by immigrants, travellers and investors who invest in more than one currency.</p>
 		 				</div>
 		 			</div>
 		 		</div>
 		 		<div class="col-12 col-md-6 col-lg-4">
 		 			<div class="ml-5 text-animation fIU">
 		 				<div class="card featureIcon">
-			 				<i class="material-icons">face</i>
+			 				<i class="material-icons">track_changes</i>
 			 			</div>
 		 				<div class="card-body">
-		 					<div class="card-title">Customize BlitzBudget</div>
-		 					<p class="mt-3">your categories, add a picture to your profile and location to your expenses.</p>
+		 					<div class="card-title">Create Goals</div>
+		 					<p class="mt-3">to achieve your dreams! To save money for a new car, home or a dream vacation.</p>
 		 				</div>
 		 			</div>
 		 		</div>
@@ -400,7 +614,7 @@
 			 			</div>
 		 				<div class="card-body">
 		 					<div class="card-title">Alerts and Notification</div>
-		 					<p class="mt-3">will notify you when you exceed your budget, reminder to enter transactions every day or to pay your bills.</p>
+		 					<p class="mt-3">will notify you when you exceed your budget or under fund your goals.</p>
 		 				</div>
 		 			</div>
 		 		</div>
@@ -420,8 +634,95 @@
 	 	<section class="Apps">
 	 		<div class="features section row">
 		 		<div class="col-12 col-md-6 col-lg-6">
-		 			<div class="iphone-illustration text-animation fIL">
-		 			</div>
+		 			<div class="iphone-illustration text-animation fIR">
+	 					<div class="time" id="currentTime"></div>
+	 					<i class="material-icons wifi">wifi</i>
+	 					<i class="material-icons network">signal_cellular_alt</i>
+						<i class="material-icons battery">battery_full</i>
+						<div class="wallet-name">John's Euro Wallet</div>
+						<i class="material-icons search">search</i>
+						<span class="current-date">January 2020</span>
+						<span class="previous-date">February 2020</span>
+						<span class="future-date" >Scheduled</span>
+						<div class="hr"></div>
+	 					<div class="namdAndDescription">
+							<h4 class="font-weight-bold overviewHeading">Monthly Expenses</h4>
+							<div class="descriptionAverages text-nowrap text-center">
+								<span class="font-weight-bold text-danger">-€2000.00</span>
+								<i class="material-icons text-danger align-middle fs-decrease">arrow_downward</i>
+							</div>
+						</div>
+	 					<div id="chatist-pie2" class="ct-chart">
+	 					</div>
+	 					<div class="info text-animation fID text-nowrap">
+                        	<div class="row info-content">
+	                            <div class="col-2">
+	                                <div class="info-content-icon bg-1 align-middle single-digit">
+										<span class="text-center percentage">02%</span>     
+	                                </div>
+	                            </div>
+	                            <div class="col-5">
+	                                <p>Beauty<span>12 transactions</span></p>
+	                            </div>
+	                            <div class="col-5">
+	                                <p class="info-content-minus">-100 EUR</p>
+	                            </div>
+	                        </div>
+	                        <div class="row info-content">
+	                            <div class="col-2">
+	                                <div class="info-content-icon bg-2 align-middle">
+										<span class="text-center percentage">19%</span>     
+	                                </div>
+	                            </div>
+	                            <div class="col-5">
+	                                <p>Bills & Fees<span>6 transactions</span></p>
+	                            </div>
+	                            <div class="col-5">
+	                                <p class="info-content-minus">-800 EUR</p>
+	                            </div>
+	                        </div>
+	                        <div class="row info-content">
+	                            <div class="col-2">
+	                                <div class="info-content-icon bg-3 align-middle">
+										<span class="text-center percentage">15%</span>     
+	                                </div>
+	                            </div>
+	                            <div class="col-5">
+	                                <p>Family & Personal<span>7 transaction</span></p>
+	                            </div>
+	                            <div class="col-5">
+	                                <p class="info-content-minus">-600 EUR</p>
+	                            </div>
+	                        </div>
+	                        <div class="row info-content last">
+	                            <div class="col-2">
+	                                <div class="info-content-icon bg-4 align-middle single-digit">
+										<span class="text-center percentage">03%</span>     
+	                                </div>
+	                            </div>
+	                            <div class="col-5">
+	                                <p>Shopping<span>1 transaction</span></p>
+	                            </div>
+	                            <div class="col-5">
+	                                <p class="info-content-minus">-120 EUR</p>
+	                            </div>
+	                        </div>
+	                    </div>
+	 					<hr class="footer-line">
+	 					<i class="material-icons dashboard text-success">timeline</i>
+	 					<span class="overview-text text-success">Overview</span>
+	 					<i class="material-icons transactions">account_balance_wallet</i>
+	 					<span class="transactions-text">Transactions</span>
+	 					<div class="networthImage addIcon">
+	 						<div class="icon text-center">
+								<i class="material-icons align-middle">add</i>
+						    </div>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" class="budget"><g fill="none" fill-rule="evenodd"><path fill="currentColor" d="M17.5 13.082c.754 1.79.65 3.688-.278 5.078-.78 1.17-2.068 1.84-3.533 1.84H4.312c-1.466 0-2.754-.67-3.533-1.84-.929-1.39-1.033-3.289-.28-5.078 1.31-3.112 3.465-6.039 5.594-7.634L6.08 5.43l-.44-.695a51.11 51.11 0 0 0-.462-.728c-.783-1.22-1.35-2.102-.983-2.952.201-.465.631-.763 1.278-.886C5.59.147 6.476 0 6.98 0c.124 0 .225.008.318.026.324.061.595.187.834.299.084.04.168.078.252.112.155.062.363.108.615.138.252-.03.46-.076.615-.138.084-.034.168-.073.252-.112.24-.112.51-.238.835-.3A1.7 1.7 0 0 1 11.019 0c.504 0 1.391.147 1.508.169.646.123 1.076.42 1.277.886.367.85-.2 1.732-.984 2.952-.147.23-.304.474-.46.728l-.441.695-.012.018c2.129 1.595 4.284 4.522 5.594 7.634zm-9.14 3.68h.957V15.68c1.449-.146 2.086-1.003 2.086-2.084 0-1.333-1.06-1.446-2.086-1.7v-1.723c.444.108.931.314 1.286.636l.642-.93a3.228 3.228 0 0 0-1.925-.867l-.003-.9h-.923l-.035.88c-1.33.135-2.17.974-2.17 1.957 0 1.323 1.121 1.785 2.136 2.029v1.587c-.66-.116-1.356-.534-1.72-.914l-.632.996c.542.536 1.334.946 2.37 1.033l.016 1.082zm-.998-5.88c0-.419.397-.644.946-.718l.017 1.37c-.512-.16-.963-.294-.963-.652zm2.768 2.882c0 .386-.19.765-.813.886l-.013-1.704c.537.169.826.42.826.818z"></path></g></svg>
+						<span class="budget-text">Budget</span>
+						<i class="material-icons goals">track_changes</i>
+						<span class="goals-text">Goals</span>
+	 				</div>
 		 		</div>
 		 		<div class="col-12 col-md-6 col-lg-5 mt-4 my-lg-auto my-md-auto ml-2 ml-lg-0 ml-md-0">
 		 			<div class="shape playStoreApps">
@@ -430,11 +731,61 @@
 		 					BlitzBudget synchronizes across devices so whether you are tracking your finances on your devices or your desktop, you are always synchronized.  
 		 				</div>
 		 				<div class="row text-center my-5">
-	                      <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
-	                        <img src="img/playstore/btn_download_appstore_en.svg" class="playstoreIcon mb-3" alt="Apple playstore button">
-	                      </div>
-	                      <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
-	                        <img src="img/playstore/btn_download_playstore_en.png" class="playstoreIcon mb-3" alt="Android playstore button">
+	                        <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
+	                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 42" class="appStoreHover">
+							        <path id="line" fill="#a6a6a6" d="M137.9 42H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h132.9a5 5 0 0 1 5.1 5v32a5 5 0 0 1-5.1 5z"></path>
+							        <path id="path-1" fill="#283139" d="M137.9 41H5.1A4 4 0 0 1 1 37V5a4 4 0 0 1 4.1-4H138c2.2 0 4.1 1.8 4.1 4v32c-.1 2.2-1.9 4-4.2 4z"></path>
+							        <path id="hover" fill-opacity=".3" d="M137.9 41H5.1A4 4 0 0 1 1 37V5a4 4 0 0 1 4.1-4H138c2.2 0 4.1 1.8 4.1 4v32c-.1 2.2-1.9 4-4.2 4z"></path>
+							        <path id="logo" fill="#ffffff" d="M19.2 14.5c0-3.4 2.8-5 2.9-5.1a6 6 0 0 0-5-2.7c-2-.2-4.1 1.2-5.1 1.2-1.1 0-2.7-1.2-4.5-1.2A6.2 6.2 0 0 0 2 10.1c-2.4 4.1-.6 10.2 1.7 13.5C4.8 25.2 6.2 27 7.9 27c1.7-.1 2.4-1.1 4.4-1.1 2.1 0 2.7 1.1 4.4 1 1.8 0 3-1.6 4.1-3.3 1.3-1.9 1.9-3.7 1.9-3.8 0 0-3.5-1.3-3.5-5.3zm-3.4-10A5.9 5.9 0 0 0 17.2.2c-1.3.1-3 .9-4 2-.9 1-1.6 2.6-1.4 4.1 1.5.2 3-.7 4-1.8z" class="st3" transform="translate(12.7 6.3)"></path>
+							        <path id="text" fill="#ffffff" d="M12.3 14.2H9.9l-1.3-4.1H4l-1.3 4.1H.4L5 .2h2.8l4.5 14zM8.2 8.3L7 4.7l-.7-2.6-.7 2.6-1.2 3.6h3.8zM24 9a6 6 0 0 1-1.4 4.1 4 4 0 0 1-3.1 1.3c-1.3 0-2.3-.5-2.9-1.4v5.3h-2.3V7.4l-.1-3.3h2l.1 1.6a3.8 3.8 0 0 1 3.4-1.8c1.2 0 2.2.5 3 1.4A5 5 0 0 1 24 9zm-2.3.1c0-1-.2-1.8-.7-2.4-.5-.7-1.1-1-2-1-.6 0-1.1.2-1.5.5-.5.4-.7.8-.9 1.4l-.1.7V10c0 .7.2 1.3.7 1.9.5.5 1 .8 1.8.8s1.5-.3 2-1a5 5 0 0 0 .7-2.6zM35.6 9a6 6 0 0 1-1.4 4.1 4 4 0 0 1-3.1 1.3c-1.3 0-2.3-.5-2.9-1.4v5.3h-2.3V7.4l-.1-3.3h2l.2 1.6a3.8 3.8 0 0 1 3.4-1.8c1.2 0 2.2.5 3 1.4.8.9 1.2 2.2 1.2 3.7zm-2.3.1c0-1-.2-1.8-.7-2.4-.5-.7-1.1-1-2-1-.6 0-1.1.2-1.5.5-.5.4-.7.8-.9 1.4l-.1.7V10c0 .7.2 1.3.7 1.9.5.5 1 .8 1.8.8s1.5-.3 2-1 .7-1.5.7-2.6zm15.4 1.1c0 1.2-.4 2.2-1.2 2.9-.9.8-2.2 1.2-3.8 1.2-1.5 0-2.7-.3-3.6-.9l.5-1.9c1 .6 2.1.9 3.3.9.8 0 1.5-.2 2-.6.5-.4.7-.9.7-1.5s-.2-1-.6-1.4c-.4-.4-1-.7-1.9-1.1-2.5-.9-3.7-2.2-3.7-4 0-1.1.4-2.1 1.3-2.8.9-.7 2-1.1 3.4-1.1 1.3 0 2.3.2 3.2.7l-.6 1.8a6 6 0 0 0-2.7-.6c-.8 0-1.4.2-1.9.6-.4.3-.6.8-.6 1.3 0 .6.2 1 .6 1.4l2 1.1a7 7 0 0 1 2.7 1.7c.6.6.9 1.4.9 2.3zm7.4-4.4h-2.5v4.9c0 1.2.4 1.9 1.3 1.9l1-.1.1 1.7c-.4.2-1 .2-1.8.2-.9 0-1.6-.3-2.1-.8s-.8-1.4-.8-2.7V5.8H50V4.1h1.5V2.3l2.2-.7v2.5h2.5v1.7zM67.3 9c0 1.5-.4 2.8-1.3 3.8s-2.2 1.5-3.7 1.5-2.7-.5-3.6-1.5-1.3-2.2-1.3-3.7c0-1.6.5-2.8 1.4-3.8.9-1 2.1-1.5 3.7-1.5 1.5 0 2.7.5 3.6 1.5.8 1 1.2 2.2 1.2 3.7zm-2.3.1c0-.9-.2-1.7-.6-2.4-.5-.8-1.1-1.2-2-1.2-.9 0-1.6.4-2.1 1.2-.4.7-.6 1.5-.6 2.4 0 .9.2 1.7.6 2.4.5.8 1.2 1.2 2 1.2.9 0 1.5-.4 2-1.2.5-.6.7-1.5.7-2.4zm9.7-3L74 6a2 2 0 0 0-1.8.9c-.4.5-.6 1.2-.6 2v5.3h-2.3V7.3l-.1-3.2h2l.1 1.9h.1a3 3 0 0 1 1.1-1.6c.5-.4 1-.5 1.6-.5h.6v2.2zm10.1 2.6l-.1 1h-6.8a3 3 0 0 0 1 2.3c.6.5 1.3.7 2.2.7 1 0 1.9-.2 2.7-.5l.4 1.6a9 9 0 0 1-3.4.6 5 5 0 0 1-3.7-1.4 5 5 0 0 1-1.3-3.7c0-1.5.4-2.8 1.3-3.8a4.3 4.3 0 0 1 3.5-1.6c1.5 0 2.6.5 3.3 1.6.6.8.9 1.9.9 3.2zm-2.2-.6a3 3 0 0 0-.4-1.7 2 2 0 0 0-1.8-.9c-.7 0-1.3.3-1.8.9-.4.5-.6 1.1-.7 1.7h4.7z" class="st3" transform="translate(44.4 18.9)"></path>
+							        <path id="top" fill="#ffffff" d="M6.4 4.2C6.4 5.4 6 6.4 5.3 7c-.7.6-1.7.9-3 .9L.7 7.8V1L2.6.9c1.2 0 2.1.3 2.7.8.8.6 1.1 1.4 1.1 2.5zm-1.2 0c0-.8-.2-1.4-.6-1.8-.4-.4-1.1-.6-1.9-.6l-.9.1V7h.8c.8 0 1.5-.2 2-.7.4-.5.6-1.2.6-2.1zm7.4 1.1c0 .8-.2 1.4-.7 1.9-.5.5-1.1.8-1.8.8s-1.3-.2-1.7-.7c-.5-.6-.7-1.2-.7-1.9 0-.8.2-1.4.7-1.9.4-.5 1-.7 1.8-.7.7 0 1.3.2 1.8.7.4.4.6 1 .6 1.8zm-1.2 0c0-.5-.1-.8-.3-1.2-.2-.4-.6-.6-1-.6s-.8.2-1 .6l-.3 1.2c0 .5.1.8.3 1.2.2.4.6.6 1 .6s.8-.2 1-.6c.2-.3.3-.7.3-1.2zm9.5-2.4l-1.6 4.9h-1l-.6-2.1-.4-1.6-.4 1.6-.7 2.1h-1l-1.5-4.9h1.1l.6 2.4.3 1.6.4-1.6.7-2.4h.9l.7 2.3.4 1.6.3-1.6.6-2.3h1.2zm5.7 4.9h-1.1V5c0-.9-.3-1.3-1-1.3a1 1 0 0 0-.8.4c-.2.2-.3.5-.3.8v2.9h-1.1V4.3 2.9h1l.1.8.6-.6c.3-.2.6-.3 1-.3.5 0 .9.1 1.2.4.4.4.6.9.6 1.6v3zm3.1 0h-1.1V.6h1.1v7.2zm6.5-2.5c0 .8-.2 1.4-.7 1.9-.5.5-1.1.8-1.8.8s-1.3-.2-1.7-.7c-.4-.5-.7-1.1-.7-1.8 0-.8.2-1.4.7-1.9.4-.5 1.1-.7 1.8-.7s1.3.2 1.8.7c.4.3.6.9.6 1.7zm-1.1 0c0-.5-.1-.8-.3-1.2-.2-.4-.6-.6-1-.6s-.8.2-1 .6c-.2.3-.3.7-.3 1.2s.1.8.3 1.2c.2.4.6.6 1 .6s.8-.2 1-.6c.2-.3.3-.7.3-1.2zm6.5 2.5h-1l-.1-.6c-.3.5-.8.7-1.5.7-.5 0-.9-.1-1.1-.4-.3-.3-.4-.6-.4-1 0-.6.3-1.1.8-1.4a4 4 0 0 1 2.1-.5v-.1c0-.7-.3-1-1-1a2 2 0 0 0-1.3.4l-.2-.7a3 3 0 0 1 1.7-.4c1.3 0 2 .7 2 2v1.8 1.2zm-1.2-1.7v-.8c-1.2 0-1.8.3-1.8 1l.2.6.6.2.7-.2.4-.6-.1-.2zm7.5 1.7h-1l-.1-.8c-.3.6-.8.9-1.6.9-.6 0-1.1-.2-1.5-.7-.4-.5-.6-1.1-.6-1.8 0-.8.2-1.4.6-1.9.4-.5.9-.7 1.5-.7.7 0 1.1.2 1.4.7V.6h1.1v5.9l.2 1.3zm-1.2-2.1v-.8-.3l-.4-.7a1 1 0 0 0-.7-.3c-.4 0-.7.2-1 .5-.2.3-.4.7-.4 1.3 0 .5.1.9.3 1.2.2.3.6.5 1 .5s.7-.1.9-.4c.2-.3.3-.6.3-1zm10.7-.4c0 .8-.2 1.4-.7 1.9-.5.5-1.1.8-1.8.8s-1.3-.2-1.7-.7c-.4-.5-.7-1.1-.7-1.8 0-.8.2-1.4.7-1.9.4-.6 1-.8 1.8-.8.7 0 1.3.2 1.8.7.3.4.6 1 .6 1.8zm-1.2 0c0-.5-.1-.8-.3-1.2-.2-.4-.6-.6-1-.6s-.8.2-1 .6c-.2.3-.3.7-.3 1.2s.1.8.3 1.2c.2.4.6.6 1 .6s.8-.2 1-.6c.2-.3.3-.7.3-1.2zm7.1 2.5h-1.1V5c0-.9-.3-1.3-1-1.3a1 1 0 0 0-.8.4c-.2.2-.3.5-.3.8v2.9H59V4.3 2.9h1v.7l.6-.6c.3-.2.6-.3 1-.3.5 0 .9.1 1.2.4.4.4.6.9.6 1.6v3.1zm7.5-4.1h-1.2v2.4c0 .6.2.9.6.9l.5-.1v.8l-.9.1c-.4 0-.8-.1-1-.4-.2-.3-.4-.7-.4-1.3V3.7h-.7v-.8h.7v-1l1.1-.3v1.2h1.2l.1.9zm5.8 4.1h-1.1V5c0-.9-.3-1.3-1-1.3-.5 0-.9.3-1.1.8l-.1.4v3h-1.1V.6h1.1v3c.3-.5.8-.8 1.5-.8.5 0 .8.1 1.1.4.4.4.6.9.6 1.7v2.9zm6.1-2.7v.5h-3.3c0 .5.2.9.5 1.1.3.2.6.3 1.1.3l1.3-.2.2.8c-.5.2-1 .3-1.7.3-.8 0-1.4-.2-1.8-.7-.4-.5-.7-1.1-.7-1.8s.2-1.4.6-1.9c.4-.5 1-.8 1.7-.8s1.3.3 1.6.8c.3.5.5 1 .5 1.6zm-1.1-.3l-.2-.8a1 1 0 0 0-.9-.5c-.4 0-.7.1-.9.4-.2.2-.3.5-.3.9h2.3z" class="st3" transform="translate(45.5 6.3)"></path>
+							    </svg>
+	                        </div>
+	                        <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
+	                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 42" class="appStoreHover">
+							        <path fill="#283139" d="M137.2 41.5H5.8a5.2 5.2 0 0 1-5.3-5.1V5.6C.5 2.8 2.9.5 5.8.5h131.5c2.9 0 5.3 2.3 5.3 5.1v30.8a5.4 5.4 0 0 1-5.4 5.1z"></path>
+							        <path id="hover" fill-opacity=".3" d="M137.2 41.5H5.8a5.2 5.2 0 0 1-5.3-5.1V5.6C.5 2.8 2.9.5 5.8.5h131.5c2.9 0 5.3 2.3 5.3 5.1v30.8a5.4 5.4 0 0 1-5.4 5.1z"></path>
+							        <path fill="#a6a6a6" d="M137.6 1c2.4 0 4.4 2 4.4 4.4v31.3c0 2.4-2 4.4-4.4 4.4H5.4A4.6 4.6 0 0 1 1 36.6V5.4C1 3 3 1 5.4 1h132.2zm.1-1H5.3A5.3 5.3 0 0 0 0 5.2v31.5C0 39.6 2.4 42 5.3 42h132.4c2.9 0 5.3-2.4 5.3-5.2V5.2c0-2.8-2.4-5.2-5.3-5.2z"></path>
+							        <path fill="#fff" stroke="#fff" stroke-width=".7" d="M50.2 11.1c0 .9-.3 1.6-.8 2.1-.6.6-1.4.9-2.3.9a3.3 3.3 0 0 1-3.3-3.2c0-.9.3-1.7 1-2.3.6-.6 1.4-.9 2.3-.9.5 0 .9.1 1.3.3l1 .7-.6.5c-.4-.5-1-.7-1.7-.7s-1.2.2-1.7.7c-.5.5-.7 1.1-.7 1.8a2.4 2.4 0 0 0 2.4 2.5c.7 0 1.3-.2 1.8-.7.3-.3.5-.7.5-1.3h-2.3v-.8h3.1v.4zm4.9-2.6h-2.9v2h2.6v.8h-2.6v2h2.9v.7h-3.7V7.8h3.7v.7zm3.4 5.5h-.8V8.5H56v-.7h4.4v.8h-1.8V14zm5 0V7.8h.8V14h-.8zm4.4 0h-.8V8.5h-1.8v-.7h4.4v.8h-1.8V14zm10.1-.8c-.6.6-1.4.9-2.3.9-.9 0-1.7-.3-2.3-.9-.6-.6-.9-1.4-.9-2.3 0-.9.3-1.7.9-2.3.6-.6 1.4-.9 2.3-.9.9 0 1.7.3 2.3.9.6.6.9 1.4.9 2.3 0 .9-.3 1.7-.9 2.3zm-4.1-.5c.5.5 1 .7 1.7.7s1.3-.2 1.7-.7c.5-.5.7-1.1.7-1.8s-.2-1.3-.7-1.8c-.5-.5-1-.7-1.7-.7s-1.3.2-1.7.7c-.5.5-.7 1.1-.7 1.8s.2 1.3.7 1.8zm6.2 1.3V7.8h1l3.1 4.8V7.8h.8V14h-.9l-3.2-5.1V14h-.8z"></path>
+							        <path fill="#fff" d="M72.2 23.1a4.4 4.4 0 1 0 0 8.8c2.5 0 4.5-1.9 4.5-4.4 0-2.6-2-4.4-4.5-4.4zm0 7.1c-1.4 0-2.5-1.1-2.5-2.7s1.2-2.7 2.5-2.7c1.4 0 2.5 1.1 2.5 2.7s-1.2 2.7-2.5 2.7zm-9.9-7.1a4.4 4.4 0 1 0 0 8.8c2.5 0 4.5-1.9 4.5-4.4 0-2.6-2-4.4-4.5-4.4zm0 7.1c-1.4 0-2.5-1.1-2.5-2.7s1.2-2.7 2.5-2.7c1.4 0 2.5 1.1 2.5 2.7s-1.1 2.7-2.5 2.7zm-11.7-5.8v1.9h4.6c-.1 1-.5 1.8-1 2.4a5 5 0 0 1-3.5 1.4c-2.8 0-5-2.2-5-5s2.2-5 5-5a5 5 0 0 1 3.4 1.3l1.4-1.3a6.6 6.6 0 0 0-4.8-1.9c-3.9 0-7.1 3.1-7.1 6.9s3.2 6.9 7.1 6.9c2.1 0 3.7-.7 4.9-1.9a6 6 0 0 0 1.7-4.4l-.1-1.2h-6.6zm48 1.5c-.4-1-1.5-2.8-3.9-2.8-2.3 0-4.2 1.8-4.2 4.4 0 2.5 1.9 4.4 4.5 4.4 2.1 0 3.3-1.2 3.8-2l-1.5-1c-.5.7-1.2 1.2-2.2 1.2-1 0-1.7-.5-2.2-1.3l6-2.4-.3-.5zm-6.2 1.5c-.1-1.7 1.4-2.6 2.4-2.6.8 0 1.5.4 1.7.9l-4.1 1.7zm-4.9 4.3h2v-13h-2v13zm-3.2-7.6c-.5-.5-1.4-1-2.4-1a4.4 4.4 0 0 0-4.3 4.4c0 2.5 2.1 4.4 4.3 4.4 1.1 0 1.9-.5 2.4-1h.1v.6c0 1.7-.9 2.6-2.4 2.6-1.2 0-2-.9-2.3-1.6l-1.7.7a4.2 4.2 0 0 0 4 2.6c2.3 0 4.3-1.3 4.3-4.6v-7.9h-1.9v.8zM82 30.2c-1.4 0-2.5-1.1-2.5-2.7s1.1-2.7 2.5-2.7c1.3 0 2.4 1.1 2.4 2.7s-1 2.7-2.4 2.7zm25.9-11.5h-4.7v13h2v-4.9h2.8c2.2 0 4.3-1.6 4.3-4a4.3 4.3 0 0 0-4.4-4.1zm0 6.2h-2.8v-4.5h2.8c1.5 0 2.3 1.2 2.3 2.2 0 1.1-.8 2.3-2.3 2.3zm12.2-1.8c-1.4 0-2.9.6-3.5 2l1.8.7a2 2 0 0 1 1.8-1c1 0 2.1.6 2.1 1.7v.1c-.4-.2-1.1-.5-2.1-.5-1.9 0-3.8 1-3.8 2.9 0 1.7 1.5 2.9 3.3 2.9 1.3 0 2.1-.6 2.5-1.3h.1v1h1.9v-5c0-2.2-1.8-3.5-4.1-3.5zm-.2 7.1c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.4 2.1-1.4.9 0 1.3.2 1.8.4a2.5 2.5 0 0 1-2.4 2.1zm11.2-6.9l-2.3 5.6h-.1l-2.3-5.6h-2.1l3.5 7.9-2 4.4h2.1l5.4-12.2h-2.2zm-17.8 8.4h2v-13h-2v13z"></path>
+							        <g transform="translate(10.4 7.5)">
+							            <linearGradient id="google_a" x1="-226.4" x2="-227.7" y1="424.8" y2="424.1" gradientTransform="matrix(13.7029 0 0 26.0466 3114.6 -11039.5)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#00a0ff"></stop>
+							                <stop offset="0" stop-color="#00a1ff"></stop>
+							                <stop offset=".3" stop-color="#00beff"></stop>
+							                <stop offset=".5" stop-color="#00d2ff"></stop>
+							                <stop offset=".8" stop-color="#00dfff"></stop>
+							                <stop offset="1" stop-color="#00e3ff"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_a)" d="M.7.8c-.4.3-.5.8-.5 1.5v23c0 .6.2 1.1.5 1.5l.1.1L13.9 14v-.3L.7.8z"></path>
+							        </g>
+							        <g transform="translate(23.9 15.5)">
+							            <linearGradient id="google_b" x1="-235.1" x2="-237.5" y1="444" y2="444" gradientTransform="matrix(10.772 0 0 8.8891 2544.2 -3941.4)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#ffe000"></stop>
+							                <stop offset=".4" stop-color="#ffbd00"></stop>
+							                <stop offset=".8" stop-color="orange"></stop>
+							                <stop offset="1" stop-color="#ff9c00"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_b)" d="M4.7 10.2L.4 5.9v-.3l4.4-4.3.1.1L10 4.2c1.5.8 1.5 2.2 0 3l-5.2 2.9-.1.1z"></path>
+							        </g>
+							        <g transform="translate(10.6 6.4)">
+							            <linearGradient id="google_c" x1="-231.2" x2="-232.5" y1="438.8" y2="437.1" gradientTransform="matrix(17.688 0 0 13.365 4093.3 -5846.2)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#ff3a44"></stop>
+							                <stop offset="1" stop-color="#c31162"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_c)" d="M18.1 19.2l-4.5-4.4-13.2 13c.5.5 1.3.6 2.2.1l15.5-8.7"></path>
+							        </g>
+							        <g transform="translate(10.6 20.7)">
+							            <linearGradient id="google_d" x1="-232.2" x2="-231.6" y1="426.3" y2="425.5" gradientTransform="matrix(17.688 0 0 13.3605 4093.3 -5681.2)" gradientUnits="userSpaceOnUse">
+							                <stop offset="0" stop-color="#32a071"></stop>
+							                <stop offset=".1" stop-color="#2da771"></stop>
+							                <stop offset=".5" stop-color="#15cf74"></stop>
+							                <stop offset=".8" stop-color="#06e775"></stop>
+							                <stop offset="1" stop-color="#00f076"></stop>
+							            </linearGradient>
+							            <path fill="url(#google_d)" d="M18.1-3.9L2.6-12.5c-.9-.5-1.7-.4-2.2.1L13.6.5l4.5-4.4z"></path>
+							        </g>
+							    </svg>
 	                      </div>
 	                    </div>
 		 			</div>
@@ -480,12 +831,13 @@
 						    <a href="/premium">BlitzBudget Plus</a>
 						  </span>
 						  <span class="d-block">
-						    <a href="https://app.blitzbudget.com/signup">Sign Up for Free</a>
+						    <a href="https://app.blitzbudget.com/signup">Get Started</a>
 						  </span>
 						</nav>
 					</div>
 	 			</div>
 	 			<div class="footerOther">
+	 				<div class="footerCopyright text-center">© <span id="currentYear">2020</span> BlitzBudget</div>
 	 				<a class="logoHeader" href="/">
 						<svg
 						   xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -540,11 +892,6 @@
 						    </g>
 						</svg>
 		 			</a>
-		 			<div class="social d-inline-block">
-		 				<i class="material-icons"></i>
-		 				<i class="material-icons"></i>
-		 				<i class="material-icons"></i>
-		 			</div>
 	 			</div>
 	 		</div>
 	 	</section>
