@@ -5,6 +5,9 @@ window.onload = function () {
 		let currentTime = new Date();
 		document.getElementById('currentTime').innerText = ("0" + Number(currentTime.getHours())).slice(-2) + ' : ' + ("0" + Number(currentTime.getMinutes())).slice(-2);
 
+		// Current Year
+		document.getElementById('currentYear').innerText = currentTime.getFullYear();
+
 		$('.deleteBudget').click(function() {
 			let deleteButtonElement = this;
 			let categoryId = lastElement(splitElement(this.id,'-'));

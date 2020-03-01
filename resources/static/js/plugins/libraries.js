@@ -147,6 +147,26 @@ function buildPieChart(dataPreferences, id, absoluteTotal) {
     }   
 }
 
+function formatLargeCurrencies(value) {
+	
+	if(value >= 1000000000) {
+		value = (value / 1000000000) + 'B';
+		return value;
+	}
+	
+	if(value >= 1000000) {
+		value = (value / 1000000) + 'M';
+		return value;
+	}
+	
+	if(value >= 1000) {
+  	  value = (value / 1000) + 'k';
+  	  return value;
+    }
+	
+	return value;
+}
+
 function startAnimationDonutChart(chart) {
 		
 	chart.on('draw', function(data) {
