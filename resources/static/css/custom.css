@@ -2502,7 +2502,7 @@ a.button:active, a.button:focus, a.button:hover {
         margin-right: 5rem;
     }
 
-    ..step1Image {
+    .step1Image {
         padding: 1rem 1rem;
     }
 

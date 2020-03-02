@@ -221,3 +221,9 @@ function startAnimationDonutChart(chart) {
 	});
 	
 }
+
+// Update the footer year
+(function scopeWrapper($) {
+	// Current Year
+	document.getElementById('currentYear').innerText = currentTime.getFullYear();
+}(jQuery)); 
