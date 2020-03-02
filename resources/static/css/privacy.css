@@ -157,15 +157,35 @@ a.text-decoration-none, .text-decoration-none {
 	color: #008697;
 }
 
+.article-container h1~ol, .article-container h1~p, .article-container h1~ul, .article-container h2~ol, .article-container h2~p, .article-container h2~ul, .article-container h3~ol, .article-container h3~p, .article-container h3~ul, .article-container h4~ol, .article-container h4~p, .article-container h4~ul, .article-container h5~ol, .article-container h5~p, .article-container h5~ul, .article-container h6~ol, .article-container h6~p, .article-container h6~ul,  h1~ol,  h1~p,  h1~ul,  h2~ol,  h2~p,  h2~ul,  h3~ol,  h3~p,  h3~ul,  h4~ol,  h4~p,  h4~ul,  h5~ol,  h5~p,  h5~ul,  h6~ol,  h6~p,  h6~ul {
+    margin-top: 1.125rem;
+}
+
+.article-container ol, .article-container p, .article-container ul,  ol,  p,  ul {
+    margin-bottom: 1.5rem;
+}
+button, input, li, p, select, textarea {
+    font-size: inherit;
+    line-height: inherit;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
 /**
 *
 * Generic
 *
 **/
-.a-content-padding p, .a-content-padding ul, .a-content p, .a-content ul, .v-singlePost-content p, .v-singlePost-content ul {
+p, ul, .article-container p, .article-container ul,  p,  ul {
     margin-bottom: 1.6875rem;
 }
-.a-content ol, .a-content p, .a-content ul, .v-singlePost-content ol, .v-singlePost-content p, .v-singlePost-content ul {
+.article-container ol, .article-container p, .article-container ul,  ol,  p,  ul {
     margin-bottom: 1.5rem;
 }
 button, input, li, p, select, textarea {
@@ -205,16 +225,17 @@ body, html {
 body {
     line-height: 1;
 }
-.a-content ol ~ h2, .a-content ol ~ h3, .a-content ol ~ h4, .a-content ol ~ h5, .a-content p ~ h2, .a-content p ~ h3, .a-content p ~ h4, .a-content p ~ h5, .a-content ul ~ h2, .a-content ul ~ h3, .a-content ul ~ h4, .a-content ul ~ h5, .v-singlePost-content ol ~ h2, .v-singlePost-content ol ~ h3, .v-singlePost-content ol ~ h4, .v-singlePost-content ol ~ h5, .v-singlePost-content p ~ h2, .v-singlePost-content p ~ h3, .v-singlePost-content p ~ h4, .v-singlePost-content p ~ h5, .v-singlePost-content ul ~ h2, .v-singlePost-content ul ~ h3, .v-singlePost-content ul ~ h4, .v-singlePost-content ul ~ h5 {
+.article-container ol ~ h2, .article-container ol ~ h3, .article-container ol ~ h4, .article-container ol ~ h5, .article-container p ~ h2, .article-container p ~ h3, .article-container p ~ h4, .article-container p ~ h5, .article-container ul ~ h2, .article-container ul ~ h3, .article-container ul ~ h4, .article-container ul ~ h5,  ol ~ h2,  ol ~ h3,  ol ~ h4,  ol ~ h5,  p ~ h2,  p ~ h3,  p ~ h4,  p ~ h5,  ul ~ h2,  ul ~ h3,  ul ~ h4,  ul ~ h5 {
     margin-bottom: 1.125rem;
     margin-top: 1.75rem;
 }
 h2, h3 {
-    font-family: Gilroy Heavy;
+    font-family: "Didact Gothic","Roboto", "Helvetica", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: #244564;
+    font-weight: 600;
 }
 h2 {
     font-size: 2.5rem;
@@ -230,10 +251,30 @@ h1, h2, h3, h4, h5, h6 {
     line-height: normal;
 }
 h1, h2, h3, h5 {
-    font-family: Gilroy Heavy;
+    font-family: "Didact Gothic","Roboto", "Helvetica", "Arial", sans-serif;
     font-style: normal;
 }
 
+h5, h6 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h4, h6 {
+    font-family: KlinicSlab;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.productHero {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.Hero {
+	background: linear-gradient(145deg,#0c95a7,#e5fafd);
+}
 
 /**
 *
@@ -252,6 +293,7 @@ h1, h2, h3, h5 {
 	color: #25384f;
 	font-size: 4.5rem;
 	line-height: 4.875rem;
+	font-weight:700;
 }
 
 /**
@@ -360,6 +402,17 @@ a.button, a:-webkit-any-link.button {
 
 a.button:active, a.button:focus, a.button:hover {
     outline: none;
+}
+
+
+.a-content a:not(.c-button),.v-singlePost-content a:not(.c-button) {
+    color: #009aae;
+    font-weight: 900;
+    text-decoration: none
+}
+
+.a-content a:not(.c-button):hover,.v-singlePost-content a:not(.c-button):hover {
+    color: #008fa1
 }
 
 .footerCopyright {
@@ -629,7 +682,18 @@ a.button:active, a.button:focus, a.button:hover {
 
     .footerInternal nav {
         padding-top: 0;
-    }        
+    }
+
+    h4, h5, h6 {
+	    font-size: 1.625rem;
+	}
+}
+
+@media (min-width: 769px) {
+	p,
+	ul {
+	    margin-bottom: 1.6875rem;
+	}
 }
 
 @media (min-width: 1200px) {
