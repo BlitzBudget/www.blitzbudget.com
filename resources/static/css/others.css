@@ -404,15 +404,17 @@ a.button:active, a.button:focus, a.button:hover {
     outline: none;
 }
 
-
-.a-content a:not(.c-button),.v-singlePost-content a:not(.c-button) {
+.article-container a,
+.article-container a:-webkit-any-link {
     color: #009aae;
     font-weight: 900;
     text-decoration: none
 }
 
-.a-content a:not(.c-button):hover,.v-singlePost-content a:not(.c-button):hover {
-    color: #008fa1
+.article-container a:hover,
+.article-container a:-webkit-any-link:hover {
+    color: #018798;
+    text-decoration: underline;
 }
 
 .footerCopyright {
@@ -627,6 +629,17 @@ a.button:active, a.button:focus, a.button:hover {
     fill-opacity:1;
     fill-rule:nonzero;
     stroke:none;
+}
+
+.article-container .footerInternal a:-webkit-any-link:hover {
+    text-decoration: underline;
+
+}
+
+.article-container .footerInternal a:-webkit-any-link {
+    color: #69757a;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 @media (max-width: 576px) {

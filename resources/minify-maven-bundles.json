@@ -4,7 +4,7 @@
             "type": "css",
             "name": "core-home.css",
             "files": [
-                "/custom.css",
+                "/home.css",
                 "/material-design.css"
             ]
         },
@@ -26,9 +26,9 @@
         },
         {
             "type": "css",
-            "name": "privacy.all.css",
+            "name": "others.all.css",
             "files": [
-                "/privacy.css",
+                "/others.css",
                 "/material-design.css"
             ]
         },
