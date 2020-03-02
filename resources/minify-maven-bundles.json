@@ -37,11 +37,6 @@
             "name": "core-others.js",
             "files": [
                 "/core/jquery.min.js",
-                "/core/popper.min.js",
-                "/core/bootstrap-material-design.min.js",
-                "/plugins/chartist.min.js",
-                "/plugins/moment.min.js",
-                "/plugins/perfect-scrollbar.jquery.min.js",
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js"
             ]

@@ -370,9 +370,220 @@ a.button:active, a.button:focus, a.button:hover {
     padding-left: 24px;
 }
 
+.article-container {
+    max-width: 1440px;
+    padding: 7.77778% 8.47222%;
+    padding-top: 7.77778%;
+    padding-bottom: 7.77778%;
+}
+
+/**
+*
+*  Menu Bar Mobile
+*
+**/
+.mobileMenuButton {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 22px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    -webkit-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+
+.mobileMenuBars {
+    position: relative;
+    width: 22px;
+    height: 2px;
+    background: 
+    #69757a;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.mobileMenuButton:hover {
+ opacity:0.8
+}
+
+.mobileMenuBars {
+ position:relative;
+ width:22px;
+ height:2px;
+ background:#69757a;
+ -webkit-transition:all 150ms ease-in-out;
+ transition:all 150ms ease-in-out
+}
+
+.mobileMenuBars::before,
+.mobileMenuBars::after {
+ content:"";
+ position:absolute;
+ left:0;
+ width:22px;
+ height:2px;
+ background:#69757a;
+ -webkit-transition:all 150ms ease-in-out;
+ transition:all 150ms ease-in-out;
+ -webkit-transform:none;
+ transform:none
+}
+
+.mobileMenuBars::before {
+ top:-6px
+}
+
+.mobileMenuBars::after {
+ bottom:-6px
+}
+
+
+.is-open .mobileMenuBars {
+    background: transparent;
+    -webkit-transition: none;
+    transition: none
+}
+
+.is-open .mobileMenuBars::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.is-open .mobileMenuBars::after {
+    bottom: 0;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg)
+}
+
+.is-open .mobileBannerMenu {
+    visibility: visible;
+    opacity: 1
+}
+
+.mobileBannerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    -webkit-transition: 150ms opacity,150ms visibility;
+    transition: 150ms opacity,150ms visibility;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.mobileBannerMenuNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 220px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.mobileBannerMenuNav a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    border-bottom: 2px solid #f5f7f8;
+    color: #495257;
+    line-height: 2.4;
+    text-decoration: none;
+    -webkit-transition: color 150ms;
+    transition: color 150ms
+}
+
+.mobileBannerMenuNav a:hover {
+    color: #69757a;
+    text-decoration: none
+}
+
+.mobileBannerMenuSocialNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.mobileBannerMenuSocialNav a {
+    -webkit-transition: opacity 150ms;
+    transition: opacity 150ms
+}
+
+.mobileBannerMenuSocialNav a:hover {
+    opacity: 0.8
+}
+
+.mobileBannerMenuNav a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    border-bottom: 2px solid #f5f7f8;
+    color: #495257;
+    line-height: 2.4;
+    text-decoration: none;
+    -webkit-transition: color 150ms;
+    transition: color 150ms;
+}
+
+.logoHeader #path14,
+.logoHeader #path16,
+.logoHeader #path18,
+.logoHeader #path20,
+.logoHeader #path22,
+.logoHeader #path42 {
+    fill:#43b2c6;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+}
+
+.logoHeader #path24,
+.logoHeader #path26,
+.logoHeader #path28,
+.logoHeader #path30,
+.logoHeader #path32,
+.logoHeader #path34,
+.logoHeader #path36,
+.logoHeader #path38,
+.logoHeader #path40 {
+    fill:#f1419a;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+}
+
 @media (max-width: 576px) {
 	.footerInternal {
         padding-top:1rem;
+    }
+
+
+    .mobileBannerMenuSocialNav .col-6 .btn-info {
+        margin-left: 2rem;
     }
 }
 
