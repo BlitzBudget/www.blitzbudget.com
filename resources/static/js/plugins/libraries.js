@@ -226,4 +226,8 @@ function startAnimationDonutChart(chart) {
 (function scopeWrapper($) {
 	// Current Year
 	document.getElementById('currentYear').innerText = new Date().getFullYear();
+	// Mobile Menu Button
+	document.getElementById('mobileMenuButton').addEventListener("click",function(){
+		this.parentNode.classList.toggle('is-open');
+	});
 }(jQuery)); 
