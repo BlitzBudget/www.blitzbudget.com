@@ -2,15 +2,15 @@
     "bundles": [
         {
             "type": "css",
-            "name": "core-website.css",
+            "name": "core-home.css",
             "files": [
-                "/custom.css",
+                "/home.css",
                 "/material-design.css"
             ]
         },
         {
             "type": "js",
-            "name": "core-website.js",
+            "name": "core-home.js",
             "files": [
                 "/core/jquery.min.js",
                 "/core/popper.min.js",
@@ -22,6 +22,23 @@
                 "/plugins/libraries.js",
                 "/home/homeScrollIntoView.js",
                 "/home/home.js"
+            ]
+        },
+        {
+            "type": "css",
+            "name": "others.all.css",
+            "files": [
+                "/others.css",
+                "/material-design.css"
+            ]
+        },
+        {
+            "type": "js",
+            "name": "core-others.js",
+            "files": [
+                "/core/jquery.min.js",
+                "/plugins/animateOnScroll.js",
+                "/plugins/libraries.js"
             ]
         }
     ]
