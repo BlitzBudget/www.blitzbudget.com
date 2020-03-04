@@ -1409,7 +1409,9 @@ a.button:active, a.button:focus, a.button:hover {
 }
 
 .iphone-illustration .overviewHeading {
-    font-size: 0.89rem;
+    font-size: .89rem;
+    font-style: normal;
+    font-family: unset;
 }
 
 .iphone-illustration .averageExpenseAmount {
