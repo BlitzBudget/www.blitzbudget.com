@@ -13,6 +13,8 @@
             "name": "core-home.js",
             "files": [
                 "/core/jquery.min.js",
+                "/core/popper.min.js",
+                "/core/bootstrap-material-design.min.js",
                 "/plugins/chartist.min.js",
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js",
