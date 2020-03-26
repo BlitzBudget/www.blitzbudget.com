@@ -2380,6 +2380,16 @@ a.button:active, a.button:focus, a.button:hover {
     padding-left: 24px;
 }
 
+.footerLink {
+    color: #69757a;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1300px) {
 
     .descriptionAverages {
