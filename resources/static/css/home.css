@@ -1887,11 +1887,11 @@ a.button:active, a.button:focus, a.button:hover {
     transition: color 150ms;
 }
 
-.appStoreHover {
+.apple-store, .play-store {
     width: 15rem;
 }
 
-.appStoreHover:hover {
+.apple-store:hover, .play-store:hover {
     opacity: 0.8rem;
 }
 

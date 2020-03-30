@@ -276,6 +276,11 @@ h4, h6 {
 	background: linear-gradient(145deg,#0c95a7,#e5fafd);
 }
 
+.error-container {
+    max-width: 1440px;
+    padding: 7.77778% 3.47222% 1.355%;
+}
+
 /**
 *
 * Privacy
@@ -642,17 +647,103 @@ a.button:active, a.button:focus, a.button:hover {
     font-weight: 400;
 }
 
+/**
+*
+* Error
+*
+**/
+
+.Error {
+    background: linear-gradient(-145deg,#fff,#e5fafd);
+}
+
+.apple-store, .play-store {
+    width: 15rem;
+}
+
+.apple-store:hover, .play-store:hover {
+    opacity: 0.8rem;
+}
+
+.page-not-found {
+    width: 40rem;
+}
+
+.errorPageInfo {
+    font-style: italic;
+    font-size: 1rem;    
+    color: #25384f;
+}
+
+@-webkit-keyframes FadeInRight {
+    from {
+        -webkit-transform: translate3d(75px, 0, 0);
+        transform: translate3d(75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes FadeInRight {
+    from {
+        -webkit-transform: translate3d(75px, 0, 0);
+        transform: translate3d(75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes FadeInLeft {
+    from {
+        -webkit-transform: translate3d(-75px, 0, 0);
+        transform: translate3d(-75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes FadeInLeft {
+    from {
+        -webkit-transform: translate3d(-75px, 0, 0);
+        transform: translate3d(-75px, 0, 0);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
 @media (max-width: 576px) {
 	.footerInternal {
         padding-top:1rem;
     }
 
-
     .mobileBannerMenuSocialNav .col-6 .btn-info {
         margin-left: 2rem;
     }
-}
 
+    .headingInPrivacyHero {
+        font-size: 4rem;
+    }
+}
 
 @media (min-width: 768px) {  
 
@@ -707,6 +798,32 @@ a.button:active, a.button:focus, a.button:hover {
 	ul {
 	    margin-bottom: 1.6875rem;
 	}
+}
+
+@media (min-width: 992px) {
+
+    .animated, .text-animation {
+        opacity: 0;
+    }
+
+    .fadeInRight {
+        -webkit-animation: 0.8s ease FadeInRight;
+        -moz-animation: 0.8s ease FadeInRight;
+        animation: 0.8s ease FadeInRight;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
+    .fadeInLeft {
+        -webkit-animation: 0.8s ease FadeInLeft;
+        -moz-animation: 0.8s ease FadeInLeft;
+        animation: 0.8s ease FadeInLeft;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
 }
 
 @media (min-width: 1200px) {
