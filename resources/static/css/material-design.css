@@ -114,6 +114,11 @@ button {
     border-image: initial;
 }
 
+small,
+.small {
+  font-size: 80%;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -3076,5 +3081,12 @@ h4, h6 {
 .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.5);
+}
+
+.btn-large {
+    padding:.825rem 5.25rem;
+    font-size:.875rem;
+    line-height:1.333333;
+    border-radius:.2rem;
 }
 
