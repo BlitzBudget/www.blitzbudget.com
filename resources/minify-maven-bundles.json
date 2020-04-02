@@ -38,6 +38,17 @@
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js"
             ]
+        },
+        {
+            "type": "js",
+            "name": "feature-request.js",
+            "files": [
+                "/core/jquery.min.js",
+                "/plugins/animateOnScroll.js",
+                "/plugins/libraries.js",
+                "/pages/feature.js",
+                "/plugins/sweetalert2.all.min.js"
+            ]
         }
     ]
 }
