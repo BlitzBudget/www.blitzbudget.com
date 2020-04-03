@@ -805,6 +805,61 @@ a.button:active, a.button:focus, a.button:hover {
     box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
 }
 
+.suggested-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border-left: 20px solid transparent;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.suggested-anchor {
+    display: block;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1px 2px rgba(71,80,89,.15);
+    box-shadow: 0 1px 2px rgba(71,80,89,.15);
+    -webkit-transition: -webkit-box-shadow .3s,-webkit-transform .3s;
+    transition: -webkit-box-shadow .3s,-webkit-transform .3s;
+    transition: box-shadow .3s,transform .3s;
+    transition: box-shadow .3s,transform .3s,-webkit-box-shadow .3s,-webkit-transform .3s;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.suggested-anchor p {
+    color: #475059;
+}
+
+.suggested-heading {
+    display: block;
+    display: -webkit-box;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-height: 40px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.suggested-anchor:hover .suggested-heading,
+.suggested-anchor:focus .suggested-heading {
+    color: #00bcd4;
+}
+
 @-webkit-keyframes FadeInRight {
     from {
         -webkit-transform: translate3d(75px, 0, 0);
@@ -861,6 +916,26 @@ a.button:active, a.button:focus, a.button:hover {
     }
 }
 
+@-webkit-keyframes FadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 @media (max-width: 576px) {
 	.footerInternal {
         padding-top:1rem;
@@ -872,6 +947,10 @@ a.button:active, a.button:focus, a.button:hover {
 
     .headingInPrivacyHero {
         font-size: 4rem;
+    }
+
+    .suggested-card {
+        border-left: none;
     }
 }
 
@@ -949,6 +1028,15 @@ a.button:active, a.button:focus, a.button:hover {
         -webkit-animation: 0.8s ease FadeInLeft;
         -moz-animation: 0.8s ease FadeInLeft;
         animation: 0.8s ease FadeInLeft;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;   
+    }
+
+    .fadeIn {
+        -webkit-animation: 0.8s ease FadeIn;
+        -moz-animation: 0.8s ease FadeIn;
+        animation: 0.8s ease FadeIn;
         -webkit-animation-fill-mode: forwards;
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;   

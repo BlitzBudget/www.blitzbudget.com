@@ -1,7 +1,28 @@
 "use strict";
 (function scopeWrapper($) {
 
+	let api = {
+		'invokeUrl' : 'https://api.blitzbudget.com',
+		'sendEmailUrl' : '/send-email'
+	}
+	const emailValidation = /^\w+([\.-]?\w+)+@\w+([\.:]?\w+)+(\.[a-zA-Z0-9]{2,3})+$/;
+
 	document.getElementById('submit-idea').addEventListener("click",function(e) {
+
+		// Fetch all the query parameters from URL
+		const queryString = window.location.search;
+
+		const urlParams = new URLSearchParams(queryString);
+
+		const emailId = urlParams.get('email_id')
+
+		if(isEmpty(emailId) || !emailValidation.test(emailId)) {
+			Toast.fire({
+				icon: 'error',
+				title: "You are not authorized!"
+			});
+			return;
+		}
 
 		// Show Sweet Alert
         Swal.fire({
@@ -63,7 +84,7 @@
 		submitIdeaDiv.appendChild(labelImportant);
 
 		let niceToHave = document.createElement('button');
-		niceToHave.classList = 'btn btn-secondary btn-lg imrt-sup-ftrs mr-2 my-3';
+		niceToHave.classList = 'btn btn-secondary btn-lg imrt-sup-ftrs mr-2 my-3 active';
 		niceToHave.innerText = 'Nice To Have';
 		submitIdeaDiv.appendChild(niceToHave);
 
