@@ -43,11 +43,11 @@
             "type": "js",
             "name": "feature-request.js",
             "files": [
+                "/plugins/sweetalert2.all.min.js",
                 "/core/jquery.min.js",
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js",
-                "/pages/feature.js",
-                "/plugins/sweetalert2.all.min.js"
+                "/pages/feature.js"               
             ]
         }
     ]
