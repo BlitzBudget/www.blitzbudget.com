@@ -39,10 +39,9 @@
             // If confirm button is clicked
             if (result.value) {
                 // send Email
-                let email =  document.getElementById('emailIdFR').value; 
                 let message =  document.getElementById('submitIdeaText').value + " And I think that the functionality is " + $('.imrt-sup-ftrs.active').text();
                 let subject = "Suggested Features: I would like to have this feature";
-				sendEmailToSupport(email, message, subject);
+				sendEmailToSupport(emailId, message, subject);
             }
 
         });
