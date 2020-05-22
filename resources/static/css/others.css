@@ -860,6 +860,10 @@ a.button:active, a.button:focus, a.button:hover {
     color: #00bcd4;
 }
 
+.signupContent .material-icons {
+    font-size: 1.2rem;
+}
+
 @-webkit-keyframes FadeInRight {
     from {
         -webkit-transform: translate3d(75px, 0, 0);
