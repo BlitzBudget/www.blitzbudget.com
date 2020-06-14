@@ -1,0 +1,84 @@
+{
+    "header": {
+        "learn": "Learn",
+        "support": "Support",
+        "plus": "BlitzBudget Plus",
+        "blog": "Blog",
+        "getstarted": "Get started",
+        "signin": "Sign In",
+        "getstarted": "Get started",
+        "controlapp": "Control your money on the go! with the app."
+    },
+    "hero": {
+        "title": "One place to control your money ",
+        "description": "Join our growing community of people who get to control their finances with BlitzBudget.We're offering complete control over your data, highest security and affordable services.",
+        "alreadyhaveanaccount": "Already have an account?"
+    },
+    "iphone": {
+        "monthlyexpense": "Monthly Expenses",
+        "beauty": "Beauty",
+        "transactions": "12 transactions",
+        "billsandfees": "Bills & Fees",
+        "sixtransactions": "6 transactions",
+        "familyandpersonal": "Family & Personal",
+        "seventransactions": "7 transactions",
+        "shopping": "Shopping",
+        "onetransaction": "1 transaction",
+        "overview": "Overview",
+        "transactions": "Transactions",
+        "budget": "Budget",
+        "goals": "Goals"
+    },
+    "steps": {
+        "title": "Gain Total Control ",
+        "subtitle": "of Your Money",
+        "one": {
+            "title": "Connect your bank account",
+            "description": "Automatically track all your transactions by connecting all your bank accounts.",
+            "secondcard": {
+                "title": "Import from bank statements",
+                "description": "Import all your transactions from you bank statement with one click."
+            },
+            "thirdcard": {
+                "title": "Share your portfolio with others",
+                "description": "Spending together? Share your portfolio with others."
+            },
+            "shape": {
+                "title": "Step 1",
+                "description": "Start tracking all your transactions",
+                "li1": "Create as many wallets based on your currency.",
+                "li2": "Connect to your bank accounts to automatically sync all your transactions.",
+                "li3": "Connect your E-Wallets to BlitzBudget for a complete overview.",
+                "li4": "Add your expenses manually"
+            }
+        },
+        "two": {
+            "title": "Step 2",
+            "description": "Mold your financial habits",
+            "cardone": {
+                "title": "Bills & Fees",
+                "overspent": "Overspent (%)",
+                "remaining": " Remaining"
+            },
+            "cardtwo": {
+                "title": "Beauty",
+                "remaining": "Remaining (%)"
+            },
+            "shape": {
+                "li1": "Create limits for spending.",
+                "li2": "Understand where your money goes and what you are left with.",
+                "li3": "Analyze over expenditure for every category.",
+                "li4": "Mold your budget's to balance your goals and spending."
+            }
+        },
+        "three": {
+            "title": "Step 3",
+            "description": "Achieve your financial goals",
+            "shape": {
+                "li1": "Plan your goals for repayment, investment or financial security.",
+                "li2": "Analyze your progress, get notified in advance to stay tuned to your goals.",
+                "li3": "Repay your debts, Build your account balance and Achieve your goals."
+            }
+        }
+    }
+}
