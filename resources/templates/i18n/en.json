@@ -79,6 +79,40 @@
                 "li2": "Analyze your progress, get notified in advance to stay tuned to your goals.",
                 "li3": "Repay your debts, Build your account balance and Achieve your goals."
             }
+        },
+        "four": {
+            "title": "Step 4",
+            "description": "Obtain a global overview of your finances",
+            "shape": {
+                "li1": "Create a wallet for every person in your family / share a wallet with appropriate permissions to obtain a global overview.",
+                "li2": "Analyze your finances with simple, beautiful and easy to understand graphics.",
+                "li3": "Understand your financial position by customized monthly overview and exports."
+            },
+            "cards": {
+                "networth": "Networth",
+                "expense": "Expenses",
+                "month": " / month"
+            }
+        }
+    },
+    "feature": {
+        "title": "Features",
+        "subtitle": " our users love",
+        "one": {
+            "title": "Multiple Wallets",
+            "subtitle": "are populate among couples and families who handle their financies and to people who manage multiple currencies."
+        },
+        "two": {
+            "title": "Connecting Bank Accounts",
+            "subtitle": "to BlitzBudget is preferred by people who spend mostly by card."
+        },
+        "three": {
+            "title": "Multiple Currencies",
+            "subtitle": "are favoured by immigrants, travellers and investors who invest in more than one currency."
+        },
+        "four": {
+            "title": "Create Goals",
+            "subtitle": "to achieve your dreams! To save money for a new car, home or a dream vacation."
         }
     }
 }
