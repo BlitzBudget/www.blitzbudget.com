@@ -28,14 +28,11 @@ function translatePage(locale) {
 }
 
 function getLanguage() {
-    // If locale is not empty from the user cache then
-    if (isNotEmpty(window.currentUser) && isNotEmpty(window.currentUser.locale)) {
-        return window.currentUser.locale.substr(0, 2);
-    }
+    let languagespreferred = ["en", "es"];
 
     let lang = navigator.languages ? navigator.languages[0] : navigator.language;
-
-    return lang.substr(0, 2);
+    lang = lang.substr(0, 2);
+    return includesStr(languagespreferred, lang) ? lang : "en";
 }
 
 function replaceText(translation) {

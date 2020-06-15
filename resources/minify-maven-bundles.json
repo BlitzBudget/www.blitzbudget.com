@@ -15,11 +15,12 @@
                 "/core/jquery.min.js",
                 "/core/popper.min.js",
                 "/core/bootstrap-material-design.min.js",
-                "/plugins/chartist.min.js",
+                "/plugins/chartist.min.js",                
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js",
                 "/home/homeScrollIntoView.js",
-                "/home/home.js"
+                "/home/home.js",
+                "/core/translator.js"
             ]
         },
         {

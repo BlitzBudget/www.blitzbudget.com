@@ -6,7 +6,6 @@
         "blog": "Blog",
         "getstarted": "Get started",
         "signin": "Sign In",
-        "getstarted": "Get started",
         "controlapp": "Control your money on the go! with the app."
     },
     "hero": {
@@ -15,6 +14,8 @@
         "alreadyhaveanaccount": "Already have an account?"
     },
     "iphone": {
+        "wallet": "John's Euro Wallet",
+        "scheduled": "Scheduled",
         "monthlyexpense": "Monthly Expenses",
         "beauty": "Beauty",
         "transactions": "12 transactions",
@@ -113,6 +114,33 @@
         "four": {
             "title": "Create Goals",
             "subtitle": "to achieve your dreams! To save money for a new car, home or a dream vacation."
+        },
+        "five": {
+            "title": "Alerts and Notification",
+            "subtitle": "will notify you when you exceed your budget or under fund your goals."
+        },
+        "six": {
+            "title": "Synchronize Devices",
+            "subtitle": "is valuable for everyone using BlitzBudget across devices."
         }
+    },
+    "store": {
+        "heading": "Keep Tabs on Your Money",
+        "subtitle": "BlitzBudget synchronizes across devices so whether you are tracking your finances on your devices or your desktop, you are always synchronized."
+    },
+    "footer": {
+        "support": "SUPPORT",
+        "privacy": "Privacy Policy",
+        "termsofservice": "Terms of Use",
+        "helpcenter": "Help Center",
+        "company": "COMPANY",
+        "careers": "Careers",
+        "press": "Press Kit",
+        "product": "PRODUCT",
+        "customerservice": "Customer Stories"
+    },
+    "href": {
+        "privacy": "/privacy",
+        "terms": "/terms"
     }
 }
