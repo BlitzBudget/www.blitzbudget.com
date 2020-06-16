@@ -1229,6 +1229,10 @@ small,
         margin-top: 3rem !important;
     }
 
+    .mt-lg-10 {
+        margin-top: 6rem !important;
+    }
+
     .mr-lg-5,
     .mx-lg-5 {
         margin-right: 3rem !important;
