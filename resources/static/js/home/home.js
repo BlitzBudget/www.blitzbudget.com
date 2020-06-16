@@ -1,6 +1,8 @@
 window.onload = function () {
 	$(document).ready(function(){
 
+		// Name of the months (0-January :: 11-December)
+		let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 		// Current Time on Iphone 11
 		let currentTime = new Date();
 		document.getElementById('currentTime').innerText = ("0" + Number(currentTime.getHours())).slice(-2) + ' : ' + ("0" + Number(currentTime.getMinutes())).slice(-2);
@@ -45,6 +47,20 @@ window.onload = function () {
 
     	// Build pie chart on iphone 11
     	buildPieChart(dataSimpleBarChart, 'chatist-pie2', 4120);
+
+    	// Current Date
+    	let currentDate = document.getElementsByClassName('current-date');
+    	for(let i=0, len=currentDate.length; i<len; i++) {
+    		let cr = currentDate[i];
+    		cr.textContent = months[currentTime.getMonth()] + ' ' + currentTime.getFullYear();
+    	}
+
+    	// Previous Date
+    	let previousDate = document.getElementsByClassName('previous-date');
+    	for(let i=0, len=previousDate.length; i<len; i++) {
+    		let pr = previousDate[i];
+    		pr.textContent = months[currentTime.getMonth() - 1] + ' ' + currentTime.getFullYear();
+    	}
 
 	});
 }
