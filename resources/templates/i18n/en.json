@@ -1,0 +1,146 @@
+{
+    "header": {
+        "learn": "Learn",
+        "support": "Support",
+        "plus": "BlitzBudget Plus",
+        "blog": "Blog",
+        "getstarted": "Get started",
+        "signin": "Sign In",
+        "controlapp": "Control your money on the go! with the app."
+    },
+    "hero": {
+        "title": "One place to control your money ",
+        "description": "Join our growing community of people who get to control their finances with BlitzBudget.We're offering complete control over your data, highest security and affordable services.",
+        "alreadyhaveanaccount": "Already have an account?"
+    },
+    "iphone": {
+        "wallet": "John's Euro Wallet",
+        "scheduled": "Scheduled",
+        "monthlyexpense": "Monthly Expenses",
+        "beauty": "Beauty",
+        "transactions": "12 transactions",
+        "billsandfees": "Bills & Fees",
+        "sixtransactions": "6 transactions",
+        "familyandpersonal": "Family & Personal",
+        "seventransactions": "7 transactions",
+        "shopping": "Shopping",
+        "onetransaction": "1 transaction",
+        "overview": "Overview",
+        "transactions": "Transactions",
+        "budget": "Budget",
+        "goals": "Goals"
+    },
+    "steps": {
+        "title": "Gain Total Control ",
+        "subtitle": "of Your Money",
+        "one": {
+            "title": "Connect your bank account",
+            "description": "Automatically track all your transactions by connecting all your bank accounts.",
+            "secondcard": {
+                "title": "Import from bank statements",
+                "description": "Import all your transactions from you bank statement with one click."
+            },
+            "thirdcard": {
+                "title": "Share your portfolio with others",
+                "description": "Spending together? Share your portfolio with others."
+            },
+            "shape": {
+                "title": "Step 1",
+                "description": "Start tracking all your transactions",
+                "li1": "Create as many wallets based on your currency.",
+                "li2": "Connect to your bank accounts to automatically sync all your transactions.",
+                "li3": "Connect your E-Wallets to BlitzBudget for a complete overview.",
+                "li4": "Add your expenses manually"
+            }
+        },
+        "two": {
+            "title": "Step 2",
+            "description": "Mold your financial habits",
+            "cardone": {
+                "title": "Bills & Fees",
+                "overspent": "Overspent (%)",
+                "remaining": " Remaining"
+            },
+            "cardtwo": {
+                "title": "Beauty",
+                "remaining": "Remaining (%)"
+            },
+            "shape": {
+                "li1": "Create limits for spending.",
+                "li2": "Understand where your money goes and what you are left with.",
+                "li3": "Analyze over expenditure for every category.",
+                "li4": "Mold your budget's to balance your goals and spending."
+            }
+        },
+        "three": {
+            "title": "Step 3",
+            "description": "Achieve your financial goals",
+            "shape": {
+                "li1": "Plan your goals for repayment, investment or financial security.",
+                "li2": "Analyze your progress, get notified in advance to stay tuned to your goals.",
+                "li3": "Repay your debts, Build your account balance and Achieve your goals."
+            }
+        },
+        "four": {
+            "title": "Step 4",
+            "description": "Obtain a global overview of your finances",
+            "shape": {
+                "li1": "Create a wallet for every person in your family / share a wallet with appropriate permissions to obtain a global overview.",
+                "li2": "Analyze your finances with simple, beautiful and easy to understand graphics.",
+                "li3": "Understand your financial position by customized monthly overview and exports."
+            },
+            "cards": {
+                "networth": "Networth",
+                "expense": "Expenses",
+                "month": " / month"
+            }
+        }
+    },
+    "feature": {
+        "title": "Features",
+        "subtitle": " our users love",
+        "one": {
+            "title": "Multiple Wallets",
+            "subtitle": "are populate among couples and families who handle their financies and to people who manage multiple currencies."
+        },
+        "two": {
+            "title": "Connecting Bank Accounts",
+            "subtitle": "to BlitzBudget is preferred by people who spend mostly by card."
+        },
+        "three": {
+            "title": "Multiple Currencies",
+            "subtitle": "are favoured by immigrants, travellers and investors who invest in more than one currency."
+        },
+        "four": {
+            "title": "Create Goals",
+            "subtitle": "to achieve your dreams! To save money for a new car, home or a dream vacation."
+        },
+        "five": {
+            "title": "Alerts and Notification",
+            "subtitle": "will notify you when you exceed your budget or under fund your goals."
+        },
+        "six": {
+            "title": "Synchronize Devices",
+            "subtitle": "is valuable for everyone using BlitzBudget across devices."
+        }
+    },
+    "store": {
+        "heading": "Keep Tabs on Your Money",
+        "subtitle": "BlitzBudget synchronizes across devices so whether you are tracking your finances on your devices or your desktop, you are always synchronized."
+    },
+    "footer": {
+        "support": "SUPPORT",
+        "privacy": "Privacy Policy",
+        "termsofservice": "Terms of Use",
+        "helpcenter": "Help Center",
+        "company": "COMPANY",
+        "careers": "Careers",
+        "press": "Press Kit",
+        "product": "PRODUCT",
+        "customerservice": "Customer Stories"
+    },
+    "href": {
+        "privacy": "/privacy",
+        "terms": "/terms"
+    }
+}
