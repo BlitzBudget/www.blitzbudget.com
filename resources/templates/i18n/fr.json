@@ -1,0 +1,146 @@
+{
+    "header": {
+        "learn": "Apprendre",
+        "support": "Support",
+        "plus": "BlitzBudget Plus",
+        "blog": "Blog",
+        "getstarted": "Démarrer",
+        "signin": "Login",
+        "controlapp": "Contrôlez votre argent en déplacement avec l'application."
+    },
+    "hero": {
+        "title": "Un endroit pour contrôler votre argent ",
+        "description": "Rejoignez notre communauté croissante de personnes qui contrôlent leurs finances grâce à BlitzBudget. Nous vous offrons un contrôle total de vos données, une sécurité maximale et des services abordables.",
+        "alreadyhaveanaccount": "Vous avez déjà un compte ?"
+    },
+    "iphone": {
+        "wallet": "Le portefeuille de John sur l'euro",
+        "scheduled": "Programmé",
+        "monthlyexpense": "Dépenses mensuelles",
+        "beauty": "Beauté",
+        "transactions": "12 transactions",
+        "billsandfees": "Comptes et frais",
+        "sixtransactions": "6 transactions",
+        "familyandpersonal": "Famille et personnel",
+        "seventransactions": "7 transactions",
+        "shopping": "Achats",
+        "onetransaction": "1 transaction",
+        "overview": "Vue d'ensemble",
+        "transactions": "Transactions",
+        "budget": "Budget",
+        "goals": "Objectifs"
+    },
+    "steps": {
+        "title": "Obtenir un contrôle total ",
+        "subtitle": "de votre argent",
+        "one": {
+            "title": "Connectez votre compte bancaire",
+            "description": "Suivez automatiquement toutes vos transactions en connectant tous vos comptes bancaires.",
+            "secondcard": {
+                "title": "Importation de relevés bancaires",
+                "description": "Importez toutes vos transactions à partir de votre relevé en un seul clic."
+            },
+            "thirdcard": {
+                "title": "Partagez votre portfolio avec d'autres",
+                "description": "Vous passez par là ensemble ? Partager votre portefeuille avec d'autres."
+            },
+            "shape": {
+                "title": "Étape 1",
+                "description": "Commencez à suivre toutes vos transactions",
+                "li1": "Créez autant de portefeuilles que vous le pouvez en fonction de votre devise.",
+                "li2": "Connectez-vous à vos comptes bancaires pour synchroniser automatiquement toutes vos transactions.",
+                "li3": "Connectez vos porte-monnaie électroniques au BlitzBudget pour une vue d'ensemble complète.",
+                "li4": "Ajoutez vos dépenses manuellement"
+            }
+        },
+        "two": {
+            "title": "Etape 2",
+            "description": "Modifiez vos habitudes financières",
+            "cardone": {
+                "title": "Factures et redevances",
+                "overspent": "Dépassement des dépenses (%)",
+                "remaining": " Reste"
+            },
+            "cardtwo": {
+                "title": "Beauté",
+                "remaining": "Reste (%)"
+            },
+            "shape": {
+                "li1": "Créer des limites de dépenses.",
+                "li2": "Comprendre où va votre argent et ce qu'il vous reste.",
+                "li3": "Analyser les dépassements de dépenses dans chaque catégorie.",
+                "li4": "Modifiez votre budget pour équilibrer vos objectifs et vos dépenses."
+            }
+        },
+        "three": {
+            "title": "Étape 3",
+            "description": "Atteindre vos objectifs financiers",
+            "shape": {
+                "li1": "Planifiez vos objectifs de remboursement, d'investissement ou de sécurité financière.",
+                "li2": "Examinez vos progrès, soyez averti à l'avance pour rester sur la voie de vos objectifs.",
+                "li3": "Remboursez vos dettes, augmentez le solde de votre compte et atteignez vos objectifs."
+            }
+        },
+        "four": {
+            "title": "Étape 4",
+            "description": "Obtenez une vue globale de vos finances",
+            "shape": {
+                "li1": "Créez un portfolio pour chaque personne de votre famille / partagez un portfolio avec les autorisations appropriées pour avoir une vue d'ensemble.",
+                "li2": "Analysez vos finances à l'aide de graphiques simples, beaux et faciles à comprendre.",
+                "li3": "Comprendre votre situation financière grâce à un aperçu mensuel personnalisé et aux exportations."
+            },
+            "cards": {
+                "networth": "Valeur nette",
+                "expense": "Dépenses",
+                "month": " / mois"
+            }
+        }
+    },
+    "feature": {
+        "title": "Caractéristiques",
+        "subtitle": " nos utilisateurs aiment",
+        "one": {
+            "title": "Portefeuilles multiples",
+            "subtitle": "sont peuplés de couples et de familles qui gèrent leurs finances et de personnes qui gèrent plusieurs devises."
+        },
+        "two": {
+            "title": "Connexion au compte bancaire",
+            "subtitle": "BlitzBudget est préféré par les personnes qui dépensent principalement par carte."
+        },
+        "three": {
+            "title": "Monnaies multiples",
+            "subtitle": "ont la faveur des immigrants, des voyageurs et des investisseurs qui investissent dans plus d'une monnaie."
+        },
+        "four": {
+            "title": "Créer des objectifs",
+            "subtitle": "pour réaliser vos rêves ! Pour économiser de l'argent en vue d'une nouvelle voiture, d'une maison ou de vacances de rêve."
+        },
+        "five": {
+            "title": "Alerte et notification",
+            "subtitle": "vous informer lorsque vous dépassez ou ne dépassez pas votre budget."
+        },
+        "six": {
+            "title": "Synchroniser les appareils",
+            "subtitle": "est précieux pour tous ceux qui utilisent BlitzBudget par."
+        }
+    },
+    "store": {
+        "heading": "Surveillez votre argent",
+        "subtitle": "BlitzBudget se synchronise entre les appareils, donc que vous suiviez vos finances sur vos appareils ou sur votre bureau, il sera toujours synchronisé."
+    },
+    "footer": {
+        "support": "SOUTENIR",
+        "privacy": "Politique de confidentialité",
+        "termsofservice": "Conditions d'utilisation",
+        "helpcenter": "Centre d'aide",
+        "company": "Société",
+        "careers": "Carrières",
+        "press": "Dossier de presse",
+        "product": "PRODUIT",
+        "customerservice": "Témoignages de clients"
+    },
+    "href": {
+        "privacy": "/fr/privacy",
+        "terms": "/fr/terms"
+    }
+}
