@@ -2276,6 +2276,24 @@ small,
     color: #00bcd4;
 }
 
+.btn.btn-link,
+.btn.btn-default.btn-link {
+    background-color: transparent;
+    color: #999;
+    box-shadow: none;
+}
+
+.btn.btn-warning.btn-link {
+    background-color: transparent;
+    color: #ff9800;
+    box-shadow: none;
+}
+
+.btn.btn-danger.btn-link {
+    background-color: transparent;
+    color: #f44336;
+    box-shadow: none;
+}
 
 .row {
     display: flex;

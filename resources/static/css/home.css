@@ -1293,10 +1293,14 @@ a.button:hover {
 
 .threeSVG {
     position: absolute;
-    top: -53%;
+    top: -23%;
     left: 67%;
     transform: translateX(-50%);
     z-index: 0;
+}
+
+.fourSVG {
+    top: -33%;
 }
 
 /**
@@ -2572,6 +2576,136 @@ a.button:hover {
 
 .footerLink:hover {
     text-decoration: underline;
+}
+
+/*
+* Card Product Goals
+*/
+.card-product {
+    margin-top: 30px;
+}
+
+.card .card-header.card-header-image {
+    position: relative;
+    padding: 0;
+    z-index: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+}
+
+.card .card-header.card-header-image img {
+    width: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-actions .btn.btn-default,
+.card-actions .btn.btn-warning,
+.card-actions .btn.btn-danger {
+    background-position: center;
+    transition: background .8s;
+}
+
+.card.card-product .card-title {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.card-product .card-category,
+.card-product .card-description,
+.card-product .card-title {
+    text-align: center;
+}
+
+.card-title a {
+    color: #3c4858;
+    text-decoration: none;
+}
+
+.card-body .card-description .description,
+.card-description,
+.footer-big p {
+    color: #999;
+}
+
+.card-product .card-body + .card-footer {
+    border-top: 1px solid #eee;
+}
+
+.card.card-product .card-footer .price {
+    font-size: .8rem;
+    font-weight: 300;
+    color: #9a9a9a;
+}
+
+.card .card-body + .card-footer .stats,
+.card .card-footer .stats {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.card .card-footer .stats {
+    color: #999;
+}
+
+.card .card-body + .card-footer .stats .card-category,
+.card .card-footer .stats .card-category {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 0;
+}
+
+#goalDisplay .card .card-footer .stats .material-icons {
+    top: 1px;
+}
+
+#goalDisplay {
+    z-index: 5;
+}
+
+.card-category .material-icons.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 1300px) {
