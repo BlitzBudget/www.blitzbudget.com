@@ -1279,6 +1279,20 @@ a.button:hover {
     font-size: 1.5rem;
 }
 
+.alexa-container .tab-content.tab-space.tab-subcategories {
+    height: 28rem;
+    overflow: hidden;
+}
+
+.nav-pills .nav-item .nav-link.is-checked {
+    border-bottom: 1px solid #dcd8db;
+    color: #00aec5;
+}
+
+.alexa-skill-link {
+    cursor: pointer;
+}
+
 @-webkit-keyframes FadeInRight {
     from {
         -webkit-transform: translate3d(75px, 0, 0);

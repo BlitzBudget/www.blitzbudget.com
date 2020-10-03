@@ -15,7 +15,7 @@
                 "/core/jquery.min.js",
                 "/core/popper.min.js",
                 "/core/bootstrap-material-design.min.js",
-                "/plugins/chartist.min.js",                
+                "/plugins/chartist.min.js",
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js",
                 "/home/homeScrollIntoView.js",
@@ -48,7 +48,17 @@
                 "/core/jquery.min.js",
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js",
-                "/pages/feature.js"               
+                "/pages/feature.js"
+            ]
+        },
+        {
+            "type": "js",
+            "name": "alexa.js",
+            "files": [
+                "/core/jquery.min.js",
+                "/plugins/animateOnScroll.js",
+                "/plugins/libraries.js",
+                "/pages/alexa.js"
             ]
         }
     ]
