@@ -111,4 +111,25 @@
         }
     });
 
+    $('.alexa-questions').click(function () {
+        let answerContainers = document.getElementsByClassName('answer-container');
+
+        // Hide all other questions
+        for (let i = 0, len = answerContainers.length; i < len; i++) {
+            let answerContainer = answerContainers[i];
+            // remove collapsed
+            answerContainer.classList.remove('collapsed');
+        }
+
+        let childNodes = this.parentNode.children;
+
+        // Add fadeInDown animation to clicked question
+        for (let i = 0, len = childNodes.length; i < len; i++) {
+            let childNode = childNodes[i];
+            if (childNode.classList.contains('answer-container')) {
+                childNode.classList.add('collapsed');
+            }
+        }
+    });
+
 }(jQuery));

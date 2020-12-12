@@ -1293,6 +1293,28 @@ a.button:hover {
     cursor: pointer;
 }
 
+.GotQuestions {
+    position: relative;
+    margin: 0 10px;
+    padding: 0;
+    width: auto;
+}
+
+.questions-container > h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 1.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.question-container > label {
+    color: #244564;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
 @-webkit-keyframes FadeInRight {
     from {
         -webkit-transform: translate3d(75px, 0, 0);
@@ -1367,6 +1389,21 @@ a.button:hover {
     to {
         opacity: 1
     }
+}
+
+.answer-container {
+    overflow: hidden;
+    height: auto;
+    flex: 1;
+    // note that we're transitioning flex, not height!
+    // transition: flex 0.3s ease-out;
+
+    // Safari only works if we do `all` here.
+    transition: all 0.3s ease-out;
+}
+
+.answer-container.collapsed {
+    flex: 0;
 }
 
 @media (max-width: 576px) {
@@ -1447,6 +1484,11 @@ a.button:hover {
     h6 {
         font-size: 1.625rem;
     }
+
+    .GotQuestions {
+        margin: 0 auto;
+        width: 48em;
+    }
 }
 
 @media (min-width: 769px) {
@@ -1499,6 +1541,9 @@ a.button:hover {
         animation-fill-mode: forwards;
     }
 
+    .GotQuestions {
+        width: 60em;
+    }
 }
 
 @media (min-width: 1200px) {
