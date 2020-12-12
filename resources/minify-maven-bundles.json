@@ -9,6 +9,23 @@
             ]
         },
         {
+            "type": "css",
+            "name": "others.all.css",
+            "files": [
+                "/others.css",
+                "/material-design.css"
+            ]
+        },
+        {
+            "type": "js",
+            "name": "alexa.js",
+            "files": [
+                "/core/jquery.min.js",
+                "/plugins/animateOnScroll.js",
+                "/plugins/libraries.js",
+                "/pages/alexa-skill.js"
+            ]
+        }, {
             "type": "js",
             "name": "core-home.js",
             "files": [
@@ -22,16 +39,7 @@
                 "/home/home.js",
                 "/core/translator.js"
             ]
-        },
-        {
-            "type": "css",
-            "name": "others.all.css",
-            "files": [
-                "/others.css",
-                "/material-design.css"
-            ]
-        },
-        {
+        }, {
             "type": "js",
             "name": "core-others.js",
             "files": [
@@ -39,8 +47,7 @@
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js"
             ]
-        },
-        {
+        }, {
             "type": "js",
             "name": "feature-request.js",
             "files": [
@@ -49,16 +56,6 @@
                 "/plugins/animateOnScroll.js",
                 "/plugins/libraries.js",
                 "/pages/feature.js"
-            ]
-        },
-        {
-            "type": "js",
-            "name": "alexa.js",
-            "files": [
-                "/core/jquery.min.js",
-                "/plugins/animateOnScroll.js",
-                "/plugins/libraries.js",
-                "/pages/alexa.js"
             ]
         }
     ]

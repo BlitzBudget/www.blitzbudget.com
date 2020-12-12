@@ -1395,10 +1395,10 @@ a.button:hover {
     overflow: hidden;
     height: auto;
     flex: 1;
-    // note that we're transitioning flex, not height!
-    // transition: flex 0.3s ease-out;
+    /* note that we're transitioning flex, not height!
+     transition: flex 0.3s ease-out;
 
-    // Safari only works if we do `all` here.
+     Safari only works if we do `all` here.*/
     transition: all 0.3s ease-out;
 }
 
