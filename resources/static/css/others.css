@@ -1475,6 +1475,25 @@ a.button:hover {
     .suggested-card {
         border-left: none;
     }
+
+    .alexa-container {
+        margin: 0 auto;
+    }
+
+    .alexa-apps .play-store,
+    .alexa-apps .apple-store {
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+    .alexa-header-container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .how-to-enable-skill {
+        font-size: 1.8rem;
+    }
 }
 
 @media (min-width: 768px) {
