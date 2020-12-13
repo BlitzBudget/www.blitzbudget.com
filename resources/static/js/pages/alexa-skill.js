@@ -111,25 +111,38 @@
         }
     });
 
-    $('.alexa-questions').click(function () {
-        let answerContainers = document.getElementsByClassName('answer-container');
-
-        // Hide all other questions
-        for (let i = 0, len = answerContainers.length; i < len; i++) {
-            let answerContainer = answerContainers[i];
-            // remove collapsed
-            answerContainer.classList.remove('collapsed');
-        }
-
-        let childNodes = this.parentNode.children;
-
-        // Add fadeInDown animation to clicked question
-        for (let i = 0, len = childNodes.length; i < len; i++) {
-            let childNode = childNodes[i];
-            if (childNode.classList.contains('answer-container')) {
-                childNode.classList.add('collapsed');
+    /*
+     * Collapse / Expand Answer div
+     */
+    let alexaQuestions = document.getElementsByClassName("alexa-questions");
+    for (let i = 0, len = alexaQuestions.length; i < len; i++) {
+        alexaQuestions[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
             }
-        }
-    });
+        });
+    }
+
+    /*
+     * Collapse / Expand Question section div
+     */
+    let questionsSection = document.getElementsByClassName("questions-section");
+    for (let i = 0, len = questionsSection.length; i < len; i++) {
+        questionsSection[i].addEventListener("click", function () {
+            var content = this.nextElementSibling;
+            if (this.classList.contains('active')) {
+                content.style.maxHeight = 0;
+            } else {
+                content.style.maxHeight = "5000px";
+            }
+            this.classList.toggle("active");
+            this.classList.toggle('my-5');
+            this.lastElementChild.classList.toggle('transform180');
+        });
+    }
 
 }(jQuery));
