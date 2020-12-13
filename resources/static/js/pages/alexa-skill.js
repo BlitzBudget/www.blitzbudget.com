@@ -27,8 +27,9 @@
     // Load More Alexa Questions
     document.getElementById('load-more-alexa-questions').addEventListener("click", function (e) {
         // Record the height of the div
-        $('#alexa-questions').animate({
-            height: '1200px'
+        let animateQuestions = document.getElementById('alexa-questions');
+        $(animateQuestions).animate({
+            height: animateQuestions.scrollHeight + "px"
         });
 
         // Load More Alexa Questions to display none
@@ -89,26 +90,30 @@
         }
 
         /*
-         * Change the height of the cards wrapper
-         */
-        // Record the height of the div
-        $('#alexa-questions').animate({
-            height: '28rem'
-        });
-
-        /*
          * Show view more only if more than 9 are present
          */
         let loadMoreAlexa = document.getElementById('load-more-alexa-questions');
+        let animateQuestions = document.getElementById('alexa-questions');
+        let heightEl;
         if (numberOfAlexaSkillsDisplayed > 9) {
             // Load More Alexa Questions to display none
             loadMoreAlexa.classList.remove('d-none');
             loadMoreAlexa.classList.add('fadeIn');
+            heightEl = '28rem';
         } else {
             // Load More Alexa Questions to display none
             loadMoreAlexa.classList.add('d-none');
             loadMoreAlexa.classList.remove('fadeIn');
+            heightEl = animateQuestions.scrollHeight + "px";
         }
+
+        /*
+         * Change the height of the cards wrapper
+         */
+        // Record the height of the div
+        $(animateQuestions).animate({
+            height: heightEl
+        });
     });
 
     /*
