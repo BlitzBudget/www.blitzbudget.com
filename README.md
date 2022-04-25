@@ -1,4 +1,4 @@
-# bb-bootstrap
+# www.blitzbudget.com
 Blitz Budget Bootstrap front end
 
 Instructions to install and run the server
