@@ -1,51 +1,54 @@
+.card-testimonial {
+    @extend %card-profile;
 
-.card-testimonial{
-	@extend %card-profile;
-    .card-body{
+    .card-body {
         padding-top: 25px;
     }
 
-    .card-avatar{
+    .card-avatar {
         max-width: 100px;
         max-height: 100px;
         margin-top: -50px;
     }
-    .card-footer{
+
+    .card-footer {
         margin-top: 0;
         margin-bottom: 2.5rem;
     }
-    .card-description{
-        & + .card-title{
+
+    .card-description {
+        &+.card-title {
             margin-top: 30px;
         }
     }
-    .icon{
-        i{
+
+    .icon {
+        em {
             font-size: 32px;
         }
 
-        &.icon-primary i{
+        &.icon-primary em {
             color: $primary-color;
         }
 
-        &.icon-info i{
+        &.icon-info em {
             color: $info-color;
         }
 
-        &.icon-danger i{
+        &.icon-danger em {
             color: $danger-color;
         }
 
-        &.icon-warning i{
+        &.icon-warning em {
             color: $warning-color;
         }
 
-        &.icon-success i{
+        &.icon-success em {
             color: $success-color;
         }
     }
 
-	& .card-description + .card-title{
-	    margin-top: 20px;
-	}
+    & .card-description+.card-title {
+        margin-top: 20px;
+    }
 }

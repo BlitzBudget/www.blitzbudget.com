@@ -1,5 +1,5 @@
 /*           badges             */
-.n-badge{
+.n-badge {
     border-radius: 8px;
     padding: 4px 8px;
     text-transform: uppercase;
@@ -19,36 +19,45 @@
     vertical-align: baseline;
 
     &:hover,
-    &:focus{
-      text-decoration: none;
+    &:focus {
+        text-decoration: none;
     }
 
 }
-.badge-icon{
+
+.badge-icon {
     padding: 0.4em 0.55em;
-    i{
-       font-size: 0.8em;
+
+    em {
+        font-size: 0.8em;
     }
 }
-.badge-default{
+
+.badge-default {
     @include badge-color($default-color);
 }
-.badge-primary{
+
+.badge-primary {
     @include badge-color($primary-color);
 }
-.badge-info{
+
+.badge-info {
     @include badge-color($info-color);
 }
-.badge-success{
+
+.badge-success {
     @include badge-color($success-color);
 }
-.badge-warning{
+
+.badge-warning {
     @include badge-color($warning-color);
 }
-.badge-danger{
+
+.badge-danger {
     @include badge-color($danger-color);
 }
-.badge-neutral{
+
+.badge-neutral {
     @include badge-color($white-color);
     color: inherit !important;
 }

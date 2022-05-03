@@ -1,61 +1,65 @@
-.phone-container{
-    img{
+.phone-container {
+    img {
         width: 100%;
     }
 }
 
 .features-2,
 .features-1,
-.features-3{
+.features-3 {
     text-align: center;
 }
 
-.features-4{
-    .card{
+.features-4 {
+    .card {
         margin-top: 70px;
     }
 }
 
-.features-2{
+.features-2 {
+
     .info-title,
-    .title{
+    .title {
         color: $white-color;
     }
 }
 
-.features-5{
-    .info{
+.features-5 {
+    .info {
         max-width: none;
         margin: 0 auto;
         padding: 10px 0 0px;
     }
-    .phone-container{
+
+    .phone-container {
         max-width: 200px;
         margin: 0 auto;
     }
 }
 
-.features-6{
-    .phone-container{
+.features-6 {
+    .phone-container {
         max-width: 260px;
         margin: 60px auto 0;
     }
-    .info{
+
+    .info {
         max-width: none;
         margin: 0 auto;
         padding: 10px 0 0px;
     }
-    .info:first-child{
+
+    .info:first-child {
         padding-top: 130px;
     }
 }
 
 .features-7,
 .features-2,
-.features-8{
+.features-8 {
     position: relative;
 
-    &:after{
+    &:after {
         display: block;
         content: "";
         position: absolute;
@@ -64,52 +68,53 @@
         top: 0;
         left: 0;
         z-index: 1;
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(0, 0, 0, .5);
     }
 
     .container,
     .container-fluid,
     .title,
-    .description{
+    .description {
         position: relative;
         z-index: 2;
     }
 }
 
 .features-8,
-.features-7{
-    .title{
+.features-7 {
+    .title {
         color: #FFFFFF;
     }
 }
 
-.features-8{
-    .title + .description{
+.features-8 {
+    .title+.description {
         margin-bottom: 70px;
     }
 }
 
-.features-7{
+.features-7 {
     overflow: hidden;
 
-    .info .info-title{
+    .info .info-title {
         color: #FFFFFF;
     }
-    .info-horizontal{
+
+    .info-horizontal {
         padding: 15px 0 0;
 
-        &:first-child{
+        &:first-child {
             padding-top: 45px;
         }
     }
 
-    .image-container{
+    .image-container {
         max-width: 1200px;
         position: relative;
         height: 550px;
         margin-top: 58px;
 
-        img{
+        img {
             max-width: 1200px;
             left: 100px;
             top: 0;
@@ -119,6 +124,6 @@
     }
 }
 
-.tablet-container{
+.tablet-container {
     margin-top: 40px;
 }

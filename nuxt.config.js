@@ -8,7 +8,7 @@ module.exports = {
     linkExactActiveClass: 'active'
   },
   head: {
-    title: 'Nuxt Now UI Kit PRO by Creative Tim',
+    title: 'BlitzBudget: Money Manager & Financial Planner',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1, shrink-to-fit=no' },

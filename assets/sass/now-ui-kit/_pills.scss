@@ -1,45 +1,46 @@
-.nav-pills{
+.nav-pills {
 
-    &.nav-pills-just-icons{
-      .nav-item .nav-link{
-        text-align: center;
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        padding: 0;
-        max-width: 80px;
-        min-width: auto;
+    &.nav-pills-just-icons {
+        .nav-item .nav-link {
+            text-align: center;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            padding: 0;
+            max-width: 80px;
+            min-width: auto;
 
-        i{
-          line-height: 80px;
+            em {
+                line-height: 80px;
+            }
         }
-      }
     }
 
     &:not(.flex-column) .nav-item {
-        &:not(:last-child) .nav-link{
+        &:not(:last-child) .nav-link {
             margin-right: 19px;
         }
     }
 
     .nav-item {
-        .nav-link{
-          padding: $padding-btn-vertical - 1 $padding-round-horizontal;
-          background-color: $opacity-gray-3;
-          min-width: 100px;
-          font-weight: $font-weight-normal;
-          text-align: center;
-          color: $light-black;
+        .nav-link {
+            padding: $padding-btn-vertical - 1 $padding-round-horizontal;
+            background-color: $opacity-gray-3;
+            min-width: 100px;
+            font-weight: $font-weight-normal;
+            text-align: center;
+            color: $light-black;
 
 
-            &:hover{
+            &:hover {
                 background-color: $opacity-gray-3;
             }
 
-            &.active{
+            &.active {
+
                 &,
                 &:focus,
-                &:hover{
+                &:hover {
                     background-color: $dark-gray;
                     color: $white-color;
                     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
@@ -48,28 +49,29 @@
 
             &.disabled,
             &:disabled,
-            &[disabled]{
+            &[disabled] {
                 opacity: .5;
             }
         }
 
-        i{
+        em {
             display: block;
             line-height: 60px;
             font-size: 24px;
         }
     }
 
-    &.nav-pills-neutral{
+    &.nav-pills-neutral {
         .nav-item {
-            .nav-link{
+            .nav-link {
                 background-color: $opacity-2;
                 color: $white-color;
 
-                &.active{
+                &.active {
+
                     &,
                     &:focus,
-                    &:hover{
+                    &:hover {
                         background-color: $white-color;
                         color: $primary-color;
                     }
@@ -78,74 +80,80 @@
         }
     }
 
-    &.nav-pills-primary{
+    &.nav-pills-primary {
         .nav-item {
-            .nav-link.active{
+            .nav-link.active {
+
                 &,
                 &:focus,
-                &:hover{
+                &:hover {
                     background-color: $brand-primary;
                 }
             }
         }
     }
 
-    &.nav-pills-info{
+    &.nav-pills-info {
         .nav-item {
-            .nav-link.active{
+            .nav-link.active {
+
                 &,
                 &:focus,
-                &:hover{
+                &:hover {
                     background-color: $brand-info;
                 }
             }
         }
     }
 
-    &.nav-pills-success{
+    &.nav-pills-success {
         .nav-item {
-            .nav-link.active{
+            .nav-link.active {
+
                 &,
                 &:focus,
-                &:hover{
+                &:hover {
                     background-color: $brand-success;
                 }
             }
         }
     }
 
-    &.nav-pills-warning{
+    &.nav-pills-warning {
         .nav-item {
-            .nav-link.active{
+            .nav-link.active {
+
                 &,
                 &:focus,
-                &:hover{
+                &:hover {
                     background-color: $brand-warning;
                 }
             }
         }
     }
 
-    &.nav-pills-danger{
+    &.nav-pills-danger {
         .nav-item {
-            .nav-link.active{
+            .nav-link.active {
+
                 &,
                 &:focus,
-                &:hover{
+                &:hover {
                     background-color: $brand-danger;
                 }
             }
         }
     }
 }
-.tab-space{
+
+.tab-space {
     padding: 20px 0 50px 0px;
 }
 
-.nav-align-center{
+.nav-align-center {
     text-align: center;
 
-    .nav-pills{
+    .nav-pills {
         display: inline-flex;
     }
 }

@@ -1,11 +1,11 @@
-.dropdown-menu{
-  i{
+.dropdown-menu {
+  em {
     margin-right: 5px;
     position: relative;
     top: 1px;
   }
 
-  .now-ui-icons{
+  .now-ui-icons {
     margin-right: 10px;
     position: relative;
     top: 4px;
@@ -14,20 +14,21 @@
     opacity: .5;
   }
 
-  .dropdown-item{
+  .dropdown-item {
+
     &.active,
-    &:active{
+    &:active {
       color: inherit;
       background: $opacity-gray-3;
     }
   }
 
-  .dropup &{
-    &:before{
+  .dropup & {
+    &:before {
       display: none;
     }
 
-    &:after{
+    &:after {
       display: inline-block;
       position: absolute;
       width: 0;
@@ -44,8 +45,8 @@
       border-left: .4em solid transparent;
     }
 
-    &.dropdown-menu-right{
-      &:after{
+    &.dropdown-menu-right {
+      &:after {
         right: 10px;
         left: auto;
       }
@@ -53,7 +54,7 @@
   }
 
   .dropdown-item,
-  .bootstrap-select &.inner li a{
+  .bootstrap-select &.inner li a {
     font-size: $font-size-small;
     padding-top: .6rem;
     padding-bottom: .6rem;
@@ -61,16 +62,16 @@
     @include transition($fast-transition-time, $transition-linear);
 
     &:hover,
-    &:focus{
+    &:focus {
       background-color: $opacity-gray-3;
     }
 
     &.disabled,
-    &:disabled{
+    &:disabled {
       color: $default-color-opacity;
 
       &:hover,
-      &:focus{
+      &:focus {
         background-color: transparent;
       }
     }
@@ -78,32 +79,32 @@
 
   .dropup:not(.bootstrap-select) &,
   .bootstrap-select &:not(.inner),
-  &.bootstrap-datetimepicker-widget{
+  &.bootstrap-datetimepicker-widget {
     @include transform-translate-y-dropdown(-25px);
     visibility: hidden;
     display: block;
     @include opacity(0);
-    top:100% !important;
+    top: 100% !important;
   }
 
   .bootstrap-select.show &:not(.inner),
   &.bootstrap-datetimepicker-widget.bottom.open,
   &.bootstrap-datetimepicker-widget.top.open,
-  .dropup.show:not(.bootstrap-select) &{
+  .dropup.show:not(.bootstrap-select) & {
     @include opacity(1);
     visibility: visible;
     @include transform-translate-y-dropdown(0px);
   }
 
   .dropup:not(.bootstrap-select) &,
-  &.bootstrap-datetimepicker-widget.top{
+  &.bootstrap-datetimepicker-widget.top {
     @include transform-translate-y-dropdown(25px);
     bottom: 100% !important;
     top: auto !important;
   }
 
   .dropup.show:not(.bootstrap-select) &,
-  &.bootstrap-datetimepicker-widget.top.open{
+  &.bootstrap-datetimepicker-widget.top.open {
     @include transform-translate-y-dropdown(-1px);
   }
 }

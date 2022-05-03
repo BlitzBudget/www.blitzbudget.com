@@ -1,39 +1,39 @@
-.footer{
+.footer {
     padding: 1.125rem 0;
     text-align: center;
 
-    &.footer-default{
+    &.footer-default {
         background-color: #f2f2f2;
     }
 
-    &.footer-white{
+    &.footer-white {
         background-color: $white-color;
     }
 
-    nav{
+    nav {
         display: inline-block;
         float: left;
     }
 
-    .content{
+    .content {
         text-align: left;
     }
 
-    .nav-link{
+    .nav-link {
         display: inline;
     }
 
-    &.footer-big{
+    &.footer-big {
         padding: 30px 0;
 
-        .social-feed i{
+        .social-feed em {
             font-size: 20px;
             float: left;
             padding-right: 10px;
             padding-bottom: 30px;
         }
 
-        .gallery-feed img{
+        .gallery-feed img {
             width: 20%;
             margin-right: 5%;
             margin-bottom: 5%;
@@ -41,7 +41,7 @@
         }
     }
 
-    .footer-brand{
+    .footer-brand {
         float: left;
         font-size: 0.875rem;
         line-height: 44px;
@@ -49,69 +49,74 @@
 
 
 
-    ul{
+    ul {
         margin-bottom: 0;
         padding: 0;
         list-style: none;
 
-        &:not(.links-vertical){
+        &:not(.links-vertical) {
             line-height: 3.1;
         }
 
-        &.links-vertical{
+        &.links-vertical {
             line-height: 1.6;
 
-            li{
+            li {
                 display: block;
                 margin-left: -5px;
                 margin-right: -5px;
                 margin-bottom: 0px;
 
-                a{
+                a {
                     padding: 5px;
                     display: block;
                 }
             }
         }
 
-        li{
+        li {
             display: inline-block;
+            line-height: unset;
+            font-weight: unset;
+            font-size: unset;
 
-            a{
+            a {
                 color: inherit;
                 padding: 13px $padding-base-vertical;
                 font-size: $font-size-small;
                 text-transform: uppercase;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     text-decoration: none;
                 }
             }
         }
     }
 
-    .social-buttons{
+    .social-buttons {
+
         a,
-        .btn{
+        .btn {
             margin: 0;
-            & + .btn {
+
+            &+.btn {
                 margin-left: 5px;
             }
         }
     }
 
-    .pull-center{
+    .pull-center {
         display: inline-block;
         float: none;
     }
 
-    .copyright{
+    .copyright {
         font-size: $font-size-small;
         line-height: 3.5;
     }
 
-    &:after{
+    &:after {
         display: table;
         clear: both;
         content: " ";
