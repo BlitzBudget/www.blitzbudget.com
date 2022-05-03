@@ -1,8 +1,23 @@
-# bb-bootstrap
-Blitz Budget Bootstrap front end
+# www.blitzbudget.com
 
-Instructions to install and run the server
+> Web Page For BlitzBudget
 
-1) npm install http-server -g
-2) http-server . -p 8080
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm install # Or yarn install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
