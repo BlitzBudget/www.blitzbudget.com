@@ -3,7 +3,7 @@
     <div class="page-header page-header-small rellax-header">
       <div
         class="page-header-image"
-        style="background-image: url('img/bg26.jpg')"
+        style="background-image: url('img/bg21.jpg')"
       ></div>
       <div class="content-center">
         <h1 class="title">One place to control your money</h1>
