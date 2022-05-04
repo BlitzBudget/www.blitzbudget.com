@@ -32,7 +32,7 @@
       <li class="nav-item">
         <a
           class="nav-link btn btn-default btn-link"
-          href="https://support.blitzbudget.com"
+          href="https://help.blitzbudget.com"
           target="_blank"
         >
           <p>Support</p>
