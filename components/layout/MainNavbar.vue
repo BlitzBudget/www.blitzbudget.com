@@ -20,33 +20,25 @@
       </el-popover>
     </template>
     <template slot="navbar-menu">
-      <li class="nav-item">
-        <a
-          class="nav-link btn btn-default btn-link"
-          href="https://learn.blitzbudget.com"
-          target="_blank"
-        >
-          <p>Learn</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link btn btn-default btn-link"
-          href="https://help.blitzbudget.com"
-          target="_blank"
-        >
-          <p>Support</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link btn btn-default btn-neutral"
-          href="https://www.blitzbudget.com/signin"
-          target="_blank"
-        >
-          <p>Sign in</p>
-        </a>
-      </li>
+      <ul class="navbar-nav mr-5">
+        <li class="nav-item">
+          <a class="nav-link" href="https://learn.blitzbudget.com"> Learn </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://help.blitzbudget.com"> Support </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-default btn-neutral"
+            href="https://www.blitzbudget.com/signin"
+            target="_blank"
+          >
+            <p>Sign in</p>
+          </a>
+        </li>
+      </ul>
     </template>
   </navbar>
 </template>

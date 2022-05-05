@@ -10,3 +10,30 @@
     text-indent: -999999px;
     margin: 55px auto 0;
 }
+
+.alexa-apps .play-store,
+.alexa-apps .apple-store {
+    width: 10rem;
+
+    @media (max-width: 576px) {
+        display: block;
+        margin: 0.5rem auto;
+    }
+}
+
+.alexa-question {
+    height: 8rem;
+    position: relative;
+}
+
+.card.alexa-question .card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.alexa-question h3 {
+    font-size: 1rem;
+}
