@@ -10,7 +10,7 @@
             <strong><u>“Alexa, open Blitz Budget”</u></strong> and provide your
             optional voice code.
           </p>
-          <tabs type="danger" centered pills>
+          <tabs type="danger" centered pills class="pb-0">
             <tab-pane label="“Add” Skills">
               <div class="row">
                 <div class="col-lg-4 col-12">

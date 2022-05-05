@@ -117,7 +117,7 @@
                 </div>
               </div>
               <div class="info info-horizontal">
-                <div class="icon icon-success icon-circle">
+                <div class="icon icon-info icon-circle">
                   <em class="now-ui-icons sport_user-run"></em>
                 </div>
                 <div class="description">
