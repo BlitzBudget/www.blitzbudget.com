@@ -142,7 +142,7 @@
             </div>
             <div class="col-md-7">
               <div class="tablet-container">
-                <img v-lazy="'img/alexa/alexa-echo-white.svg'" />
+                <img v-lazy="'img/alexa/alexa-echo-white.svg'" alt="alexa white" />
               </div>
             </div>
           </div>
