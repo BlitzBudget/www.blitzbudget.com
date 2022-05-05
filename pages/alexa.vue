@@ -142,7 +142,10 @@
             </div>
             <div class="col-md-7">
               <div class="tablet-container">
-                <img v-lazy="'img/alexa/alexa-echo-white.svg'" alt="alexa white" />
+                <img
+                  v-lazy="'img/alexa/alexa-echo-white.svg'"
+                  alt="alexa white"
+                />
               </div>
             </div>
           </div>
@@ -157,8 +160,8 @@
 import { Card, Button, FormGroupInput, Tabs, TabPane } from "@/components";
 import initParallax from "@/utils/initParallax";
 import FeaturesSection from "@/components/pages/sections/Features";
-import AlexaSkillsSection from "@/components/pages/sections/alexa/skills";
-import AlexaQuestionSection from "@/components/pages/sections/alexa/questions";
+import AlexaSkillsSection from "@/components/pages/sections/alexa/Skills";
+import AlexaQuestionSection from "@/components/pages/sections/alexa/Questions";
 export default {
   name: "landing-page",
   layout: "gray-footer",
