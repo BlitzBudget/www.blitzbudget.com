@@ -604,7 +604,7 @@
                   <p>
                     We take security quite seriously around here, and go into
                     detail about the steps we take to protect users’ data in our
-                    <a href="https://www.blitzbudget.com/security"
+                    <a href="https://www.blitzbudget.com/terms"
                       >Security Policy</a
                     >. For more legal reading, see our
                     <a href="https://www.blitzbudget.com/terms"

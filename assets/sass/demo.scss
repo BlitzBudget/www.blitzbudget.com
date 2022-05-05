@@ -1,5 +1,9 @@
 @import "now-ui-kit/mixins/vendor-prefixes";
 
+html {
+  transition: all .5s;
+}
+
 .tim-row {
   margin-bottom: 20px;
 }
