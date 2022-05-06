@@ -1,9 +1,5 @@
 <template>
-  <footer
-    class="footer"
-    :class="{ [`footer-${type}`]: type }"
-    :data-background-color="backgroundColor"
-  >
+  <footer class="footer" :class="{ [`footer-${type}`]: type }" :data-background-color="backgroundColor">
     <div class="container">
       <nav>
         <ul>
@@ -17,19 +13,16 @@
             <a href="https://www.blitzbudget.com/terms"> Terms of Service </a>
           </li>
           <li>
+            <a href="https://blog.blitzbudget.com/"> Blog </a>
+          </li>
+          <li>
             <a href="https://app.blitzbudget.com/"> Get Started </a>
           </li>
         </ul>
       </nav>
       <div class="copyright">
         &copy; {{ year }}, Created by
-        <a
-          href="https://www.blitzbudget.com"
-          target="_blank"
-          rel="noopener"
-          class="text-success"
-          >BlitzBudget</a
-        >.
+        <a href="https://www.blitzbudget.com" target="_blank" rel="noopener" class="text-success">BlitzBudget</a>.
       </div>
     </div>
   </footer>
