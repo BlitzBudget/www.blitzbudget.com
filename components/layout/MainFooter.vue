@@ -4,9 +4,6 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.blitzbudget.com"> BlitzBudget </a>
-          </li>
-          <li>
             <a href="https://blitzbudget.com/privacy"> Privacy Policy </a>
           </li>
           <li>
