@@ -1,10 +1,7 @@
 <template>
   <div class="wrapper landing-page">
     <div class="page-header page-header-small rellax-header">
-      <div
-        class="page-header-image"
-        style="background-image: url('img/bg4.jpg')"
-      ></div>
+      <div class="page-header-image" style="background-image: url('img/bg4.jpg')"></div>
       <div class="content-center">
         <h1 class="title">Alexa, ask Blitz Budget, What's my balance?</h1>
         <div class="text-center">
@@ -74,7 +71,7 @@
       <div class="features-5">
         <div class="container">
           <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title">Get Started</h2>
               <h4 class="description">
                 Once you've downloaded the Amazon Alexa app, you can enable the
@@ -82,18 +79,10 @@
               </h4>
               <div class="row text-center my-5">
                 <div class="col-12 col-md-6 my-auto text-md-right alexa-apps">
-                  <img
-                    class="apple-store"
-                    src="/img/playstore/btn_download_appstore_en.svg"
-                    alt="apple store icon"
-                  />
+                  <img class="apple-store" src="/img/playstore/btn_download_appstore_en.svg" alt="apple store icon" />
                 </div>
                 <div class="col-12 col-md-6 my-auto text-md-left alexa-apps">
-                  <img
-                    class="play-store"
-                    src="/img/playstore/btn_download_playstore_en.svg"
-                    alt="play store icon"
-                  />
+                  <img class="play-store" src="/img/playstore/btn_download_playstore_en.svg" alt="play store icon" />
                 </div>
               </div>
             </div>
@@ -105,13 +94,9 @@
                 <div class="description">
                   <h4 class="info-title">Enable the skill</h4>
                   <p>
-                    Open the Alexa app or go to&nbsp;<a
-                      title="Link opens in a new window"
-                      target="_blank"
-                      class="text-success"
-                      href="https://www.amazon.com/dp/B08PZBNBSF"
-                      >Amazon.com</a
-                    >. Select “Skills” and search for BlitzBudget. Select
+                    Open the Alexa app or go to&nbsp;<a title="Link opens in a new window" target="_blank"
+                      class="text-success" href="https://www.amazon.com/dp/B08PZBNBSF">Amazon.com</a>. Select “Skills”
+                    and search for BlitzBudget. Select
                     “Enable”.
                   </p>
                 </div>
@@ -142,10 +127,7 @@
             </div>
             <div class="col-md-7">
               <div class="tablet-container">
-                <img
-                  v-lazy="'img/alexa/alexa-echo-white.svg'"
-                  alt="alexa white"
-                />
+                <img v-lazy="'img/alexa/alexa-echo-white.svg'" alt="alexa white" />
               </div>
             </div>
           </div>

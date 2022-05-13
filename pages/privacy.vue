@@ -1,10 +1,7 @@
 <template>
   <div class="wrapper blog-post">
     <div class="page-header page-header-small rellax-header">
-      <div
-        class="page-header-image"
-        style="background-image: url('img/bg24.jpg')"
-      ></div>
+      <div class="page-header-image" style="background-image: url('img/bg24.jpg')"></div>
       <div class="content-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
@@ -19,14 +16,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="button-container">
-              <a href="#pablo" class="btn btn-success btn-round btn-lg">
+              <nuxt-link to="#article" class="btn btn-success btn-round btn-lg">
                 <em class="now-ui-icons text_align-left"></em> Read Article
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
       </div>
-      <div class="section">
+      <div class="section" id="article">
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
@@ -46,7 +43,7 @@
                     that you may provide when you visit and utilize the
                     financial planning software available through our apps,
                     software, and the website
-                    <a href="https://www.blitzbudget.com">blitzbudget.com</a>
+                    <nuxt-link to="/">blitzbudget.com</nuxt-link>
                     (collectively, our “Website“). This includes our practices
                     for collecting, using, maintaining, protecting, and
                     disclosing that information and the basis for doing so.
@@ -83,9 +80,8 @@
                     <li>
                       in order to provide the services and fulfill our
                       obligations pursuant to the
-                      <a href="https://www.blitzbudget.com/terms"
-                        >Terms of Service</a
-                      >. For example, we cannot provide our services without an
+                      <nuxt-link to="/terms">Terms of Service</nuxt-link>. For example, we cannot provide our services
+                      without an
                       email address to sign into your account, conduct customer
                       support, or send educational materials; we cannot provide
                       the service without users providing financial information
@@ -260,15 +256,10 @@
                   <p>
                     One way to limit cookies is by opting out of third party
                     cookies/advertising networks, like
-                    <a href="https://tools.google.com/dlpage/gaoptout"
-                      >Google Analytics</a
-                    >. If you are in Canada or the EU you can use the
-                    <a href="https://youradchoices.ca"
-                      >DAAC’s youradchoices.ca</a
-                    >, or
-                    <a href="http://youronlinechoices.eu/"
-                      >EDAA’s youronlinechoices.eu</a
-                    >
+                    <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics</a>. If you are in Canada or the
+                    EU you can use the
+                    <a href="https://youradchoices.ca">DAAC’s youradchoices.ca</a>, or
+                    <a href="http://youronlinechoices.eu/">EDAA’s youronlinechoices.eu</a>
                     respectively. Some people use what are called “Ad Blockers”
                     to limit advertising/tracking. We don’t endorse any
                     <em>particular</em> Ad Blocker, but want you to know that
@@ -296,59 +287,43 @@
                   </p>
                   <ul>
                     <li>
-                      <a
-                        href="https://support.google.com/chrome/answer/95647?hl=en-GB"
-                        >Google Chrome</a
-                      >
+                      <a href="https://support.google.com/chrome/answer/95647?hl=en-GB">Google Chrome</a>
                     </li>
                     <li>
                       <a
-                        href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies"
-                        >Internet Explorer</a
-                      >
+                        href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies">Internet
+                        Explorer</a>
+                    </li>
+                    <li>
+                      <a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy">Microsoft
+                        Edge</a>
                     </li>
                     <li>
                       <a
-                        href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy"
-                        >Microsoft Edge</a
-                      >
+                        href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer#w_cookie-settings">Mozilla
+                        Firefox</a>
                     </li>
                     <li>
-                      <a
-                        href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer#w_cookie-settings"
-                        >Mozilla Firefox</a
-                      >
+                      <a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari
+                        (Desktop)</a>
                     </li>
                     <li>
-                      <a
-                        href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
-                        >Safari (Desktop)</a
-                      >
+                      <a href="https://support.apple.com/en-us/HT201265">Safari (Mobile)</a>
                     </li>
                     <li>
-                      <a href="https://support.apple.com/en-us/HT201265"
-                        >Safari (Mobile)</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://support.google.com/ics/nexus/bin/answer.py?hl=en&amp;answer=2425067"
-                        >Android Browser</a
-                      >
+                      <a href="https://support.google.com/ics/nexus/bin/answer.py?hl=en&amp;answer=2425067">Android
+                        Browser</a>
                     </li>
                   </ul>
                   <h3>Recipients of personal data</h3>
                   <p>
-                    <strong
-                      >We do not sell users’ data. (And we never have!)</strong
-                    >
+                    <strong>We do not sell users’ data. (And we never have!)</strong>
                   </p>
                   <p>
                     We share data to fulfill the purposes for which you provide
                     it; to enforce or apply our
-                    <a href="https://www.blitzbudget.com/terms"
-                      >Terms of Service</a
-                    >, including billing. We may disclose or transfer personal
+                    <nuxt-link to="/terms">Terms of Service</nuxt-link>, including billing. We may disclose or transfer
+                    personal
                     information that we collect or you provide as described in
                     this privacy policy:
                   </p>
@@ -397,9 +372,7 @@
                     </li>
                     <li>
                       To enforce or apply our
-                      <a href="https://www.blitzbudget.com/terms"
-                        >Terms of Service</a
-                      >
+                      <nuxt-link to="/terms">Terms of Service</nuxt-link>
                       or terms of sale and other agreements, including for
                       billing and collection purposes.
                     </li>
@@ -520,9 +493,7 @@
                     consent, we will delete that information. If you believe we
                     might have any information from or about a child under 13,
                     please contact us at
-                    <a href="mailto:admin@blitzbudget.com"
-                      >admin@blitzbudget.com</a
-                    >.
+                    <a href="mailto:admin@blitzbudget.com">admin@blitzbudget.com</a>.
                   </p>
                   <h3>Your Rights</h3>
                   <p>
@@ -546,30 +517,26 @@
                     of each type of email. Any administrative or service-related
                     emails (to confirm a purchase, or an update to this Privacy
                     Policy or the
-                    <a href="https://www.blitzbudget.com/terms"
-                      >Terms of Service</a
-                    >, etc.) generally do not offer an option to unsubscribe as
+                    <nuxt-link to="/terms">Terms of Service</nuxt-link>, etc.) generally do not offer an option to
+                    unsubscribe
+                    as
                     they are necessary to provide the Services you requested.
                   </p>
                   <h4>Updating Account Information</h4>
                   <p>
                     You may correct, amend, or update your email and/or password
                     at any time by adjusting that information in your
-                    <a href="https://app.blitzbudget.com/settings"
-                      >account settings</a
-                    >. You may cease aggregation of transactions from your
+                    <a href="https://app.blitzbudget.com/settings">account settings</a>. You may cease aggregation of
+                    transactions from your
                     financial institutions at any time through the individual
                     account settings in the
-                    <a href="https://app.blitzbudget.com/profile"
-                      >BlitzBudget app</a
-                    >.
+                    <a href="https://app.blitzbudget.com/profile">BlitzBudget app</a>.
                   </p>
                   <h4>Portability</h4>
                   <p>
                     You can access information that you have shared with us by
-                    <a href="https://app.blitzbudget.com/transactions"
-                      >exporting your budget and transactions history</a
-                    >.
+                    <a href="https://app.blitzbudget.com/transactions">exporting your budget and transactions
+                      history</a>.
                   </p>
                   <h4>Object, Restrict, or Withdraw Consent</h4>
                   <p>
@@ -596,23 +563,15 @@
                     acknowledge and understand that your information will be
                     transferred, processed, and stored in the Euro Zone, as it
                     is necessary to provide the Services and perform the
-                    <a href="https://www.blitzbudget.com/terms"
-                      >Terms of Service</a
-                    >.
+                    <nuxt-link to="/terms">Terms of Service</nuxt-link>.
                   </p>
                   <h3>Further reading</h3>
                   <p>
                     We take security quite seriously around here, and go into
                     detail about the steps we take to protect users’ data in our
-                    <a href="https://www.blitzbudget.com/terms"
-                      >Security Policy</a
-                    >. For more legal reading, see our
-                    <a href="https://www.blitzbudget.com/terms"
-                      >Terms of Service</a
-                    >. If you need further assistance, email
-                    <a href="mailto:admin@blitzbudget.com"
-                      >admin@blitzbudget.com</a
-                    >.
+                    <nuxt-link to="/terms">Security Policy</nuxt-link>. For more legal reading, see our
+                    <nuxt-link to="/terms">Terms of Service</nuxt-link>. If you need further assistance, email
+                    <a href="mailto:admin@blitzbudget.com">admin@blitzbudget.com</a>.
                   </p>
                 </div>
               </article>

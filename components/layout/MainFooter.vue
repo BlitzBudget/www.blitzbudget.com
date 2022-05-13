@@ -4,16 +4,19 @@
       <nav>
         <ul>
           <li>
-            <a href="https://blitzbudget.com/privacy"> Privacy Policy </a>
+            <nuxt-link to="/privacy"> Privacy Policy </nuxt-link>
           </li>
           <li>
-            <a href="https://www.blitzbudget.com/terms"> Terms of Service </a>
+            <nuxt-link to="/terms"> Terms of Service </nuxt-link>
           </li>
           <li>
             <a href="https://blog.blitzbudget.com/"> Blog </a>
           </li>
           <li>
             <a href="https://app.blitzbudget.com/"> Get Started </a>
+          </li>
+          <li>
+            <nuxt-link to="/alexa"> Alexa </nuxt-link>
           </li>
         </ul>
       </nav>

@@ -1,10 +1,7 @@
 <template>
   <div class="wrapper blog-post">
     <div class="page-header page-header-small rellax-header">
-      <div
-        class="page-header-image"
-        style="background-image: url('img/bg25.jpg')"
-      ></div>
+      <div class="page-header-image" style="background-image: url('img/bg25.jpg')"></div>
       <div class="content-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
@@ -19,14 +16,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="button-container">
-              <a href="#pablo" class="btn btn-success btn-round btn-lg">
+              <nuxt-link to="#article" class="btn btn-success btn-round btn-lg">
                 <em class="now-ui-icons text_align-left"></em> Read Article
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
       </div>
-      <div class="section">
+      <div class="section" id="#article">
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
@@ -40,12 +37,8 @@
                     (collectively, these “Terms of Service”), govern your access
                     to and use of the financial planning software available
                     through our apps, software, and the website
-                    <a
-                      href="https://www.blitzbudget.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >blitzbudget.com</a
-                    >, any associated content, including receipt of educational
+                    <nuxt-link to="" target="_blank" rel="noreferrer noopener">blitzbudget.com</nuxt-link>, any
+                    associated content, including receipt of educational
                     materials and communications to manage your subscription,
                     functionality and services (the “Website”), whether as a
                     guest or a registered user.
@@ -56,19 +49,11 @@
                     accept or agree to the Terms of Service when this option is
                     made available to you, you accept and agree to be bound and
                     abide by these Terms of Service and our
-                    <a
-                      href="https://www.blitzbudget.com/privacy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >, incorporated herein by reference. If you do not want to
+                    <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>,
+                    incorporated herein by reference. If you do not want to
                     agree to these Terms of Service or the
-                    <a
-                      href="https://www.blitzbudget.com/privacy/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >, you must not access or use the Website.
+                    <nuxt-link to="/privacy/" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>, you
+                    must not access or use the Website.
                   </p>
                   <p>
                     This Website is offered and available to users who are 13
@@ -116,19 +101,11 @@
                     information you provide to register with this Website or
                     otherwise, including but not limited to through the use of
                     any interactive features on the Website, is governed by our
-                    <a
-                      href="https://www.blitzbudget.com/privacy/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >, and you consent to all actions we take with respect to
+                    <nuxt-link to="/privacy/" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>, and
+                    you
+                    consent to all actions we take with respect to
                     your information consistent with our
-                    <a
-                      href="https://www.blitzbudget.com/privacy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >.
+                    <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>.
                   </p>
                   <p>
                     If you choose, or are provided with, a username, password or
@@ -187,12 +164,9 @@
                     information maintained by third-party financial institutions
                     with which you have a legally binding customer relationship.
                     Subject to our privacy procedures as described in the
-                    <a
-                      href="https://www.blitzbudget.com/privacy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >, the Company may work with one or more third party
+                    <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>, the
+                    Company
+                    may work with one or more third party
                     financial service technology providers to access and
                     retrieve your Account Information.
                   </p>
@@ -488,12 +462,8 @@
                       that could give rise to any civil or criminal liability
                       under applicable laws or regulations or that otherwise may
                       be in conflict with these Terms of Service and our
-                      <a
-                        href="https://blitzbudget.com/privacy"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >Privacy Policy</a
-                      >.
+                      <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy
+                        Policy</nuxt-link>.
                     </li>
                     <li>Be likely to deceive any person.</li>
                     <li>
@@ -535,19 +505,11 @@
                   <h2>Information About You and Your Visits to the Website</h2>
                   <p>
                     All information we collect on this Website is subject to our
-                    <a
-                      href="https://www.blitzbudget.com/privacy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >. By using the Website, you consent to all actions taken by
+                    <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>. By
+                    using the
+                    Website, you consent to all actions taken by
                     us with respect to your information in compliance with the
-                    <a
-                      href="https://www.blitzbudget.com/privacy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >.
+                    <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>.
                   </p>
                   <h2>Online Purchases and Other Terms and Conditions</h2>
                   <p>
@@ -690,12 +652,7 @@
                   <h2>Entire Agreement</h2>
                   <p>
                     The Terms of Service and our
-                    <a
-                      href="https://www.blitzbudget.com/privacy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      >Privacy Policy</a
-                    >
+                    <nuxt-link to="/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</nuxt-link>
                     and Terms of Sale constitute the sole and entire agreement
                     between you and Blitz Budget with respect to the Website and
                     supersede all prior and contemporaneous understandings,
