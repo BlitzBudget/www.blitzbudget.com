@@ -2,6 +2,14 @@
 
 > Web Page For BlitzBudget
 
+## Deployment Status
+
+[![Deploy to S3 Bucket](https://github.com/BlitzBudget/www.blitzbudget.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/BlitzBudget/www.blitzbudget.com/actions/workflows/deploy.yml)
+
+## Sonarcloud Status
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=BlitzBudget_www.blitzbudget.com)
+
 ## Build Setup
 
 ``` bash
