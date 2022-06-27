@@ -1,10 +1,7 @@
 <template>
   <div class="wrapper landing-page">
     <div class="page-header page-header-small rellax-header">
-      <div
-        class="page-header-image"
-        style="background-image: url('img/bg21.jpg')"
-      ></div>
+      <div class="page-header-image" style="background-image: url('img/bg21.jpg')"></div>
       <div class="content-center">
         <h1 class="title">One place to control your money</h1>
         <div class="text-center">
@@ -24,6 +21,9 @@ import FeaturesSection from "@/components/pages/sections/Features";
 export default {
   name: "landing-page",
   layout: "gray-footer",
+  head: {
+    title: 'Money Manager & Financial Planner',
+  },
   components: {
     Card,
     Tabs,
