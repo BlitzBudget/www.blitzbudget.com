@@ -680,6 +680,9 @@ import {
 import initParallax from "@/utils/initParallax";
 export default {
   name: "blog-post",
+  head: {
+    title: 'Terms of Service',
+  },
   components: {
     Card,
     InfoSection,

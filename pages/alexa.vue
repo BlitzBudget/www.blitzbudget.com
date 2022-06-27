@@ -147,6 +147,9 @@ import AlexaQuestionSection from "@/components/pages/sections/alexa/Questions";
 export default {
   name: "landing-page",
   layout: "gray-footer",
+  head: {
+    title: 'Alexa',
+  },
   components: {
     Card,
     Tabs,
